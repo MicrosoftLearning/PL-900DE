@@ -125,7 +125,7 @@ Aufgabe Nr. 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
 
 2. Hinzufügen der Schaltflächen zum Ein- und Auschecken
    
-1. Wählen Sie die Registerkarte **Einfügen** aus
+   1. Wählen Sie die Registerkarte **Einfügen** aus
    2. Klicken Sie auf **Schaltfläche**
    3. Ändern Sie die Eigenschaft der Schaltfläche **Text** in **„Einchecken“**
    4. Benennen Sie die Schaltfläche in **Eincheck-Schaltfläche** um

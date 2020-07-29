@@ -42,7 +42,7 @@ Vor dem Beginn zu beachtende Dinge
 -   Haben Sie ausreichend Daten für die Visualisierung?
 -   Welche möglichen Merkmale können Sie verwenden, um Besuchsdaten zu analysieren?
 
-Übung Nr. 1: Power BI-Bericht erstellen 
+Übung 1: Power BI-Bericht erstellen 
 ===============================
 
 **Ziel:** In dieser Übung erstellen Sie, basierend auf Daten aus der Common Data Service-Datenbank, einen Power BI-Bericht.
@@ -91,7 +91,7 @@ Aufgabe 1: Daten vorbereiten
 
 16. Klicken Sie auf ... neben dem Feld **bc_scheduledstart**, und wählen Sie **Umbenennen** aus. Geben Sie **Start** als Feldnamen ein.
 
-17. Speichern Sie laufende Arbeiten, indem Sie auf **Datei** klicken** | Speichern** und einen Dateinamen Ihrer Wahl eingeben.
+17. Speichern Sie laufende Arbeiten, indem Sie auf **Datei** klicken **| Speichern** und einen Dateinamen Ihrer Wahl eingeben.
 
 ## Aufgabe 2: Diagramm- und Zeitvisualisierungen erstellen
 
@@ -108,12 +108,12 @@ Aufgabe 1: Daten vorbereiten
     * Wählen Sie verschiedene Gebäudesegmente im Kreisdiagramm aus, und beobachten Sie Änderungen im Zeitbericht.
     * Wählen Sie verschiedene Balken im Zeitsäulendiagramm aus, und beobachten Sie Änderungen im Kreisbericht.
     * Führen Sie mit den Symbolen oder mit dem Multifunktionsleistenbefehl **Daten/Drillvorgang | Nächste Ebene erweitern** einen Drilldown auf die Monatsebene aus.
-11. Speichern Sie laufende Arbeiten, indem Sie auf **Datei** klicken** | Speichern** klicken.
+11. Speichern Sie laufende Arbeiten, indem Sie auf **Datei** klicken **| Speichern** klicken.
 
-Übung Nr. 2: Power BI-Dashboard erstellen
+Übung 2: Power BI-Dashboard erstellen
 ================================
 
-## Aufgabe Nr. 1: Power BI-Bericht veröffentlichen
+## Aufgabe 1: Power BI-Bericht veröffentlichen
 
 1. Klicken Sie im Menüband auf die Schaltfläche **Veröffentlichen**.
 
@@ -142,7 +142,7 @@ Aufgabe 1: Daten vorbereiten
 ## Aufgabe 4: Mobiltelefonansicht erstellen
 
 1. Wählen Sie den Bericht aus dem Bereich **Berichte** aus.
-2. Wählen Sie je nach UI-Version entweder ... | Mobile Ansicht** oder Webansicht | Telefonansicht.
+2. Wählen Sie je nach UI-Version entweder **... | Mobile Ansicht** oder **Webansicht | Telefonansicht**.
 3. Ordnen Sie die Kacheln wie gewünscht neu an.
 4. Wählen Sie ... | QR-Code generieren.
 5. Wenn Sie ein mobiles Gerät haben, scannen Sie den Code mit einer QR-Scanner-App, die auf iOS- und Android-Plattformen verfügbar ist.

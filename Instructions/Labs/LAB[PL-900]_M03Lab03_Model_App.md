@@ -113,7 +113,7 @@ In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erste
 18.  Klicken Sie oben links auf dem Bildschirm auf **Zurück**. Sie sollten jetzt wieder auf der
      Ansichtsregisterkarte „Besuchsentität“ sein.
 
-Übung Nr. 2: Eine modellgesteuerte Anwendung erstellen
+Übung 2: Eine modellgesteuerte Anwendung erstellen
 =============================================
 
 **Ziel:** In dieser Übung erstellen Sie die modellgesteuerte App, passen die Sitemap an und testen die App.

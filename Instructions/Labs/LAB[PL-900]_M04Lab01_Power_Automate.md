@@ -112,11 +112,11 @@ Aufgabe 2: Flow überprüfen und aktivieren
 4.  Öffnen Sie den Flow, suchen und öffnen Sie die letzte **Ausführung**.
 5.  Öffnen Sie den Schritt **Mail** und überprüfen Sie, ob der E-Mail-Inhalt korrekt generiert wurde.
 
-# Übung Nr. 2: Erstellen eines Security Sweep-Flows
+# Übung 2: Erstellen eines Security Sweep-Flows
 
 **Ziel:** In dieser Übung erstellen Sie einen Power Automate-Flow, der die Anforderung implementiert. Die Sicherheitsüberprüfung wird alle 15 Minuten durchgeführt und die Sicherheit wird benachrichtigt, wenn einer der Besucher seine geplante Zeit überschritten hat.
 
-## Aufgabe Nr. 1: Einen Flow zum Abrufen von Datensätzen erstellen
+## Aufgabe 1: Einen Flow zum Abrufen von Datensätzen erstellen
 
 1. Öffnen Sie die Campus Management-Lösung.
 

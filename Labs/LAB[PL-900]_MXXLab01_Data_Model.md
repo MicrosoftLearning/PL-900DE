@@ -144,13 +144,13 @@ Aufgabe Nr. 3: Eine vorhandene Entität hinzufügen
     Dadurch wird die Kontaktentität zur neu erstellten Lösung hinzugefügt. 
 21.  Ihre Lösung sollte jetzt eine Entität haben: Kontakt.
 
-Übung Nr. 2: Entitäten und Beziehungen erstellen
+Übung 2: Entitäten und Beziehungen erstellen
 ========================================
 
 **Ziel:** In dieser Übung erstellen Sie Entitäten und fügen Beziehungen
 zwischen den Entitäten hinzu.
 
-Aufgabe Nr. 1: Entität „Gebäude“ und Felder erstellen
+Aufgabe 1: Entität „Gebäude“ und Felder erstellen
 -----------------------------------------
 
 1.  Öffnen Sie in Ihrer Entwicklungsumgebung die Lösung „Campus Management“
@@ -242,11 +242,11 @@ Aufgabe 3: Beziehungen erstellen
 5.  Wählen Sie aus dem oberen Menü **Lösungen** aus, und klicken Sie auf **Alle
     Anpassungen veröffentlichen.**
 
-# Übung Nr. 3: Daten importieren
+# Übung 3: Daten importieren
 
 **Ziel:** In dieser Übung importieren Sie Beispieldaten in die Common Data Service-Datenbank.
 
-## Aufgabe Nr. 1: Importdatenzuordnung
+## Aufgabe 1: Importdatenzuordnung
 
 1. Laden Sie [CampusDataMap.xml](..\Allfiles\CampusDataMap.xml) herunter.
 2. Navigieren Sie zum Power Platform Admin Center unter https://aka.ms/ppac und melden Sie sich an.

@@ -62,7 +62,7 @@ In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlag
 2.  Erstellen Sie eine neue Canvas-App
 
     -   Klicken Sie auf **Neue App | Canvas-App**.
-    -   Klicken Sie unter ** Common Data Service ** auf ** Telefonlayout ** 
+    -   Klicken Sie unter **Common Data Service** auf **Telefonlayout** 
 -   Wählen Sie die **Common Data Service**-Verbindung und klicken Sie dann auf **Erstellen**
     -   Tabelle **Besuch** auswählen
     -   Auf **Verbinden**klicken
@@ -112,7 +112,7 @@ In dieser Aufgabe konfigurieren Sie ein Formular zum Bearbeiten von Informatione
     * Name, Gebäude, Besucher, geplanter Start, geplantes Ende
 9.  Klicken Sie auf **Datei | Speichern**, um die laufenden Arbeiten beizubehalten, und klicken Sie dann auf **Speichern**. 
 
-Aufgabe Nr. 4: Konfigurieren Sie die Besuchsgalerie
+Aufgabe 4: Konfigurieren Sie die Besuchsgalerie
 ---------------------------------------
 
 In dieser Aufgabe konfigurieren Sie die vorgenerierte Galerie so, dass Titel, Start- und Enddatum für den Besuch angezeigt werden. 
@@ -165,7 +165,7 @@ Da die Anzahl der Besuche kontinuierlich zunimmt, benötigen Benutzer eine Funkt
    
 8. Klicken Sie auf **Datei | Speichern**, um die laufenden Arbeiten beizubehalten, und klicken Sie dann auf **Speichern**.
 
-# Übung Nr. 2: Fertigstellen der App
+# Übung 2: Fertigstellen der App
 
 In dieser Übung testen Sie die Anwendung und fügen sie bei Erfolg Ihrer Lösung hinzu.
 

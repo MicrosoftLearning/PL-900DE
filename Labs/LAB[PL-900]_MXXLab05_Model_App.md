@@ -110,7 +110,7 @@ In dieser Aufgabe ändern wir die Standardansicht für aktive Besuche und erstel
 17.  Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
 18.  Klicken Sie im Browser auf die Schaltfläche „Zurück“.
 
-Übung Nr. 2: Eine modellgesteuerte Anwendung erstellen
+Übung 2: Eine modellgesteuerte Anwendung erstellen
 =============================================
 
 **Ziel:** In dieser Übung erstellen Sie die modellgesteuerte App, passen die Sitemap an und testen die App.

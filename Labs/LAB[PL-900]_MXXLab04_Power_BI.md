@@ -110,10 +110,10 @@ Aufgabe 1: Daten vorbereiten
     * Drilldown auf Monatsebene mit Symbolen oder dem Multifunktionsleistenbefehl **Daten / Drill | Nächste Ebene erweitern**.
 11. Speichern Sie laufende Arbeiten durch Klicken von **Datei | Speichern**.
 
-Übung Nr. 2: Power BI-Dashboard erstellen
+Übung 2: Power BI-Dashboard erstellen
 ================================
 
-## Aufgabe Nr. 1: Power BI-Bericht veröffentlichen
+## Aufgabe 1: Power BI-Bericht veröffentlichen
 
 1. Klicken Sie im Menüband auf die Schaltfläche **Veröffentlichen**.
 

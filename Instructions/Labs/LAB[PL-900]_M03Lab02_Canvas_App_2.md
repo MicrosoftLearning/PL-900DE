@@ -61,7 +61,7 @@ Aufgabe 1: Canvas-App erstellen
     -   Klicken Sie, um die **Campus Management**-Lösung zu öffnen.
 2.  Erstellen Sie eine neue Canvas-App
 
-    -   Klicken Sie auf **Neu**, und wählen Sie **App \** aus.**| Canvas-App \| Formfaktor „Telefon“ **.
+    -   Klicken Sie auf **Neu**, und wählen Sie **App \| Canvas-App \| Formfaktor „Telefon“**.
         Dadurch wird der App-Editor in einem neuen Fenster geöffnet.
     -   Wenn Sie Ihre erste App erstellen, werden Sie aufgefordert,
         das Land oder die Region für die App festzulegen. Klicken Sie auf **Los geht's.**
@@ -129,7 +129,7 @@ Aufgabe 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
 
 2. Hinzufügen der Schaltflächen zum Ein- und Auschecken
    
-1. Wählen Sie die Registerkarte **Einfügen** aus
+   1. Wählen Sie die Registerkarte **Einfügen** aus
    2. Klicken Sie auf **Schaltfläche**
    3. Ändern Sie die Eigenschaft **Text** der Schaltfläche in **„Einchecken“** (Sie können innerhalb der vorhandenen Anführungszeichen eingeben).
    4. Benennen Sie die Schaltfläche in **CheckInButton** um, indem Sie auf den Schaltflächennamen (Schaltfläche1) im rechten Bereich klicken.

@@ -59,7 +59,7 @@ Aufgabe 1: Flow erstellen
 
 3. Suchen Sie nach **Aktuell** und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
 
-4. Wählen Sie den Trigger **Wenn ein Datensatz erstellt**, **aktualisiert ** oder **gelöscht** wird.
+4. Wählen Sie den Trigger **Wenn ein Datensatz erstellt**, **aktualisiert** oder **gelöscht** wird.
 
    * Wählen Sie**Erstellen** für **Triggerbedingung**
    * Wählen Sie **Besuche** als **Entitätsnamen** aus
@@ -108,11 +108,11 @@ Aufgabe 2: Flow überprüfen und aktivieren
 4.  Öffnen Sie den Flow, suchen und öffnen Sie die letzte **Ausführung**.
 5.  Öffnen Sie den Schritt **Mail** und überprüfen Sie, ob der E-Mail-Inhalt korrekt generiert wurde.
 
-# Übung Nr. 2: Erstellen eines Security Sweep-Flows
+# Übung 2: Erstellen eines Security Sweep-Flows
 
 **Ziel:** In dieser Übung erstellen Sie einen Power Automate-Flow, der die Anforderung implementiert. Die Sicherheitsüberprüfung wird alle 15 Minuten durchgeführt und die Sicherheit wird benachrichtigt, wenn einer der Besucher seine geplante Zeit überschritten hat.
 
-## Aufgabe Nr. 1: Einen Flow zum Abrufen von Datensätzen erstellen
+## Aufgabe 1: Einen Flow zum Abrufen von Datensätzen erstellen
 
 1. Öffnen Sie die Campus Management-Lösung.
 
@@ -160,7 +160,7 @@ Aufgabe 2: Flow überprüfen und aktivieren
     * Wählen Sie **Gebäude** als **Entitätsname** aus
     * Wählen Sie **Gebäude (Wert)** als **Artikel-ID**
 
-9.  Vorherige Datenabrufsequenz für **Besucher** und **Benutzer** wiederholen, dabei zugehörigen Entitätsnamen **Besucher (Wert)** sowie **Besitzer (Wert) ** als **Artikel-ID** verwenden
+9.  Vorherige Datenabrufsequenz für **Besucher** und **Benutzer** wiederholen, dabei zugehörigen Entitätsnamen **Besucher (Wert)** sowie **Besitzer (Wert)** als **Artikel-ID** verwenden
 
 10.  Fügen Sie die Aktion **E-Mail-Benachrichtigung senden** aus **Mail**verbindung hinzu.
 
