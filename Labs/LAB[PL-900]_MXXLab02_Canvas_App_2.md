@@ -4,17 +4,17 @@ lab:
     module: 'Modul XX: Power Apps Build'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
+# PL-900: Microsoft Power Platform – Grundlagen
 ## Modul X, Lab 2 – Canvas-App – Teil 2
 
 Szenario
 ========
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
+Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in papierform aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
 
 In Teil 2 dieses Labs erstellen Sie eine Power Apps-Canvas-App, mit deren Hilfe das Sicherheitspersonal an den Gebäudeeingängen die Besucher schnell bestätigen und registrieren kann.
 
@@ -59,7 +59,7 @@ Aufgabe 1: Canvas-App erstellen
     -   Wählen Sie **Lösungen** aus.
 
     -   Klicken Sie, um die **Campus Management**-Lösung zu öffnen.
-2.  Erstellen Sie eine neue Canvas-Anwendung
+2.  Erstellen Sie eine neue Canvas-App
 
     -   Klicken Sie auf **Neu**, und wählen Sie **App \| Canvas-App \|  Telefonformularfaktor** aus.
         Dadurch wird der App-Editor in einem neuen Fenster geöffnet.
@@ -97,7 +97,7 @@ Aufgabe 2: Besucherinformationen anzeigen
    -   Klicken Sie auf **Feld hinzufügen**, und wählen Sie die folgenden Felder aus: Tatsächliches Ende, Tatsächlicher Start, Gebäude, Geplantes Ende, Geplanter Start, Besucher
    -   Drücken Sie auf **Hinzufügen**.
    -   Ändern Sie die Reihenfolge der ausgewählten Felder, indem Sie die Feldkarten in die Liste ziehen. Die empfohlene Reihenfolge ist: Besucher, Gebäude, Geplanter Start, Geplantes Ende, Tatsächlicher Start, Tatsächliches Ende
-   -   Wählen Sie die Eigenschaft **Element**, und geben Sie „LookUp(Visits, Code = textCode.Text)“ ein 
+   -   Wählen Sie die Eigenschaft **Element**, und geben Sie `LookUp(Visits, Code = textCode.Text)` ein 
 
 3.  Klicken Sie auf **Datei | Speichern**, um die laufenden Arbeiten beizubehaltendann, und klicken Sie dann **Speichern**.
 
@@ -120,7 +120,7 @@ Aufgabe Nr. 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
 
    * Wählen Sie das Steuerelement **textCode** aus
    * Wählen Sie die Eigenschaft **OnChange** aus
-   * Geben Sie den folgenden Ausdruck ein: „Set(Visit, LookUp(Visits, Code = textCode.Text))“
+   * Geben Sie den folgenden Ausdruck ein: `Set(Visit, LookUp(Visits, Code = textCode.Text))`
      Es ist derselbe Ausdruck wie oben, außer, dass wir diesmal die Ergebnisse in einer globalen Variablen speichern. Dadurch können wir die Variable *Besuch* in der gesamten App verwenden, ohne dass der gesamte Suchausdruck erneut eingegeben werden muss.
 
 2. Hinzufügen der Schaltflächen zum Ein- und Auschecken
@@ -143,8 +143,8 @@ Aufgabe Nr. 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
 
       ```
       If(!IsBlank(Visit) 
-      && Visit.Status = 'Status (Besuche)'.Activ
-      && IsBlank(Visit.'Tatsächlicher Start'),
+      && Visit.Status = 'Status (Visits)'.Active
+      && IsBlank(Visit.'Actual Start'),
           DisplayMode.Edit,
           DisplayMode.Disabled
       )
@@ -152,9 +152,9 @@ Aufgabe Nr. 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
 
    Der Ausdruck kann wie folgt unterteilt werden:
 
-   * `!IsBlank(Besuch)` – Besuchsdatensatz wurde gefunden
+   * `!IsBlank(Visit)` – Besuchsdatensatz wurde gefunden
    * `&&` – logischer AND-Operator
-   * `Visit.Status = 'Status (Besuche)'. Aktiv` Status des Datensatzes ist *Aktiv*
+   * `Visit.Status = 'Status (Visits)'.Active` Status des Datensatzes ist *Aktiv*
    * `IsBlank (Visit.'Actual Start ')` – Das Feld „Aktiver Start“ enthält keine Daten.
 
 4. Wir möchten die Schaltfläche **Auschecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer ist), der Datensatzstatus aktiv ist und der Besuch bereits gestartet wurde, d. h., der tatsächliche Startwert ist nicht leer.
@@ -165,8 +165,8 @@ Aufgabe Nr. 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
 
      ```
      If(!IsBlank(Visit) 
-     && Visit.Status = 'Status (Besuche)'.Activ
-     && !IsBlank(Visit.'Tatsächlicher Start'),
+     && Visit.Status = 'Status (Visits)'.Active
+     && !IsBlank(Visit.'Actual Start'),
          DisplayMode.Edit,
          DisplayMode.Disabled
      )
@@ -192,9 +192,9 @@ Um den Ein- und Auscheckvorgang durchzuführen, müssen die CDS-Besuchsdaten wie
 
    ```
    Patch(
-       Besuche,
-       Besuch,
-       {'Tatsächlicher Start': Jetzt()}
+       Visits,
+       Visit,
+       {'Actual Start': Now()}
    );
    Refresh([@Visits]);
    Set(Visit, LookUp(Visits, Code = textCode.Text));
@@ -213,10 +213,10 @@ Um den Ein- und Auscheckvorgang durchzuführen, müssen die CDS-Besuchsdaten wie
    ```
    Patch(
        [@Visits],
-       Besuch,
+       Visit,
        {
-           „Tatsächliches Ende“: Jetzt(),
-           Status: „Status (Besuche)“.Inaktiv
+           'Actual End': Now(),
+           Status: 'Status (Visits)'.Inactive
        }
    );
    Refresh([@Visits]);
@@ -279,5 +279,5 @@ Die Benutzerfreundlichkeit einer mobilen App wird erheblich verbessert, wenn zus
 * Wie vermeide ich die manuelle Eingabe des Besuchscodes?
 * Fügen Sie eine Gebäudevalidierung für den Besuch hinzu.
 * Hinzufügen einer Validierung der tatsächlichen Besuchszeit im Vergleich zur geplanten Besuchszeit hinzu (zu früh, zu spät usw.).
-* Fügen Sie einen detaillierten Status des Besuchs hinzu, z. B. eine. E-Mail-Anzeige und -Prüfung für den Besucher, Grund für die Verweigerung des Gebäudezugangs usw.
+* Fügen Sie einen detaillierten Status des Besuchs hinzu, wie etwa eine. E-Mail-Anzeige und -Prüfung für den Besucher, Grund für die Verweigerung des Gebäudezugangs usw.
 * Wie würden Sie mit den Anforderungen mehrerer Gebäude/Besprechungen/Überprüfungen während eines einzelnen Campusbesuchs umgehen? Zum Beispiel kann jemand den Campus für einen Tag besuchen und an diesem Tag Mitarbeiter in mehreren Gebäuden zu unterschiedlichen Tageszeiten treffen. Würden Sie in Betracht ziehen, die Entität *Termin* in die Lösung einzubeziehen?

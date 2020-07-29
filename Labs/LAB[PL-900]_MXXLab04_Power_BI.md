@@ -4,7 +4,7 @@ lab:
     module: 'Modul XX: Power Apps Build'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
+# PL-900: Microsoft Power Platform – Grundlagen
 ## Modul X, Lab 4 – Power BI
 
 Szenario
@@ -14,7 +14,7 @@ Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
 
 In diesem Lab erstellen Sie ein Power BI-Dashboard, das Daten zu Campusbesuchen visualisiert.
 
@@ -80,7 +80,7 @@ Aufgabe 1: Daten vorbereiten
 13. Stellen Sie die App wie folgt fertig.
 
     ```
-    Spalte = RELATED(bc_Building[bc_name])
+    Column = RELATED(bc_Building[bc_name])
     ```
 
     , und drücken Sie die EINGABETASTE. Dadurch wird den Besuchsdaten ein neues Feld mit dem Gebäudenamen hinzugefügt.

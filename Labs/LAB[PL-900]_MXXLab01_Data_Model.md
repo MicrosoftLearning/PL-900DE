@@ -4,18 +4,18 @@ lab:
     module: 'Modul XX: Power Apps Build'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
+# PL-900: Microsoft Power Platform – Grundlagen
 ## Modul X, Lab 1 – Datenmodellierung
 
 
 Szenario
 ========
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
+Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in papierform aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
 
 In diesem Lab richten Sie eine Umgebung ein, erstellen eine Common Data Service (CDS)-Datenbank und eine Lösung, um Ihre Änderungen nachzuverfolgen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
@@ -47,7 +47,7 @@ Vor dem Beginn zu beachtende Dinge
 -----------------------------------
 
 * Namenskonvention
-* Datentypen, Einschränkungen (z. B. maximale Länge eines Namens)
+* Datentypen, Einschränkungen (wie etwa maximale Länge eines Namens)
 * Datetime-Formatierung zur Unterstützung einer einfachen Lokalisierung
 
 Übung 1: Umgebung und Lösung erstellen

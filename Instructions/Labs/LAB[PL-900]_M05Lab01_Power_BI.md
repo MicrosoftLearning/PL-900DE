@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 06: Power BI'
-    module: 'Modul 05: Erste Schritte mit Power BI'
+    title: 'Lab: Power BI'
+    module: 'Modul 5: Erste Schritte mit Power BI'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
-## Modul 4, Lab 6 – Power BI
+# Modul 5: Erste Schritte mit Power BI
+## Lab: Power BI
 
 Szenario
 ========
@@ -14,7 +14,7 @@ Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann. 
 
 In diesem Lab erstellen Sie ein Power BI-Dashboard, das Daten zu Campusbesuchen visualisiert.
 
@@ -25,9 +25,9 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
 
 -   Eine Verbindung zum Common Data Service herstellen 
 -   Die Daten so transformieren, dass sie benutzerfreundliche Beschreibungen für die zugehörigen Datensätze enthalten (Lookups)
--    Einen Bericht mit verschiedenen Visualisierungen der Informationen zu Campusbesuchen erstellen und veröffentlichen
--    Abfrage in natürlicher Sprache zum Erstellen zusätzlicher Visualisierungen verwenden
--    Mobile Ansicht erstellen
+-   Einen Bericht mit verschiedenen Visualisierungen der Informationen zu Campusbesuchen erstellen und veröffentlichen
+-   Abfrage in natürlicher Sprache zum Erstellen zusätzlicher Visualisierungen verwenden
+-   Mobile Ansicht erstellen
 
 
 ## Voraussetzungen
@@ -40,9 +40,9 @@ Vor dem Beginn zu beachtende Dinge
 -   Wer ist das Zielpublikum des Berichts?
 -   Wie wird das Publikum den Bericht verwenden? Typisches Gerät? Standort?
 -   Haben Sie ausreichend Daten für die Visualisierung?
--   Welche möglichen Merkmale können Sie verwenden, um Daten über die Besuche zu analysieren?
+-   Welche möglichen Merkmale können Sie verwenden, um Besuchsdaten zu analysieren?
 
-Übung 1: Power BI-Bericht erstellen 
+Übung Nr. 1: Power BI-Bericht erstellen 
 ===============================
 
 **Ziel:** In dieser Übung erstellen Sie, basierend auf Daten aus der Common Data Service-Datenbank, einen Power BI-Bericht.
@@ -53,8 +53,8 @@ Aufgabe 1: Daten vorbereiten
 1.  Finden Sie die URL Ihrer Organisation heraus.
 
     * Navigieren Sie zum Power Platform Admin Center unter https://aka.ms/ppac.
-    * Wählen Sie auf der linken Navigationsseite „Umgebungen“ aus, und wählen Sie dann die Zielumgebung aus.
-    * Klicken Sie im Bereich **Details** mit der rechten Maustaste auf **Umgebungs-URL**, und wählen Sie dann **Link kopieren** aus.
+    * Wählen Sie im linken Navigationsbereich „Umgebungen“ aus, und wählen Sie dann die Zielumgebung aus.
+    * Klicken Sie im Panel **Details** mit der rechten Maustaste auf **Umgebungs-URL**, und wählen Sie dann **Link kopieren** aus.
 2. Wenn Sie Power BI Desktop nicht installiert haben, navigieren Sie zu https://aka.ms/pbidesktopstore, um die Power BI-App herunterzuladen und zu installieren.
 
 3. Öffnen Sie Power BI Desktop, und melden Sie sich an, wenn Sie dazu aufgefordert werden.
@@ -80,7 +80,7 @@ Aufgabe 1: Daten vorbereiten
 13. Stellen Sie die App wie folgt fertig.
 
     ```
-    Spalte = RELATED(bc_Building[bc_name])
+    Column = RELATED(bc_Building[bc_name])
     ```
 
     , und drücken Sie die EINGABETASTE. Dadurch wird den Besuchsdaten ein neues Feld mit dem Gebäudenamen hinzugefügt.
@@ -99,7 +99,7 @@ Aufgabe 1: Daten vorbereiten
 2. Ziehen Sie das Feld **Gebäude** in das Zielfeld **Legende**.
 3. Ziehen Sie das Feld **Besuche** in das Zielfeld **Werte**.
 4. Ändern Sie die Größe des Kreisdiagramms mithilfe der Ziehpunkte an den Ecken, sodass alle Diagrammkomponenten sichtbar sind.
-5. Klicken Sie im Power BI-Menüband auf **Neues visuelles Element**, und wählen Sie dann im Bereich **Visualisierungen** das gestapelte Säulendiagramm aus. 
+5. Klicken Sie im Power BI-Menüband auf **Neues visuelles Element**, und wählen Sie dann im Bereich **Visualisierungen** das gestapelte Säulendiagramm aus, wenn dies nicht bereits ausgewählt ist. 
 6. Ziehen Sie das Feld **Besuche** in das Zielfeld **Werte**.
 7. Ziehen Sie das Feld **Start** in das Zielfeld **Achse**.
 8. Klicken Sie auf das **x** neben **Tag** und **Quartal**, sodass nur die Summen für  **Jahr** und **Monat** angezeigt werden.
@@ -142,7 +142,7 @@ Aufgabe 1: Daten vorbereiten
 ## Aufgabe 4: Mobiltelefonansicht erstellen
 
 1. Wählen Sie den Bericht aus dem Bereich **Berichte** aus.
-2. Wählen Sie je nach UI-Version entweder ... | Mobile Ansicht oder **Webansicht | Telefonansicht** aus.
+2. Wählen Sie je nach UI-Version entweder ... | Mobile Ansicht** oder Webansicht | Telefonansicht.
 3. Ordnen Sie die Kacheln wie gewünscht neu an.
 4. Wählen Sie ... | QR-Code generieren.
 5. Wenn Sie ein mobiles Gerät haben, scannen Sie den Code mit einer QR-Scanner-App, die auf iOS- und Android-Plattformen verfügbar ist.

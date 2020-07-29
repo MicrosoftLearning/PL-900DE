@@ -4,7 +4,7 @@ lab:
     module: 'Modul XX: Power Apps Build'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
+# PL-900: Microsoft Power Platform – Grundlagen
 ## Modul X, Lab 3 – Power Automate
 
 Szenario
@@ -14,7 +14,7 @@ Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
 
 In diesem Lab erstellen Sie Power Automate-Flows, um verschiedene Segmente des Campus-Managements zu automatisieren. 
 
@@ -142,8 +142,8 @@ Aufgabe 2: Flow überprüfen und aktivieren
 
    Schrittweise Erklärung
 
-   * „statecode eq 0“ filtert aktive Besuche (wobei „Status“ gleich „Aktiv“ ist)
-   * „bc_actualstart ne null“ beschränkt die Suche auf Besuche, bei denen „Tatsächlicher Start“ einen Wert hat, d. h. es wurde eingecheckt
+   * `statecode eq 0` filtert aktive Besuche (wobei „Status“ gleich „Aktiv“ ist)
+   * `bc_actualstart ne null` beschränkt die Suche auf Besuche, bei denen „Tatsächlicher Start“ einen Wert hat, d. h. es wurde eingecheckt
    *  `bc_actualend eq null` beschränkt die Suche auf Besuche, bei denen kein Auschecken stattgefunden hat („Tatsächliches Ende“ hat keinen Wert) 
    * `Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15)` beschränkt Besuche, die vor mehr als 15 Minuten abgeschlossen werden sollten.  
 

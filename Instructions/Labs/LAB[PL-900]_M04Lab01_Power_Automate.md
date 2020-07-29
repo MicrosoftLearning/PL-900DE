@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 05: Power Automate'
-    module: 'Module 04: Erste Schritte mit Power Automate'
+    title: 'Lab: Power Automate'
+    module: 'Modul 4: Erste Schritte mit Power Automate'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
-## Modul 4, Lab 5 – Power Automate
+# Modul 4: Erste Schritte mit Power Automate
+## Lab: Power Automate
 
 Szenario
 ========
@@ -14,7 +14,7 @@ Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann. 
 
 In diesem Lab erstellen Sie Power Automate-Flows, um verschiedene Aspekte des Campus-Managements zu automatisieren. 
 
@@ -82,20 +82,24 @@ Aufgabe 1: Flow erstellen
 
    * Geben Sie **Ihr geplanter Besuch am Bellows College** als **Betreff** ein.
 
-   * Geben Sie den folgenden Text unter **E-Mail-Text** ein.
-
+   * Geben Sie den folgenden Text unter **E-Mail-Text** ein.  
+        *Hinweis: Fettgedruckter Text kennzeichnet dynamischen Inhalt, der an diesen Stellen eingefügt werden muss. Es wird empfohlen, zuerst den gesamten Text einzugeben und dann an der richtigen Stelle dynamischen Inhalt hinzuzufügen.*
+     >
      > Hallo {**Vorname**},
      >
-     > Sie werden den Bellows Campus vom {**Geplanter Start**} bis zum {**Geplantes Ende**} besuchen.
+     > Sie werden den Bellows Campus von {**Geplanter Start**} bis {**Geplantes Ende**} besuchen.
      >
      > Ihr Sicherheitscode lautet {**Code**}. Bitte geben Sie ihn nicht weiter! Sie müssen diesen Code während Ihres Besuchs erzeugen.
      >
+     >
      > Mit freundlichen Grüßen
+     >
      > Campusverwaltung
+     >
      > Bellows College
      
-   * Fettgedruckter Text kennzeichnet dynamischen Inhalt, der an diesen Stellen eingefügt werden muss.
-10.  Wählen Sie den Flow-Namen, und benennen Sie ihn in **Benachrichtigung besuchen** um.
+   
+10.  Wählen Sie den Namen des Flows aus, und ändern Sie ihn in **Besuchsbenachrichtigung**.
 
 11.  Wählen Sie **Speichern** aus
 
@@ -142,8 +146,8 @@ Aufgabe 2: Flow überprüfen und aktivieren
 
    Schrittweise Erklärung
 
-   * „statecode eq 0“ filtert aktive Besuche (wobei „Status“ gleich „Aktiv“ ist)
-   * „bc_actualstart ne null“ beschränkt die Suche auf Besuche, bei denen „Tatsächlicher Start“ einen Wert hat, d. h. es wurde eingecheckt
+   * `statecode eq 0` filtert aktive Besuche (wobei „Status“ gleich „Aktiv“ ist)
+   * `bc_actualstart ne null` beschränkt die Suche auf Besuche, bei denen „Tatsächlicher Start“ einen Wert hat, d. h. es wurde eingecheckt
    *  `bc_actualend eq null` beschränkt die Suche auf Besuche, bei denen kein Auschecken stattgefunden hat („Tatsächliches Ende“ hat keinen Wert) 
    * `Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15)` beschränkt Besuche, die vor mehr als 15 Minuten abgeschlossen werden sollten.  
 
@@ -162,19 +166,19 @@ Aufgabe 2: Flow überprüfen und aktivieren
 
 9.  Vorherige Datenabrufsequenz für **Besucher** und **Benutzer** wiederholen, dabei zugehörigen Entitätsnamen **Besucher (Wert)** sowie **Besitzer (Wert) ** als **Artikel-ID** verwenden
 
-10.  Fügen Sie die Aktion **E-Mail-Benachrichtigung senden** aus **Mail**verbindung hinzu.
+10.  Fügen Sie die Aktion **E-Mail-Benachrichtigung senden** über die **E-Mail**-Verbindung hinzu, und behalten Sie **Auf jede Schleife anwenden** bei.
 
-11.  Ihre E-Mail-Adresse als **An** eingeben
+11.  Geben Sie Ihre E-Mail-Adresse im Feld **An** ein.
 
-12.  Geben Sie ein „Kontakt **Vollständiger Name** ist zu lange hier“. **Vollständiger Name** ist ein dynamischer Inhalt aus dem aktuellen Besuchsdatensatz.
+12.  Geben Sie „Kontakt {**Vollständiger Name**} blieb zu lange“ ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem aktuellen Besuchsdatensatz.
 
 13.  „Es ist im Gebäude **Name** passiert“eingeben, **Name** ist dabei dynamischer Inhalt aus dem Schritt **GetBuilding**
 
 14.  **Erste Email** aus dem Schritt **GetUser** lokalisieren und in das CC-Feld einfügen (der Besprechungsleiter erhält eine Kopie der E-Mail)
 
-15.  Flow-Namen auswählen und in **Sicherheits-Sweep** umbenennen
+15.  Wählen Sie den Flownamen **Unbenannt** in der oberen linken Ecke aus, und ändern Sie ihn auf **Sicherheits-Sweep**.
 
-16.  Wählen Sie **Speichern** aus
+16.  Drücken Sie **Speichern**.
 
 ## Aufgabe 2: Flow überprüfen und aktivieren
 

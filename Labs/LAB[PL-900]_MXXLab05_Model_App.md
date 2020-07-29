@@ -4,7 +4,7 @@ lab:
     module: 'Modul XX: Power Apps Build'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
+# PL-900: Microsoft Power Platform – Grundlagen
 ## Modul X, Lab 5 – Modellgesteuerte App
 
 Szenario
@@ -14,7 +14,7 @@ Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
 
 In diesem Lab erstellen Sie eine modellgesteuerte Power Apps-App, mit der die Campus-Mitarbeiter im Backoffice  die Besuchsdatensätze für den gesamten Campus verwalten können.
 
@@ -99,7 +99,7 @@ In dieser Aufgabe ändern wir die Standardansicht für aktive Besuche und erstel
 6.  Passen Sie die Größe der einzelnen Spalten an die angezeigten Informationen an.
 7.  Klicken Sie auf **Speichern** und warten Sie, bis die Änderungen gespeichert sind.
 8.  Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
-9.  Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besuche zu erstellen. Klicken Sie im Eigenschaftenpanel neben dem vorhandenen Filter auf „x“, um den Filter zu entfernen.
+9.  Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besuche zu erstellen. Klicken Sie im Eigenschaftenpanel neben dem vorhandenen Filter auf `x`, um den Filter zu entfernen.
 10.  Drücken Sie das Chevron neben der Schaltfläche **Speichern** (achten Sie darauf, dass Sie nicht die Schaltfläche selbst drücken), und wählen Sie **Speichern unter** aus.
 11.  Ändern Sie den Namen in **Heutige Besuche** und drücken Sie auf **Speichern**.
 12.  Drücken Sie im Eigenschaftenpanel auf den Link **Filter bearbeiten**.
@@ -233,5 +233,5 @@ Aufgabe 2: Testanwendung
 
 * Spezifische Ansichten und Formulare für Besuche und Gebäude auswählen
 * Das Sicherheitspersonal arbeitet üblicherweise in einem einzigen Gebäude. Welche einfache Möglichkeit könnten Sie ihnen bieten, Besuche nur für ein ausgewähltes Gebäude anzuzeigen?
-* Wie würden Sie den Zugriff auf bestimmte Entitäten beschränken, z. B. sollten Gebäude für alle Mitarbeiter außer den Administratoren schreibgeschützt sein?
+* Wie würden Sie den Zugriff auf bestimmte Entitäten beschränken, wie etwa sollten Gebäude für alle Mitarbeiter außer den Administratoren schreibgeschützt sein?
 * Welche Dashboards würden Sie der App hinzufügen?

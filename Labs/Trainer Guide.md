@@ -4,7 +4,7 @@ lab:
     module: 'Modul XX: Power Apps Build'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
+# PL-900: Microsoft Power Platform – Grundlagen
 ## Kursleiteranleitung
 
 # Umgebungen
@@ -20,11 +20,11 @@ Wir empfehlen, die Labs als Kursteilnehmer vor der Schulungsdurchführung abzusc
 
 # Übersicht
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
+Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in papierform aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
 
 Einige Kursteilnehmer fühlen sich möglicherweise überfordert, alle Anpassungen innerhalb des Lösungsframeworks vorzunehmen. Es ist jedoch wichtig, gute Gewohnheiten zu entwickeln, um sie nach dem Kurs mitzubringen.
 
@@ -59,7 +59,7 @@ Themen zur Diskussion:
 * Wo beginnen Sie?
 * Beziehungen 
 * Bewährte Verfahren zur Implementierung des Datenmodells in CDS
-* Einbringen von Common Data Model-Entitäten (z. B. Kontakte) – Was soll einbezogen werden?
+* Einbringen von Common Data Model-Entitäten (wie etwa Kontakte) – Was soll einbezogen werden?
 * Dev/Test-Beispieldatensätze – Wie viel ist genug? Bewährte Verfahren zum Erstellen von Dev/Test-Datensätzen.
 
 ### Herausforderungen
@@ -134,7 +134,7 @@ Diskussionsthemen
 
   > Manipulieren von Datum/Uhrzeit in Formeln, komplexerer Logik.
 
-* Fügen Sie einen detaillierten Status des Besuchs hinzu, z. B. eine. E-Mail-Anzeige und -Prüfung für den Besucher, Grund für die Verweigerung des Gebäudezugangs usw.
+* Fügen Sie einen detaillierten Status des Besuchs hinzu, wie etwa eine. E-Mail-Anzeige und -Prüfung für den Besucher, Grund für die Verweigerung des Gebäudezugangs usw.
 
   > Zugriff auf die Eigenschaften verwandter Entitäten, erstellen einer ansprechenden Benutzeroberfläche
 
@@ -228,9 +228,9 @@ Themen zur Diskussion:
 
 * Das Sicherheitspersonal arbeitet üblicherweise in einem einzigen Gebäude. Welche einfache Möglichkeit könnten Sie ihnen bieten, Besuche nur für ein ausgewähltes Gebäude anzuzeigen?
 
-  > Personalisierung in modellgesteuerten Apps, z. B. persönliche Ansichten. Raster und Filtern. Vorab erstellte feste Ansichten, wenn die Anzahl der Gebäude gering ist. Unterraster (in dem Formular „Gebäude“)
+  > Personalisierung in modellgesteuerten Apps, wie etwa persönliche Ansichten. Raster und Filtern. Vorab erstellte feste Ansichten, wenn die Anzahl der Gebäude gering ist. Unterraster (in dem Formular „Gebäude“)
 
-* Wie würden Sie den Zugriff auf bestimmte Entitäten beschränken, z. B. sollten Gebäude für alle Mitarbeiter außer den Administratoren schreibgeschützt sein?
+* Wie würden Sie den Zugriff auf bestimmte Entitäten beschränken, wie etwa sollten Gebäude für alle Mitarbeiter außer den Administratoren schreibgeschützt sein?
 
   > Sicherheitsrollen, Trimmen der Benutzeroberfläche. Sprechen Sie möglicherweise über Verweisdaten (im Besitz von Benutzern vs. Entitäten im Besitz von Organisationen).
 

@@ -4,17 +4,17 @@ lab:
     module: 'Modul XX: Power Apps Build'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
+# PL-900: Microsoft Power Platform – Grundlagen
 ## Modul X, Lab 2 – Canvas-App – Teil 1
 
 Szenario
 ========
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
+Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in papierform aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern.  
+Während dieses Kurses erstellen Sie Apps und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern.  
 
 In Teil 1 dieses Labs entwerfen Sie eine PowerApps-Canvas-App, mit der College-Mitarbeiter Besuche für ihre Gäste verwalten können.
 
@@ -59,7 +59,7 @@ In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlag
 
     -   Wählen Sie **Apps** aus.
 
-2.  Erstellen Sie eine neue Canvas-Anwendung
+2.  Erstellen Sie eine neue Canvas-App
 
     -   Klicken Sie auf **Neue App | Canvas-App**.
     -   Klicken Sie unter ** Common Data Service ** auf ** Telefonlayout ** 
@@ -120,14 +120,14 @@ In dieser Aufgabe konfigurieren Sie die vorgenerierte Galerie so, dass Titel, St
 1.  Erweitern Sie **BrowseScreen1** unter **Strukturansicht**
 2.   **BrowseGallery1** auswählen
 3.  Wählen Sie die Eigenschaft **TemplateSize** aus dem Dropdown„Eigenschaft“
-4.  Ersetzen Sie den Ausdruck durch ‘Min (150, BrowseGallery1.Height - 60)’. Dadurch wird ausreichend Platz für zusätzliche Informationen garantiert.
+4.  Ersetzen Sie den Ausdruck durch `Min (150, BrowseGallery1.Height - 60)`. Dadurch wird ausreichend Platz für zusätzliche Informationen garantiert.
 5.  Bearbeiten Sie den Katalog, indem Sie auf das Stiftsymbol in der oberen linken Ecke klicken
 6.  Wählen Sie das Feld mit Datum und Uhrzeit aus 
-7.  Ändern Sie die Eigenschaft **Text** von „ThisItem.'Created On'“ zu „ThisItem.'Scheduled Start'“.
+7.  Ändern Sie die Eigenschaft **Text** von `ThisItem.'Created On'` zu `ThisItem.'Scheduled Start'`.
 8.  Feld erneut auswählen
-9.  Drücken Sie STRG+C und dann STRG+V, um eine Kopie des Felds zu erstellen.
+9.  Drücken Sie `CTRL-C` und dann `CTRL-V`, um eine Kopie des Felds zu erstellen.
 10.  Bewegen Sie das kopierte Steuerelement mit der Maus oder der Tastatur nach unten, und richten Sie es an den anderen Steuerelementen im Katalog aus
-11.  Ändern Sie die Eigenschaft **Text** in „ThisItem.'Scheduled End'“
+11.  Ändern Sie die Eigenschaft **Text** in `ThisItem.'Scheduled End'`
 12.  Klicken Sie auf **Datei | Speichern**, um die laufenden Arbeiten beizubehalten, und klicken Sie dann auf **Speichern**. 
 
 ## Aufgabe Nr. 6: Datumsfilter hinzufügen
@@ -146,14 +146,14 @@ Da die Anzahl der Besuche kontinuierlich zunimmt, benötigen Benutzer eine Funkt
 
 6. Wählen Sie die Eigenschaft **Elemente** aus
 
-7. Suchen Sie im Ausdruck ’[@Visits]‘ und ersetzen Sie ihn durch ‘Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)‘. Der gesamte Ausdruck sollte wie folgt aussehen:
+7. Suchen Sie im Ausdruck `[@Visits]` und ersetzen Sie ihn durch `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Der gesamte Ausdruck sollte wie folgt aussehen:
 
    ```
    SortByColumns(
    	Search(
         Filter(
-        	Besuche,
-            'Geplantes Ende'> = DatePicker1.SelectedDate
+        	Visits,
+            'Scheduled End' >= DatePicker1.SelectedDate
            ),
            TextSearchBox1.Text,
        	"bc_code","bc_name"

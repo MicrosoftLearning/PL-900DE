@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 04: Modellgesteuerte App'
-    module: 'Modul 03: Einführung in den Common Data Service'
+    title: 'Lab: Modellgesteuerte App'
+    module: 'Modul 3: Erste Schritte mit Power Apps'
 ---
 
-# PL-900: Microsoft-Power-Platform-Grundlagen
-## Modul 3, Lab 4 – Modellgesteuerte App
+# Modul 3: Erste Schritte mit Power Apps
+## Lab: Modellgesteuerte App
 
 Szenario
 ========
@@ -14,9 +14,9 @@ Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierungen durch, um es dem Verwaltungs- und Sicherheitspersonal des Bellows College zu ermöglichen, den Zugang zu den Gebäuden auf dem Campus zu verwalten und zu steuern. 
+Während dieses Kurses erstellen Sie Apps und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann. 
 
-In diesem Lab erstellen Sie eine modellgesteuerte Power Apps-App, mit der die Campus-Mitarbeiter im Backoffice  die Besuchsdatensätze für den gesamten Campus verwalten können.
+In diesem Lab erstellen Sie eine modellgesteuerte Power Apps-App, mit der die Campus-Mitarbeiter im Backoffice die Besuchsdatensätze für den gesamten Campus verwalten können.
 
 Weiterführende Schritte des Lab
 ======================
@@ -65,9 +65,9 @@ Aufgabe 1: Formular „Besuch bearbeiten“
 3.  Wählen Sie **Lösungen** aus.
 4.  Klicken Sie, um die **Campus Management**-Lösung zu öffnen.
 5.  Klicken Sie, um die Entität **Besuch** zu öffnen.
-7.  Wählen Sie die Registerkarte **Formulare** aus, und klicken Sie auf den Formulartyp **Haupt** damit dieser geöffnet wird. Standardmäßig hat das
-    Formular hat zwei Felder: „Name“ (primäres Feld) und „Besitzer“.
-7.  Fügen Sie unter dem Feld **Besitzer** die folgenden Felder hinzu, indem Sie Felder in das Formular ziehen oder einfach auf Feldnamen doppelklicken:
+6.  Wählen Sie die Registerkarte **Formulare** aus, und klicken Sie auf den Formulartyp **Haupt** damit dieser geöffnet wird. 
+    -   Standardmäßig hat das Formular zwei Felder: „Name“ (primäres Feld) und „Besitzer“.
+7.  Fügen Sie unter dem Feld **Besitzer** die folgenden Felder hinzu, indem Sie Felder in das Formular ziehen oder einfach auf Feldnamen klicken:
     * **Gebäude**
     * **Besucher**
     * **Geplanter Start**
@@ -75,16 +75,16 @@ Aufgabe 1: Formular „Besuch bearbeiten“
     * **Tatsächlicher Start**
     * **Tatsächliches Ende** 
 8.  Ziehen Sie das Feld **Code**, und legen Sie es im Formularkopf ab. (Möglicherweise müssen Sie das Eigenschaftenpanel auf der rechten Seite des Bildschirms minimieren, um das Feld im Formular anzuzeigen.)
-9.  Aktivieren Sie im Bereich „Eigenschaften“ die Option **Schreibgeschütztes** Feld
-10.  Wählen Sie das Feld **Besitzer** aus, und ändern Sie im Bereich „Eigenschaften“ die **Feldbezeichnung** in **Host**.
-11.  Klicken Sie auf **Speichern**, und warten Sie, bis der Speichervorgang abgeschlossen ist.
-12.  Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
-13.  Klicken Sie im Browser auf die Schaltfläche „Zurück“. Sie sollten jetzt wieder auf der
+9.  Aktivieren Sie das im Feld „Code“ weiterhin ausgewählte Kontrollkästchen für das Feld **Schreibgeschützt** im Eigenschaftenfenster.
+10.  Wählen Sie das Feld **Besitzer** aus, und ändern Sie im Bereich „Eigenschaften“ die **Feldbezeichnung** in **Gastgeber**.
+11.  Klicken Sie oben rechts auf **Speichern**, und warten Sie, bis der Speichervorgang abgeschlossen ist.
+12.  Klicken Sie oben rechts auf **Veröffentlichen**, und warten Sie, bis die Veröffentlichung abgeschlossen ist.
+13.  Klicken Sie oben links auf dem Bildschirm auf **Zurück**. Sie sollten jetzt wieder auf der
      Formular-Registerkarte „Entität Besuch“.
 
 ## Aufgabe 2: Besuchsansichten bearbeiten
 
-In dieser Aufgabe ändern wir die Standardansicht für aktive Besuche und erstellen eine neue Ansicht für die heutigen Besuche.
+In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erstellen eine neue Ansicht für die heutigen Besuche.
 
 1.  Wählen Sie die Registerkarte **Ansichten** aus, und klicken Sie auf die Ansicht **Aktive Besuche**, um diese zu öffnen.
 2.  Fügen Sie der Ansicht die folgenden Felder hinzu, indem Sie entweder auf die Felder klicken oder sie ziehen und ablegen:
@@ -93,22 +93,25 @@ In dieser Aufgabe ändern wir die Standardansicht für aktive Besuche und erstel
     3.  **Gebäude**
     4.  **Geplanter Start** 
     5.  **Geplantes Ende**
-3.  Klicken Sie auf das Chevronsymbol der Spalte **Erstellt am**, und wählen Sie **Entfernen** aus. Das Feld **Erstellt am** wird nun aus der Ansicht entfernt.
-4.  Klicken Sie auf das Chevronsymbol der Spalte **Name**, und wählen Sie **Entfernen** aus. Das Feld **Name** wird nun aus der Ansicht entfernt.
+3.  Klicken Sie auf den Dropdownpfeil der Spalte **Erstellt am**, und wählen Sie **Entfernen** aus. Das Feld **Erstellt am** wird nun aus der Ansicht entfernt.
+4.  Klicken Sie auf den Dropdownpfeil der Spalte **Name**, und wählen Sie **Entfernen** aus. Das Feld **Name** wird nun aus der Ansicht entfernt.
 5.  Klicken Sie im Eigenschaftenpanel rechts auf **Sortieren nach**, und wählen Sie **Geplanter Start** aus. Klicken Sie erneut auf **Geplanter Start**, um die Reihenfolge in „absteigend“ zu ändern (neue Besuche oben).
-6.  Passen Sie die Größe der einzelnen Spalten an die angezeigten Informationen an.
+6.  Passen Sie die Größe der einzelnen Spaltenbreiten an die Daten an.
 7.  Klicken Sie auf **Speichern** und warten Sie, bis die Änderungen gespeichert sind.
 8.  Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
-9.  Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besuche zu erstellen. Klicken Sie im Eigenschaftenpanel neben dem vorhandenen Filter auf „x“, um den Filter zu entfernen.
-10.  Drücken Sie das Chevron neben der Schaltfläche **Speichern** (achten Sie darauf, dass Sie nicht die Schaltfläche selbst drücken), und wählen Sie **Speichern unter** aus.
-11.  Ändern Sie den Namen in **Heutige Besuche** und drücken Sie auf **Speichern**.
+9.  Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besuche zu erstellen. Klicken Sie im Eigenschaftenpanel neben dem vorhandenen Filter auf `x`, um den Filter zu entfernen.
+10.  Klicken Sie auf den Dropdownpfeil der Schaltfläche **Speichern** (achten Sie darauf, dass Sie nicht auf die Schaltfläche selbst drücken), und wählen Sie **Speichern unter** aus.
+11.  Ändern Sie den Namen in **Heutige Besuche**, und drücken Sie auf **Speichern**.
 12.  Drücken Sie im Eigenschaftenpanel auf den Link **Filter bearbeiten**.
 13.  Klicken Sie auf **Hinzufügen**, und wählen Sie **Zeile hinzufügen** aus.
-14.  Wählen Sie **Geplanter Start** als Feld aus, und wählen Sie dann **Heute** als Bedingung aus. Klicken Sie auf **OK**, um die Bedingung zu speichern.
-15.  Fügen Sie der Ansicht die Felder **Tatsächlicher Start** und **Tatsächliches Ende** hinzu.  Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
+14.  Wählen Sie **Geplanter Start** als Feld aus, und wählen Sie dann **Heute** als Bedingung aus. 
+15.  Klicken Sie auf „...“ auf der Zeile **Status**, und klicken Sie auf **Löschen**. 
+16.  Die Ansicht wird jetzt gefiltert, um nur Datensätze anzuzeigen, bei denen Heute das geplante Startdatum ist. Klicken Sie auf **OK**, um die Bedingung zu speichern.
+15.  Fügen Sie der Ansicht die Felder **Tatsächlicher Start** und **Tatsächliches Ende** hinzu. Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
 16.  Klicken Sie auf **Speichern** und warten Sie, bis die Änderungen gespeichert sind.
 17.  Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
-18.  Klicken Sie im Browser auf die Schaltfläche „Zurück“.
+18.  Klicken Sie oben links auf dem Bildschirm auf **Zurück**. Sie sollten jetzt wieder auf der
+     Ansichtsregisterkarte „Besuchsentität“ sein.
 
 Übung Nr. 2: Eine modellgesteuerte Anwendung erstellen
 =============================================
@@ -125,7 +128,7 @@ Aufgabe 1: Eine Anwendung erstellen
     -   Anmelden bei <https://make.powerapps.com>
 
     -   Während Sie in Ihrer Umgebung sind, klicken Sie auf **Campus Management**, um diese Lösung
-        Lösung.
+        zu öffnen.
 2.  Eine modellgesteuerte Anwendung erstellen
 
     -   Klicken Sie auf **Neu**, wählen Sie **App** aus und dann **modellgesteuerte App**. Dadurch wird eine neue Registerkarte geöffnet.
@@ -139,7 +142,7 @@ Aufgabe 1: Eine Anwendung erstellen
 
     -   Navigieren Sie zum Eigenschaftenbereich, und geben Sie **Campus** als **Titel** ein.
 
-    -   Wählen Sie **Neue Gruppe** aus.
+    -   Wählen Sie **Gruppe** aus.
 
     -   Navigieren Sie zum Bereich **Eigenschaften**, und geben Sie **Sicherheit** als **Titel** ein.
 5.  Die Entität „Kontakt“ zur Siteübersicht
@@ -179,7 +182,7 @@ Aufgabe 1: Eine Anwendung erstellen
 12.  Klicken Sie auf **Speichern**, um die Anwendung zu speichern.
 13.  Klicken Sie auf **Überprüfen**, um die in der Anwendung vorgenommenen Änderungen zu überprüfen. Es werden einige Warnungen angezeigt, die wir aber ignorieren können, da wir nicht auf eine bestimmte Ansicht und ein bestimmtes Formular für die Entitäten verwiesen haben und die Benutzer Zugriff auf alle Ansichten und Formulare für die Entitäten **Besuch** und **Gebäude** haben.
 14.  Klicken Sie auf **Veröffentlichen**, um die Anwendung zu veröffentlichen und auf den Abschluss des Veröffentlichungsvorgangs
-     zu warten.
+     beenden.
 15.  Klicken Sie auf **Speichern und schließen**, um den App-Designer zu schließen.
 16.  Klicken Sie auf **Fertig**.
 17.  Wählen Sie **Lösungen** und **Alle Anpassungen veröffentlichen** aus.
@@ -206,7 +209,7 @@ Aufgabe 2: Testanwendung
     -   Sie sollten nun den erstellten Kontakt in der Ansicht **Aktive Kontakte** sehen.
 3.  Erstellen eines neuen Gebäudedatensatzes
 
-    -   Wählen Sie **Gebäude** in der Siteübersicht aus.
+    -   Wählen Sie in der Siteübersicht **Gebäude** aus.
 
     -   Klicken Sie auf **Neu**.
 
@@ -233,5 +236,5 @@ Aufgabe 2: Testanwendung
 
 * Spezifische Ansichten und Formulare für Besuche und Gebäude auswählen
 * Das Sicherheitspersonal arbeitet üblicherweise in einem einzigen Gebäude. Welche einfache Möglichkeit könnten Sie ihnen bieten, Besuche nur für ein ausgewähltes Gebäude anzuzeigen?
-* Wie würden Sie den Zugriff auf bestimmte Entitäten beschränken, z. B. sollten Gebäude für alle Mitarbeiter außer den Administratoren schreibgeschützt sein?
+* Wie würden Sie den Zugriff auf bestimmte Entitäten beschränken, wie etwa sollten Gebäude für alle Mitarbeiter außer den Administratoren schreibgeschützt sein?
 * Welche Dashboards würden Sie der App hinzufügen?
