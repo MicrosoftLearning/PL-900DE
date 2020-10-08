@@ -27,7 +27,7 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 -   Eine Verbindung zum Common Data Service als Datenquelle herstellen
 -   Die Eingabe (Besuchercode) erfassen und den Besucherdatensatz suchen
 -   Ein Formularansicht-Steuerelement konfigurieren, um die Besucherinformationen anzuzeigen
--   Nutzung einer CDS-Ansicht, um die Galerie aufzufüllen
+-   Nutzen Sie eine Common Data Service-Ansicht, um den Katalog aufzufüllen
 -   Ausführen des Ein- und Auscheckvorgangs für einen Besucher
 
 
