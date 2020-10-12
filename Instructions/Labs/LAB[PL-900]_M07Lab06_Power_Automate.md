@@ -59,7 +59,7 @@ Aufgabe 1: Flow erstellen
 
 3. Suchen Sie nach **Aktuell** und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
 
-4. Wählen Sie den Trigger **Wenn ein Datensatz erstellt**, **aktualisiert ** oder **gelöscht** wird.
+4. Wählen Sie den Trigger **Wenn ein Datensatz erstellt**, **aktualisiert** oder **gelöscht** wird.
 
    * Wählen Sie**Erstellen** für **Triggerbedingung**
    * Wählen Sie **Besuche** als **Entitätsnamen** aus
@@ -177,6 +177,7 @@ Aufgabe 2: Flow überprüfen und aktivieren
     * Wählen Sie **Besucher (Wert)** als **Artikel-ID** aus dem dynamischen Inhalt aus.
     
 10.  Eigentümerdaten für zugehörigen Datensatz abrufen
+
     * Klicken Sie innerhalb der Schleife auf **Aktion hinzufügen**.
     * Suchen Sie nach **Aktuell** und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. 
     * Wählen Sie die Aktion **Datensatz abrufen** aus.

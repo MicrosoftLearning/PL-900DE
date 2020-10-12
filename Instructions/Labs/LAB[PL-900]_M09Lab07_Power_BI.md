@@ -91,7 +91,7 @@ Aufgabe 1: Daten vorbereiten
 
 16. Klicken Sie auf ... neben dem Feld **bc_scheduledstart**, und wählen Sie **Umbenennen** aus. Geben Sie **Start** als Feldnamen ein.
 
-17. Speichern Sie in Bearbeitung befindliche Arbeiten, indem Sie auf **File \** klicken.**| Speichern** und einen Dateinamen Ihrer Wahl eingeben.
+17. Speichern Sie in Bearbeitung befindliche Arbeiten, indem Sie auf **File \| Speichern** und einen Dateinamen Ihrer Wahl eingeben.
 
 ## Aufgabe 2: Diagramm- und Zeitvisualisierungen erstellen
 
@@ -107,8 +107,8 @@ Aufgabe 1: Daten vorbereiten
 10. Testen Sie die Berichtsinteraktivität:
     * Wählen Sie verschiedene Gebäudesegmente im Kreisdiagramm aus, und beobachten Sie Änderungen im Zeitbericht.
     * Wählen Sie verschiedene Balken im Zeitsäulendiagramm aus, und beobachten Sie Änderungen im Kreisbericht.
-    * Führen Sie mithilfe der Symbole oder mit **Daten/Drill \** einen Drilldown zur Monatsebene durch.**| Nächste Ebene erweitern** einen Drilldown auf die Monatsebene aus.
-11. Speichern Sie in Bearbeitung befindliche Arbeiten, indem Sie auf **File \** klicken.**| Speichern** klicken.
+    * Führen Sie mithilfe der Symbole oder mit **Daten/Drill \** einen Drilldown zur Monatsebene durch. **| Nächste Ebene erweitern** einen Drilldown auf die Monatsebene aus.
+11. Speichern Sie in Bearbeitung befindliche Arbeiten, indem Sie auf **File \| Speichern** klicken.
 
 Übung Nr. 2: Power BI-Dashboard erstellen
 ================================

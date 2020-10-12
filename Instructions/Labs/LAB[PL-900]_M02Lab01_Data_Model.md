@@ -229,7 +229,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 ## Aufgabe Nr. 3: Datenimport überprüfen
 
-1. Wählen Sie die Lösung **Campusmanagement** aus. Sollte make.powerapps.com noch nicht geöffnet sein, dann navigieren Sie zu make.powerapps.com, und klicken Sie im linken Bereich auf „Lösungen“, um nach Ihrer Lösung zu suchen.*
+1. Wählen Sie die Lösung **Campusmanagement** aus. Sollte make.powerapps.com noch nicht geöffnet sein, dann navigieren Sie zu make.powerapps.com, und klicken Sie im linken Bereich auf „Lösungen“, um nach Ihrer Lösung zu suchen.
 2. Wählen Sie die Entität **Besuch** aus, und wählen Sie dann die Registerkarte **Daten** aus.
 3. Klicken Sie in der oberen rechten Ecke auf **Aktive Besuche**, um die Ansichtsauswahl anzuzeigen, und wählen Sie dann **Alle Felder** aus.
 4. Wenn der Import erfolgreich war, sollte eine Liste der Besuchseinträge angezeigt werden.
