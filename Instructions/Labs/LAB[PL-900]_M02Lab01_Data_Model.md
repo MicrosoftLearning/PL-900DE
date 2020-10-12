@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: Datenmodellierung'
     module: 'Modul 2: Einführung in den Common Data Service'
