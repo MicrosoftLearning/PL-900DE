@@ -178,12 +178,12 @@ Aufgabe 2: Flow überprüfen und aktivieren
     
 10.  Eigentümerdaten für zugehörigen Datensatz abrufen
 
-    * Klicken Sie innerhalb der Schleife auf **Aktion hinzufügen**.
-    * Suchen Sie nach **Aktuell** und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. 
-    * Wählen Sie die Aktion **Datensatz abrufen** aus.
-    * Klicken Sie auf die Schaltfläche mit den drei Punkten (...) neben **Datensatz abrufen**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **GetUser** ein.
-    * Wählen Sie **Besuche** als **Entitätsname** aus.
-    * Wählen Sie **Eigentümer (Wert)** als **Artikel-ID** aus dem dynamischen Inhalt aus.
+* Klicken Sie innerhalb der Schleife auf **Aktion hinzufügen**.
+* Suchen Sie nach **Aktuell** und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. 
+* Wählen Sie die Aktion **Datensatz abrufen** aus.
+* Klicken Sie auf die Schaltfläche mit den drei Punkten (...) neben **Datensatz abrufen**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **GetUser** ein.
+* Wählen Sie **Besuche** als **Entitätsname** aus.
+* Wählen Sie **Eigentümer (Wert)** als **Artikel-ID** aus dem dynamischen Inhalt aus.
 
 11.  Fügen Sie die Aktion **E-Mail-Benachrichtigung senden** aus **Mail**-Verbindung hinzu, und bleiben Sie dabei innerhalb der Aktion **Auf jede Schleife anwenden**.
 

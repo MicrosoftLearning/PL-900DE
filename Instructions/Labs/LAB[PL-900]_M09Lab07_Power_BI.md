@@ -107,7 +107,7 @@ Aufgabe 1: Daten vorbereiten
 10. Testen Sie die Berichtsinteraktivität:
     * Wählen Sie verschiedene Gebäudesegmente im Kreisdiagramm aus, und beobachten Sie Änderungen im Zeitbericht.
     * Wählen Sie verschiedene Balken im Zeitsäulendiagramm aus, und beobachten Sie Änderungen im Kreisbericht.
-    * Führen Sie mithilfe der Symbole oder mit **Daten/Drill \** einen Drilldown zur Monatsebene durch. **| Nächste Ebene erweitern** einen Drilldown auf die Monatsebene aus.
+    * Führen Sie mithilfe der Symbole oder mit **Daten/Drill** einen Drilldown zur Monatsebene durch. **\| Nächste Ebene erweitern** einen Drilldown auf die Monatsebene aus.
 11. Speichern Sie in Bearbeitung befindliche Arbeiten, indem Sie auf **File \| Speichern** klicken.
 
 Übung Nr. 2: Power BI-Dashboard erstellen
