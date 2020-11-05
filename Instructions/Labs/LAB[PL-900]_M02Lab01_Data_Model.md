@@ -1,35 +1,35 @@
 ---
 lab:
-    title: 'Lab: Datenmodellierung'
-    module: 'Modul 2: Einführung in den Common Data Service'
+    title: 'Lab 1: Datenmodellierung'
+    module: 'Modul 2: Einführung in Common Data Service'
 ---
 
-# Modul 2: Einführung zu Common Data Service
+# Modul 2: Einführung in Common Data Service
 ## Lab: Datenmodellierung
 
 
 # Szenario
-    
+
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann. 
 
-In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Common Data Service(CDS)-Datenbank und eine Lösung, um Ihre Änderungen nachzuverfolgen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
+In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine CDS-Datenbank (Common Data Service) und eine Lösung zum Nachverfolgen Ihrer Änderungen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
 -   R1 –  Verfolgen Sie Standorte (Gebäude) der Campusbesuche
 -   R2 –  Aufzeichnen der grundlegende Informationen, um die Besucher zu identifizieren und nachzuverfolgen 
 -   R3 – Planen, Aufzeichnen und Verwalten von Besuchen 
 
-Zum Abschluss importieren Sie Beispieldaten in Common Data Service.
+Zum Abschluss werden Sie Beispieldaten in Common Data Service importieren.
 
 # Weiterführende Schritte des Lab
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
 * eine Lösung und einen Herausgeber erstellen
-* sowohl neue als auch vorhandene Komponenten hinzufügen, die zur Erfüllung der Anwendungsanforderungen erforderlich sind. Die Metadatenbeschreibung (Entitäten und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Labs/Campus%20Management.png). Sie können die STRG-TASTE gedrückt halten und klicken oder aber mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
+* sowohl neue als auch vorhandene Komponenten hinzufügen, die zur Erfüllung der Anwendungsanforderungen erforderlich sind. Beschreibungen zu den Metadaten (Entitäten und Beziehungen) finden Sie im [Datenmodelldokument](../../Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
 
 Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 
@@ -39,35 +39,35 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 
 ## Voraussetzungen:
 
-* Abschluss von **Modul 0 Lab 0 – Lab-Umgebung validieren**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 
-## Dinge, die Sie vor Beginn bedenken sollten:
+## Bevor Sie beginnen, sollten Sie Folgendes berücksichtigen:
 
 * Namenskonvention
+
 * Datentypen, Einschränkungen (z. B. maximale Länge eines Namens)
+
 * Datetime-Formatierung zur Unterstützung einer einfachen Lokalisierung
 
 # Übung 1: Lösung erstellen
 
-**Ziel:** In dieser Übung bereiten Sie die Umgebung vor und erstellen eine Lösung zur Unterstützung des Datenmodellierungsprozesses. 
-
-## Aufgabe Nr. 1: Lösung und Publisher erstellen
+## Aufgabe Nr. 1: Lösung und Publisher erstellen
 
 1.  Lösung erstellen
 
-    -   Melden Sie sich bei <https://make.powerapps.com> an. Möglicherweise müssen Sie sich erneut authentifizieren – klicken Sie auf **Anmelden**, und befolgen Sie bei Bedarf die Anweisungen.
+    -   Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
 
-    -   Wählen Sie Ihre Umgebung aus, indem Sie in der oberen rechten Ecke des Bildschirms auf **Umgebung** klicken und Ihre Umgebung aus dem Dropdownmenü auswählen.
+    -   Wählen Sie Ihre Umgebung aus. Klicken Sie dazu in der oberen rechten Ecke des Bildschirms auf **Umgebung**, und wählen Sie im Dropdownmenü Ihre Umgebung aus.
 
     -   Wählen Sie **Lösungen** aus dem linken Menü aus, und klicken Sie auf **Neue Lösung**.
 
-    -   Geben Sie [Ihr Nachname] **Campusmanagement** als **Anzeigename** ein.
+    -   Geben Sie **„[Ihr Nachname] Campusverwaltung“** als **Anzeigename** ein.
 
 2.  Publisher erstellen
 
     -   Klicken Sie auf das Dropdownmenü **Herausgeber**, und wählen Sie **Herausgeber** aus.
 
-    -   In dem sich öffnenden Fenster geben Sie **Bellows College** als **Anzeigename** und **bc** als **Präfix** ein.
+    -   Geben Sie in dem Fenster, das daraufhin eingeblendet wird, **Bellows College** als **Anzeigename** und **bc** als **Präfix** ein.
 
     -   Klicken Sie auf **Speichern und schließen**. 
     
@@ -78,24 +78,35 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
     -   Klicken Sie nun auf die Dropdownliste **Publisher**, und wählen Sie den Herausgeber **Bellows College** aus,
         den Sie gerade erstellt haben.
 
-    -   Bestätigen Sie, dass die **Version** auf **1.0.0.0** gesetzt ist. 
+    -   Vergewissern Sie sich, dass **Version** auf **1.0.0.0** gesetzt ist. 
     
     -   Klicken Sie auf **Erstellen**.
 
-## Aufgabe Nr. 2: Eine vorhandene Entität hinzufügen
+## Aufgabe Nr. 2: Eine vorhandene Entität hinzufügen
 
-1.  Klicken Sie, um Lösung **Campusmanagement** zu öffnen, die Sie gerade erstellt haben.
+1.  Klicken Sie, um Ihre **Campusverwaltung**-Lösung, die Sie gerade erstellt haben, zu öffnen.
+
 2.  Klicken Sie auf **Vorhandene hinzufügen**, und wählen Sie **Entität** aus.
+
 3.  Suchen Sie **Kontakt**, und wählen Sie diese Option aus.
+
 4.  Klicken Sie auf **Weiter**.
-5.  Klicken Sie auf **Komponenten auswählen**.
+
+5.  Klicken Sie unter „Kontakt“ auf **Komponenten auswählen**.
+
 6.  Wählen Sie die Registerkarte **Ansichten** aus, und wählen Sie die Ansicht **Aktive Kontakte** aus. Klicken Sie auf
     **Hinzufügen**.
+    
 7.  Klicken Sie erneut auf **Komponenten auswählen**.
+
 8.  Wählen Sie die Registerkarte **Formulare** aus, und wählen Sie das Formular **Kontakt**aus.
+    
 9.  Klicken Sie auf **Hinzufügen**.
-10. Sie sollten **1 Ansicht** und **1 Formular** ausgewählt haben. Klicken Sie auf **Hinzufügen**.
-    Dadurch wird die Kontaktentität mit der ausgewählten Ansicht und dem ausgewählten Formular zur neu erstellten Lösung hinzugefügt. 
+
+    > Sie sollten **1 Ansicht** und **1 Formular** ausgewählt haben. 
+    
+10.  Klicken Sie erneut auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Entität „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt. 
+    
 11.  Ihre Lösung sollte jetzt eine Entität haben: Kontakt.
 
 # Übung Nr. 2: Entitäten und Beziehungen erstellen
@@ -105,142 +116,224 @@ zwischen den Entitäten hinzu.
 
 ## Aufgabe Nr. 1: Entität „Gebäude“ und Felder erstellen
 
-1.  In Ihrem Browser sollte weiterhin die Campusmanagement-Lösung geöffnet sein. Öffnen Sie andernfalls die Campusmanagement-Lösung wie folgt:
+1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
+
     * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie noch nicht angemeldet sind)
-    * Wählen Sie **Lösungen** aus, und klicken Sie zum Öffnen auf die Lösung **Campus Management**,
+    
+    * Wählen Sie **Lösungen** aus, und klicken Sie zum Öffnen der Lösung **[Ihr Nachname] Campusverwaltung**,
           die Sie gerade erstellt haben.
+          
 2.  Die Entität „Gebäude“ erstellen
 
     -   Klicken Sie auf **Neu**, und wählen Sie **Entität** aus.
-    -   Geben Sie **Gebäude** als **Anzeigename** ein.  
-    -   Klicken Sie auf **Fertig**. Dadurch startet
-            die Bereitstellung der Entität im Hintergrund, während Sie mit dem Hinzufügen
-            weiterer Entitäten und Felder beginnen können.
+    
+    -   Geben Sie **Gebäude** als **Anzeigename** ein. 
+    
+    -   Klicken Sie auf **Fertig**. Dadurch wird die Entität im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Entitäten und Felder hinzuzufügen.
 
-## Aufgabe 2: Erstellen der Entität „Besuch“ und von Feldern
+## Aufgabe Nr. 2: Erstellen der Entität „Besuch“ und von Feldern
 
-Die Entität **Besuch** enthält Informationen zu den Campusbesuchen, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
+Die Entität **Besuch** wird Informationen zu den Campusbesuchen enthalten, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
 
 Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besucher leicht eingegeben und interpretiert werden kann, wenn er beim Einchecken gefragt wird.
 
-> [HINWEIS]
-> Wir nutzen **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs *immer* die Lokalzeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie aus einer anderen Zeitzone angezeigt wird. 
+> Wir verwenden **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs immer die Ortszeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie in einer anderen Zeitzone angezeigt wird. 
 
-1.  Wählen Sie Ihre Lösung **Campusmanagement** aus.
+1.  Wählen Sie Ihre **Campusverwaltung**-Lösung aus.
+
 2. Entität „Besuch“ erstellen
 
    * Klicken Sie auf **Neu**, und wählen Sie **Entität** aus.
+   
    * Geben Sie **Besuch** als **Anzeigename** ein. 
+   
    * Klicken Sie auf **Fertig**. Dadurch wird die Entität im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Felder hinzuzufügen.
 
 3. Erstellen Sie das Feldes „Geplanter Start“
 
    * Stellen Sie sicher, dass Sie die Registerkarte **Felder** ausgewählt haben, und klicken Sie auf **Feld hinzufügen**.
+   
    * Geben Sie **Geplanter Start** als **Anzeigename** ein.
+   
    * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+   
    * Wählen Sie im Feld **Erforderlich** die Option **Erforderlich** aus.
+   
    * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-   * Wählen Sie im Feld **Verhalten** die Option **Zeitzonenunabhängig** aus.
+   
+   * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+   
    * Klicken Sie auf **Fertig**.
 
 4.  Erstellen des Feldes „Geplantes Ende“
 
     * Klicken Sie auf **Feld hinzufügen**.
+    
     * Geben Sie **Geplantes Ende** als **Anzeigename** ein.
+    
     * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+    
     * Wählen Sie im Feld **Erforderlich** die Option **Erforderlich** aus.
+    
     * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-    * Wählen Sie im Feld **Verhalten** die Option **Zeitzonenunabhängig** aus.
+    
+    * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    
     * Klicken Sie auf **Fertig**.
     
-6.  Erstellen des Feldes „Tatsächlicher Start“
+5.  Erstellen des Feldes „Tatsächlicher Start“
 
     * Klicken Sie auf **Feld hinzufügen**.
+    
     * Geben Sie **Tatsächlicher Start** als **Anzeigename** ein.
+    
     * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+    
+    * Belassen Sie im Feld **Erforderlich** die Einstellung **Optional**.
+    
     * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-    * Wählen Sie im Feld **Verhalten** die Option **Zeitzonenunabhängig** aus.
+    
+    * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    
     * Klicken Sie auf **Fertig**.
     
-7.  Erstellen Sie das Feld „Tatsächliches Ende“
+6.  Erstellen Sie das Feld „Tatsächliches Ende“
 
     * Klicken Sie auf **Feld hinzufügen**.
+    
     * Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
+    
     * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+    
+    * Belassen Sie im Feld **Erforderlich** die Einstellung **Optional**.
+    
     * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-    * Wählen Sie im Feld **Verhalten** die Option **Zeitzonenunabhängig** aus.
+    
+    * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    
     * Klicken Sie auf **Fertig**.
     
 7.  Erstellen Sie das Feld „Code“
 
     * Klicken Sie auf **Feld hinzufügen**.
+    
     * Geben Sie **Code** als **Anzeigename** ein.
+    
     * Wählen Sie **AutoWert** als **Datentyp** aus.
+    
     * Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
+    
     * Klicken Sie auf **Fertig**.
     
 8.  Klicken Sie auf **Entität speichern**
 
 ## Aufgabe 3: Beziehungen erstellen
 
-1.  Vergewissern Sie sich, dass immer noch die Entität **Besuch** Ihrer Lösung **Campusmanagement** angezeigt wird. Navigieren Sie andernfalls dorthin.
+1.  Stellen Sie sicher, dass Sie weiterhin die Entität **Besuch** Ihrer **Campusverwaltung**-Lösung anzeigen. Navigieren Sie andernfalls dorthin.
+
 2.  Erstellen der Beziehung „Besuch zu Kontakt“
+
     * Wählen Sie die Registerkarte **Beziehungen** aus.
+    
     * Klicken Sie auf **Beziehung hinzufügen**, und wählen Sie **n:1** aus.
-    * Wählen Sie  **Kontakt** für **Verknüpft (Eins)** aus. 
+    
+    * Wählen Sie **Kontakt** als **Verknüpft (Eins)** aus. 
+    
     * Geben Sie **Besucher** als **Anzeigename des Nachschlagefelds** ein 
+    
     * Klicken Sie auf **Fertig**.
+    
 3.  Erstellen Sie die Beziehung „Besuch in Gebäude“
+
     * Klicken Sie auf **Beziehung hinzufügen**, und wählen Sie **n:1** aus.
-    * Wählen Sie **Gebäude** für **Verknüpft (Eins)** aus. 
+    
+    * Wählen Sie **Gebäude** als **Verknüpft (Eins)** aus. 
+    
     * Klicken Sie auf **Fertig**.
+    
 4.  Klicken Sie auf **Entität speichern**.
-5.  Wählen Sie aus dem oberen Menü **Lösungen** aus, und klicken Sie auf **Alle Anpassungen veröffentlichen**.
+
+5.  Wählen Sie im oberen Menü **Lösungen** aus, und klicken Sie auf **Alle Anpassungen veröffentlichen**.
 
 # Übung Nr. 3: Daten importieren
 
 **Ziel:** In dieser Übung importieren Sie Beispieldaten in die Common Data Service-Datenbank.
 
-## Aufgabe Nr. 1: Datenzuordnung importieren
+## Aufgabe Nr. 1: Lösung importieren
 
-1. Laden Sie [CampusDataMap.xml](../../Allfiles/Labs/CampusDataMap.xml) herunter, falls Sie dies noch nicht getan haben.
-2. Navigieren Sie zum Power Platform Admin Center unter <https://admin.powerplatform.microsoft.com>, und melden Sie sich an.
-3. Wählen Sie Ihre Bellows College-Umgebung aus.
-4. Klicken Sie oben auf **Einstellungen**.
-5. Erweitern Sie den Abschnitt **Datenverwaltung**, und wählen Sie dann **Datenzuordnungen** aus. Dadurch wird der Bildschirm „Zuordnung importieren“ auf einer neuen Browserregisterkarte geöffnet.
-6. Klicken Sie auf **Importieren**, und klicken Sie dann auf **Datei wählen**. Suchen Sie die Datei **CampusDataMap.xml**, die zuvor heruntergeladen wurde, und wählen Sie sie aus. Drücken Sie dann auf **OK**. 
-7. Die Datei Campus-Datenzuordnung sollte erfolgreich importiert werden. Beim Auftreten eines Fehlers navigieren Sie zurück, und überprüfen Sie, ob Sie alle erforderlichen Entitäten und Felder aus den vorherigen Aufgaben erstellt haben.
-8. Wählen Sie aus dem oberen Menü **Lösungen** aus, und klicken Sie auf **Alle Anpassungen veröffentlichen**.
+In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enthält, der erforderlich ist, um den Datenimport abzuschließen.
 
-## Aufgabe Nr. 2: Daten importieren  
+1. Die Datei **DataImport_managed.zip** sollten Sie auf Ihrem Desktop gespeichert haben. Laden Sie soweit noch nicht geschehen die [Datenimportlösung](../../Allfiles/DataImport_managed.zip) herunter.
 
-1. Laden Sie [CampusData.zip](../../Allfiles/Labs/CampusData.zip) herunter.
-2. Navigieren Sie zum Power Platform Admin Center unter <https://admin.powerplatform.microsoft.com>.
-3. Wählen Sie Ihre Bellows College-Umgebung aus.
-4. Klicken Sie oben auf **Einstellungen**.
-5. Erweitern Sie den Abschnitt **Datenverwaltung**, und wählen Sie dann **Datenimport-Assistent** aus.
-6. Drücken Sie auf **DATEN IMPORTIEREN**.
-7. Klicken Sie auf **Datei wählen**. Suchen Sie dann die zuvor heruntergeladene Datei **CampusData.zip**, und wählen sie aus.
-8. Klicken Sie auf **Weiter** und dann erneut auf **Weiter**.
-9. Wählen Sie **CampusImportDataMap** aus, und klicken Sie auf **Weiter**.
-10. Überprüfen Sie die Zuordnungszusammenfassung. Klicken Sie auf **Weiter** und anschließend auf **Übermitteln**.
-11. Klicken Sie auf **Fertig**.
-12. Der Datenimport beginnt jetzt. Mithilfe der Schaltfläche „Aktualisieren“ auf der rechten Seite des Bildschirms **Meine Importe** können Sie jetzt die Tabelle aktualisieren, bis alle vier Importe den Statusgrund **Abgeschlossen** aufweisen. Dies kann einige Minuten dauern.
+2. Melden Sie sich bei <https://make.powerapps.com> an.
+
+3. Wählen Sie oben rechts Ihre Umgebung „[Ihre Initialen] Übung“ aus, falls diese noch nicht ausgewählt ist.
+
+4. Wählen Sie im linken Navigationsbereich **Lösungen** aus.
+
+5. Klicken Sie auf **Importieren**, und klicken Sie dann auf **Durchsuchen**. Navigieren Sie zur Datei **DataImport_managed.zip** auf Ihrem Desktop, wählen Sie sie aus, und klicken Sie dann auf **Weiter**.
+
+>   Möglicherweise wird die folgende Meldung angezeigt:
+>
+>   Es fehlen Abhängigkeiten. Installieren Sie die folgenden Lösungen, bevor Sie diese installieren...
+>
+>   Diese Meldung bedeutet entweder, dass das Datenmodell nicht vollständig ist, das
+>   Herausgeberpräfix nicht **bc** lautet oder für die Entitäten **Gebäude** und **Besuch**
+>   andere Namen als in den vorherigen Schritten angegeben sind.
+
+6. Klicken Sie auf **Weiter**. Sie sollten aufgefordert werden, Verbindungen neu herzustellen. 
+
+7. Erweitern Sie die Dropdownliste **Wählen Sie eine Verbindung aus**, und wählen Sie **+Neue Verbindung** aus.
+
+8. Es wird ein neues Browserfenster oder eine neue Browserregisterkarte geöffnet. Wählen Sie **Erstellen** aus, wenn Sie aufgefordert werden, eine Common Data Service-Verbindung herzustellen. Falls erforderlich, melden Sie sich an, um das Erstellen der Verbindung abzuschließen.
+
+9. Wechseln Sie zurück zur vorherigen Registerkarte, auf der Sie die Lösung importiert haben.
+
+10. Klicken Sie auf **Aktualisieren**, um die Liste der Verbindungen zu aktualisieren. 
+
+11. Vergewissern Sie sich, dass die Verbindung, die Sie gerade erstellt haben, ausgewählt ist.
+
+12. Klicken Sie auf **Importieren**.
+
+13. Warten Sie, bis der Importvorgang abgeschlossen ist.
+
+## Aufgabe Nr. 2: Daten importieren  
+
+1. Öffnen Sie die **Datenimport**-Lösung.
+
+2. Überprüfen Sie den **Status** des Flows **Daten importieren**.
+
+3. Wenn **Status** auf **Aus** gesetzt ist, klicken Sie auf die Schaltfläche mit den drei Punkten (**...**) neben **Daten importieren**, und wählen Sie dann **Einschalten** aus.
+
+   > **Wichtig:** Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die von Ihnen erstellten Entitäten und Felder mit den obigen Anweisungen übereinstimmen.
+
+4. Wählen Sie die Komponente **Daten importieren** aus. Power Automate wird auf einer neuen Registerkarte geöffnet. Klicken Sie auf **Los geht's**, wenn ein Popupfenster eingeblendet wird. 
+
+5. Klicken Sie auf **Ausführen**, und klicken Sie dann auf **Flow ausführen**, wenn Sie dazu aufgefordert werden.
+
+6. Klicken Sie auf **Fertig**.
+
+7. Warten Sie, bis die Ausführung der Flow-Instanz abgeschlossen ist. Sie können die Tabelle **28-tägiger Ausführungsverlauf** aktualisieren, um zu sehen, wann der Flow ausgeführt wurde. Der Zweck dieses Flows bestand darin, Beispieldaten für die nächsten Labs zu generieren. In der nächsten Aufgabe werden Sie überprüfen, ob der Datenimport erfolgreich war. 
 
 ## Aufgabe Nr. 3: Datenimport überprüfen
 
-1. Wählen Sie die Lösung **Campusmanagement** aus. Sollte make.powerapps.com noch nicht geöffnet sein, dann navigieren Sie zu make.powerapps.com, und klicken Sie im linken Bereich auf „Lösungen“, um nach Ihrer Lösung zu suchen.
-2. Wählen Sie die Entität **Besuch** aus, und wählen Sie dann die Registerkarte **Daten** aus.
-3. Klicken Sie in der oberen rechten Ecke auf **Aktive Besuche**, um die Ansichtsauswahl anzuzeigen, und wählen Sie dann **Alle Felder** aus.
-4. Wenn der Import erfolgreich war, sollte eine Liste der Besuchseinträge angezeigt werden.
-5. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und bestätigen Sie, dass das Gebäudeformular in einem separaten Fenster geöffnet wird.
-6. Klicken Sie auf einen beliebigen Wert in der Spalte **Besucher** (möglicherweise müssen Sie nach rechts scrollen), und bestätigen Sie, dass das Kontaktformular in einem separaten Fenster geöffnet wird.
+1. Navigieren Sie zurück zur vorherigen Power Apps-Registerkarte. Klicken Sie in dem Popupfenster auf **Fertig**. Wählen Sie in der linken Navigationsleiste **Lösungen** aus, und öffnen Sie Ihre **Campusverwaltung**-Lösung.
+
+2. Klicken Sie, um die Entität **Besuch** zu öffnen, und wählen Sie dann die Registerkarte **Daten** aus.
+
+3. Klicken Sie in der oberen rechten Ecke auf **Aktive Besuche**, um die Ansichtsauswahl einzublenden, und wählen Sie dann **Alle Felder** aus. Dadurch wird die Ansicht geändert, die zum Anzeigen der Besuchsdaten verwendet wird.
+
+    > Wenn der Import erfolgreich war, sollte eine Liste der Besuchseinträge angezeigt werden.
+
+4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass in einem separaten Fenster das Gebäudeformular geöffnet wird. Schließen Sie dieses Fenster.
+
+5. Klicken Sie auf einen beliebigen Wert in der Spalte **Besucher** (möglicherweise müssen Sie dazu nach rechts scrollen), und überzeugen Sie sich, dass in einem separaten Fenster das Kontaktformular geöffnet wird. Schließen Sie dieses Fenster.
 
 # Herausforderungen
 
-* Würden Sie in Betracht ziehen, die Terminaktivität als Teil der Lösung zu verwenden? Was würde sich ändern?
-* Wie wird erzwungen, dass das geplante Ende nach dem geplanten Start liegt? 
-* Fügen Sie Unterstützung für mehrere Besprechungen während eines einzelnen Besuchs hinzu.
-* Schützen Sie den Gebäudezugang nicht nur für externe Kontakte, sondern auch für interne Mitarbeiter.
-* Bestimmte Gebäude dürfen nur nach Genehmigung des Managements betreten werden. Was würde der Genehmigungsprozess im Datenmodell ändern?
+* Würden Sie in Betracht ziehen, die *Termin*-Aktivität als Teil der Lösung zu verwenden? Was würde sich ändern?
+* Wie lässt sich erzwingen, dass das geplante Ende hinter dem geplanten Start liegt? 
+* Wie lässt sich Unterstützung für mehrere Meetings während eines einzelnen Besuchs hinzufügen?
+* Wie lässt sich der Gebäudezugang nicht nur für externe Kontakte, sondern auch für interne Mitarbeiter absichern?
+* Wie lässt sich für Besuche in bestimmten Gebäude vorgeben, dass dazu eine Genehmigung der Verwaltung erforderlich ist? Was würde der Genehmigungsprozess im Datenmodell ändern?
 
