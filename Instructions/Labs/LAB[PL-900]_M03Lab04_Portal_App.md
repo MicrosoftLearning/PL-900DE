@@ -232,5 +232,5 @@ Ihr App-Layout sollte etwa die folgende Struktur aufweisen:
 * Erstellen Sie eine andere Ansicht von „Gebäude“, in der nur der Gebäudename angezeigt wird. Sie müssen in Portal Studio **Website durchsuchen** auswählen, um die Änderungen anzuzeigen.
 * Klicken Sie im Toolbelt auf das Symbol **Designs**, und bearbeiten Sie das CSS Ihres benutzerdefinierten Designs.
 * Erstellen Sie eine Seite mit der Komponente **Formular**, und ändern Sie eine Komponente **Liste**, um mit dem Formular Common Data Service-Datensätze hinzuzufügen oder zu bearbeiten.
-* Aktivieren Sie **Entitätsberechtigungen** für die ** Einstellungen** einer Komponente **Liste**. Was geschieht mit den Daten?
+* Aktivieren Sie **Entitätsberechtigungen** für die **Einstellungen** einer Komponente **Liste**. Was geschieht mit den Daten?
 * Wählen Sie in Portal Studio das Quellcode-Editor-Symbol `</>` aus, um die Seitenquelle anzuzeigen. Wenn Sie mit HTML vertraut sind, nehmen Sie einige Änderungen vor, und zeigen die Ergebnisse an.

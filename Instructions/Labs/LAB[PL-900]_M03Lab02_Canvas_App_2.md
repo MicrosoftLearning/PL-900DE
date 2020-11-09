@@ -63,7 +63,7 @@ Aufgabe 1: Canvas-App erstellen
     
 2.  Erstellen Sie eine neue Canvas-Anwendung
 
-    -   Klicken Sie auf **Neu**, und wählen Sie **App \** aus.**| Canvas-App \| Formfaktor „Telefon“ **.
+    -   Klicken Sie auf **Neu**, und wählen Sie **App \** aus. **| Canvas-App \| Formfaktor „Telefon“**.
         Dadurch wird der App-Editor in einem neuen Fenster geöffnet.
         
     -   Klicken Sie auf **Überspringen**, wenn das Dialogfeld „Willkommen bei Power Apps Studio“ angezeigt wird.
@@ -103,7 +103,7 @@ Aufgabe Nr. 2: Besucherinformationen anzeigen
     
     -   Wählen Sie die Eigenschaft **HintText** aus, und geben Sie `"Besuchercode eingeben"` als Wert ein (einschließlich doppelter Anführungszeichen)
     
-    -   Klicken Sie neben dem Steuerelementnamen in einer Strukturansicht (TextInput1) auf die Schaltfläche mit den drei Punkten (**...**), wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `**textCode**`
+    -   Klicken Sie neben dem Steuerelementnamen in einer Strukturansicht (TextInput1) auf die Schaltfläche mit den drei Punkten (**...**), wählen Sie **Umbenennen** aus, und ändern Sie den Namen in  `**textCode**`
     
 2. Formulansicht hinzufügen
 
@@ -305,7 +305,7 @@ Die Benutzerfreundlichkeit einer mobilen App wird erheblich verbessert, wenn zus
 
 1. Wählen Sie die Registerkarte **Einfügen** aus
 
-2. Wählen Sie **Symbole \** aus**| Hinzufügen**. An dieser Stelle spielt es keine Rolle, welches Symbol wir auswählen, da der Wert dynamisch sein soll.
+2. Wählen Sie **Symbole \** aus **| Hinzufügen**. An dieser Stelle spielt es keine Rolle, welches Symbol wir auswählen, da der Wert dynamisch sein soll.
 
 3. Ändern Sie die Größe des Symbols, und platzieren Sie es in der Mitte des Bildschirms unter den Schaltflächen.
 
