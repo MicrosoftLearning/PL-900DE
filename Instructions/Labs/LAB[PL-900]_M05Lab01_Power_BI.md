@@ -56,7 +56,7 @@ Aufgabe 1: Power BI Desktop installieren/Power BI-Dienst vorbereiten
 > [WICHTIG!]
 > Wenn bei der Installation von Power BI Desktop per Microsoft Store Probleme auftreten, versuchen Sie es mit einem eigenständigen Installationsprogramm, das von [https://aka.ms/pbiSingleInstaller-ger](https://aka.ms/pbiSingleInstaller-ger) heruntergeladen werden kann.
 
-2. **Wenn Sie Power BI Desktop erfolgreich installiert haben, fahren Sie mit [Aufgabe Nr. 2](#task-2-prepare-data)** fort. Wenn Sie nicht über die erforderlichen Berechtigungen zum Installieren von Desktopanwendungen verfügen oder wenn beim Ausführen oder Konfigurieren von Power BI Desktop ein Problem auftritt, führen Sie die unten aufgeführten Aufgabenschritte aus, und fahren Sie dann mit [Aufgabe Nr. 3](#task-3-create-chart-and-time-visualizations)fort. Verwenden Sie dann jedoch anstelle von Power BI Desktop den Power BI-Onlinedienst unter [https://app.powerbi.com](https://app.powerbi.com) im Lab. 
+2. **Wenn Sie Power BI Desktop erfolgreich installiert haben, fahren Sie mit [Aufgabe Nr. 2](#task-2-prepare-data)** fort. Wenn Sie nicht über die erforderlichen Berechtigungen zum Installieren von Desktopanwendungen verfügen oder wenn beim Ausführen oder Konfigurieren von Power BI Desktop ein Problem auftritt, führen Sie die unten aufgeführten Aufgabenschritte aus, und fahren Sie dann mit [Aufgabe Nr. 3](#task-3-create-chart-and-time-visualizations) fort. Verwenden Sie dann jedoch anstelle von Power BI Desktop den Power BI-Onlinedienst unter [https://app.powerbi.com](https://app.powerbi.com) im Lab. 
 
 3. Laden Sie [visits.pbix](../../Allfiles/visits.pbix) herunter, und speichern Sie die Datei auf Ihrem Computer.
 

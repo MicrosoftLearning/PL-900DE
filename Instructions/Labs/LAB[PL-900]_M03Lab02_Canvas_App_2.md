@@ -201,9 +201,9 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
 
    Der Ausdruck kann wie folgt unterteilt werden:
 
-   * `!IsBlank(Besuch)` – Besuchsdatensatz wurde gefunden
+   * `!IsBlank(Visit)` – Besuchsdatensatz wurde gefunden
    * `&&` – logischer AND-Operator
-   * `Visit.Status = 'Status (Besuche)'. Aktiv` Status des Datensatzes ist *Aktiv*
+   * `Visit.Status = 'Status (Visits)'.Active` Status des Datensatzes ist *Aktiv*
    * `IsBlank (Visit.'Actual Start ')` – Das Feld „Aktiver Start“ enthält keine Daten.
 
 4. Wir möchten die Schaltfläche **Auschecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer ist), der Datensatzstatus aktiv ist und der Besuch bereits gestartet wurde, d. h., der tatsächliche Startwert ist nicht leer.
@@ -251,7 +251,7 @@ Um den Ein- und Auscheckvorgang durchzuführen, müssen die Common Data Service-
 
    Dieser Ausdruck enthält die folgenden Informationen:
 
-   * `Patch (Besuche, Besuch, {'Tatsächlicher Start': Jetzt()});`. Die *Patch*-Methode aktualisiert die Entität **Besuche**, der durch die Variable **Besuch** (der aktuelle Besuch) identifizierte Datensatz. Der Ausdruck legt den Wert des Felds *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit (*Jetzt()* Methode) fest.
+   * `Patch(Visits, Visit, {'Actual Start': Now()});`. Die *Patch*-Methode aktualisiert die Entität **Besuche**, der durch die Variable **Besuch** (der aktuelle Besuch) identifizierte Datensatz. Der Ausdruck legt den Wert des Felds *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit (*Jetzt()* Methode) fest.
    * `Refresh([@Visits]);`. Dieser Ausdruck aktualisiert die Besuchsdatensätze, wenn sich die zugrunde liegenden Werte geändert haben.
    * `Set (Visit, LookUp (Visits, Code = textCode.Text));` Dieser Ausdruck aktualisiert die Variable *Besuch* mit aktuellen Daten aus Common Data Service.
    

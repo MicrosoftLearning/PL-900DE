@@ -201,7 +201,7 @@ Da die Anzahl der Besuche kontinuierlich zunimmt, benötigen Benutzer eine Funkt
 
 8. Suchen Sie die Eigenschaft **Items**, und klicken Sie in das Textfeld.
 
-8. Suchen Sie im Ausdruck nach `@Visits]` und ersetzen Sie diese Zeichenfolge durch `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Der gesamte Ausdruck sollte wie folgt aussehen:
+8. Suchen Sie im Ausdruck nach `[@Visits]` und ersetzen Sie diese Zeichenfolge durch `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Der gesamte Ausdruck sollte wie folgt aussehen:
 
    ```
    SortByColumns(
