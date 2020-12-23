@@ -39,7 +39,7 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 
 ## Voraussetzungen:
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
 
 ## Bevor Sie beginnen, sollten Sie Folgendes berücksichtigen:
 
@@ -49,7 +49,7 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 
 * Datetime-Formatierung zur Unterstützung einer einfachen Lokalisierung
 
-# Übung 1: Lösung erstellen
+# Übung Nr. 1: Lösung erstellen
 
 ## Aufgabe Nr. 1: Lösung und Publisher erstellen
 
@@ -61,15 +61,17 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 
     -   Wählen Sie **Lösungen** aus dem linken Menü aus, und klicken Sie auf **Neue Lösung**.
 
-    -   Geben Sie **„[Ihr Nachname] Campusverwaltung“** als **Anzeigename** ein.
+    -   Geben Sie **[Ihr Nachname] Campusverwaltung** als **Anzeigename** ein.
 
 2.  Publisher erstellen
 
     -   Klicken Sie auf das Dropdownmenü **Herausgeber**, und wählen Sie **Herausgeber** aus.
 
-    -   Geben Sie in dem Fenster, das daraufhin eingeblendet wird, **Bellows College** als **Anzeigename** und **bc** als **Präfix** ein.
+    -   Geben Sie in dem Fenster, das daraufhin eingeblendet wird, **Bellows College** als **Anzeigename** ein. 
+    
+    -   Geben Sie **bc** als **Präfix** ein.
 
-    -   Klicken Sie auf **Speichern und schließen**. 
+    -   Klicken Sie auf **Speichern und schließen**.
     
     -   Klicken Sie im Popupfenster auf **Fertig**.
 
@@ -114,7 +116,7 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 **Ziel:** In dieser Übung erstellen Sie Entitäten und fügen Beziehungen
 zwischen den Entitäten hinzu.
 
-## Aufgabe Nr. 1: Entität „Gebäude“ und Felder erstellen
+## Aufgabe Nr. 1: Entität „Gebäude“ und Felder erstellen
 
 1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
 
@@ -131,7 +133,7 @@ zwischen den Entitäten hinzu.
     
     -   Klicken Sie auf **Fertig**. Dadurch wird die Entität im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Entitäten und Felder hinzuzufügen.
 
-## Aufgabe Nr. 2: Erstellen der Entität „Besuch“ und von Feldern
+## Aufgabe Nr. 2: Erstellen der Entität „Besuch“ und von Feldern
 
 Die Entität **Besuch** wird Informationen zu den Campusbesuchen enthalten, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
 
@@ -227,7 +229,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
     
 8.  Klicken Sie auf **Entität speichern**
 
-## Aufgabe 3: Beziehungen erstellen
+## Aufgabe Nr. 3: Beziehungen erstellen
 
 1.  Stellen Sie sicher, dass Sie weiterhin die Entität **Besuch** Ihrer **Campusverwaltung**-Lösung anzeigen. Navigieren Sie andernfalls dorthin.
 
@@ -259,7 +261,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 **Ziel:** In dieser Übung importieren Sie Beispieldaten in die Common Data Service-Datenbank.
 
-## Aufgabe Nr. 1: Lösung importieren
+## Aufgabe Nr. 1: Lösung importieren
 
 In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enthält, der erforderlich ist, um den Datenimport abzuschließen.
 
@@ -267,7 +269,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 2. Melden Sie sich bei <https://make.powerapps.com> an.
 
-3. Wählen Sie oben rechts Ihre Umgebung „[Ihre Initialen] Übung“ aus, falls diese noch nicht ausgewählt ist.
+3. Wählen Sie oben rechts Ihre Umgebung ***Meine Initialen* Übung** aus, falls diese noch nicht ausgewählt ist.
 
 4. Wählen Sie im linken Navigationsbereich **Lösungen** aus.
 
@@ -283,7 +285,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 6. Klicken Sie auf **Weiter**. Sie sollten aufgefordert werden, Verbindungen neu herzustellen. 
 
-7. Erweitern Sie die Dropdownliste **Wählen Sie eine Verbindung aus**, und wählen Sie **+Neue Verbindung** aus.
+7. Erweitern Sie die Dropdownliste **Wählen Sie eine Verbindung aus**, und wählen Sie **Neue Verbindung** aus.
 
 8. Es wird ein neues Browserfenster oder eine neue Browserregisterkarte geöffnet. Wählen Sie **Erstellen** aus, wenn Sie aufgefordert werden, eine Common Data Service-Verbindung herzustellen. Falls erforderlich, melden Sie sich an, um das Erstellen der Verbindung abzuschließen.
 
@@ -297,37 +299,47 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 13. Warten Sie, bis der Importvorgang abgeschlossen ist.
 
-## Aufgabe Nr. 2: Daten importieren  
+## Aufgabe Nr. 2: Daten importieren  
 
 1. Öffnen Sie die **Datenimport**-Lösung.
 
 2. Überprüfen Sie den **Status** des Flows **Daten importieren**.
 
-3. Wenn **Status** auf **Aus** gesetzt ist, klicken Sie auf die Schaltfläche mit den drei Punkten (**...**) neben **Daten importieren**, und wählen Sie dann **Einschalten** aus.
+3. Wenn **Status** auf **Aus** gesetzt ist, klicken Sie auf die Schaltfläche mit den Auslassungspunkten ([...]) neben **Daten importieren**, und wählen Sie dann **Einschalten** aus.
 
    > **Wichtig:** Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die von Ihnen erstellten Entitäten und Felder mit den obigen Anweisungen übereinstimmen.
 
-4. Wählen Sie die Komponente **Daten importieren** aus. Power Automate wird auf einer neuen Registerkarte geöffnet. Klicken Sie auf **Los geht's**, wenn ein Popupfenster eingeblendet wird. 
+4. Öffnen Sie die Komponente **Daten importieren**. Power Automate wird auf einer neuen Registerkarte geöffnet. 
 
-5. Klicken Sie auf **Ausführen**, und klicken Sie dann auf **Flow ausführen**, wenn Sie dazu aufgefordert werden.
+5. Klicken Sie auf **Los geht's**, wenn ein Popupfenster eingeblendet wird. 
 
-6. Klicken Sie auf **Fertig**.
+6. Klicken Sie auf **Ausführen**, und klicken Sie dann auf **Flow ausführen**, wenn Sie dazu aufgefordert werden.
 
-7. Warten Sie, bis die Ausführung der Flow-Instanz abgeschlossen ist. Sie können die Tabelle **28-tägiger Ausführungsverlauf** aktualisieren, um zu sehen, wann der Flow ausgeführt wurde. Der Zweck dieses Flows bestand darin, Beispieldaten für die nächsten Labs zu generieren. In der nächsten Aufgabe werden Sie überprüfen, ob der Datenimport erfolgreich war. 
+7. Klicken Sie auf **Fertig**.
 
-## Aufgabe Nr. 3: Datenimport überprüfen
+8. Warten Sie, bis die Ausführung der Flow-Instanz abgeschlossen ist. Sie können die Tabelle **28-tägiger Ausführungsverlauf** aktualisieren, um zu sehen, wann der Flow ausgeführt wurde. 
+
+    > Der Zweck dieses Flows bestand darin, Beispieldaten für die nächsten Labs zu generieren. In der nächsten Aufgabe werden Sie überprüfen, ob der Datenimport erfolgreich war. 
+
+## Aufgabe Nr. 3: Datenimport überprüfen
 
 1. Navigieren Sie zurück zur vorherigen Power Apps-Registerkarte. Klicken Sie in dem Popupfenster auf **Fertig**. Wählen Sie in der linken Navigationsleiste **Lösungen** aus, und öffnen Sie Ihre **Campusverwaltung**-Lösung.
 
 2. Klicken Sie, um die Entität **Besuch** zu öffnen, und wählen Sie dann die Registerkarte **Daten** aus.
 
-3. Klicken Sie in der oberen rechten Ecke auf **Aktive Besuche**, um die Ansichtsauswahl einzublenden, und wählen Sie dann **Alle Felder** aus. Dadurch wird die Ansicht geändert, die zum Anzeigen der Besuchsdaten verwendet wird.
+3. Klicken Sie in der oberen rechten Ecke auf **Aktive Besuche**, um die Ansichtsauswahl einzublenden, und wählen Sie dann **Alle Felder** aus. Dadurch wird die Ansicht geändert, die zum Anzeigen der Besuchsdaten verwendet wird. 
+
+    > Wenn Sie aufgrund geringerer Auflösung **Aktive Besuche** nicht sehen, sollte an derselben Stelle ein Augensymbol angezeigt werden.
 
     > Wenn der Import erfolgreich war, sollte eine Liste der Besuchseinträge angezeigt werden.
 
-4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass in einem separaten Fenster das Gebäudeformular geöffnet wird. Schließen Sie dieses Fenster.
+4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass in einem separaten Fenster das Gebäudeformular geöffnet wird. 
 
-5. Klicken Sie auf einen beliebigen Wert in der Spalte **Besucher** (möglicherweise müssen Sie dazu nach rechts scrollen), und überzeugen Sie sich, dass in einem separaten Fenster das Kontaktformular geöffnet wird. Schließen Sie dieses Fenster.
+5. Schließen Sie das kürzlich gestartete Fenster.
+
+6. Klicken Sie auf einen beliebigen Wert in der Spalte **Besucher** (möglicherweise müssen Sie dazu nach rechts scrollen), und überzeugen Sie sich, dass in einem separaten Fenster das Kontaktformular geöffnet wird.
+
+7. Schließen Sie das kürzlich gestartete Fenster.
 
 # Herausforderungen
 

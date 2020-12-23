@@ -4,7 +4,7 @@ lab:
     module: 'Modul 3: Erste Schritte mit Power Apps'
 ---
 
-# Modul 3: Erste Schritte mit Power Apps
+# Modul 3: Erste Schritte mit Power Apps
 
 ## Lab: Entwerfen einer Canvas-App, Teil 1
 
@@ -40,21 +40,20 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 -   Ausgewählte Datensätze einschränken, um die App-Leistung und die Benutzereinführung zu verbessern
 
 
-Übung 1: Canvas-App für Mitarbeiter erstellen
-===============================
+# Übung Nr. 1: Canvas-App für Mitarbeiter erstellen
 
 **Ziel:** In dieser Übung erstellen Sie eine Canvas-App aus einer Vorlage und ändern sie dann so, dass sie die erforderlichen Daten enthält.
 
-## Aufgabe 1: Canvas-App erstellen
+## Aufgabe Nr. 1: Canvas-App erstellen
 
 In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlage, die auf Common Data Service basiert. Wenn Sie „Besuche“ als ausgewählte Entität aus Common Data Service nutzen, generiert die Vorlage die App „Katalog – Ansicht – Bearbeiten“, um Campusbesuche zu verwalten.
 
-1.  Öffnen Sie Ihre Campus Management-Lösung.
+1.  Öffnen Sie Ihre Campusverwaltung-Lösung.
 
     -   Anmelden bei <https://make.powerapps.com>
 
     -   Wählen Sie Ihre **Umgebung** oben rechts aus, falls sie noch nicht auf
-        Ihre Bellows College-Umgebung eingestellt ist.
+        Ihre Übungsumgebung eingestellt ist.
 
     -   Wählen Sie **Apps** aus.
 
@@ -66,13 +65,13 @@ In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlag
 
 3.  Wählen Sie die **Common Data Service**-Verbindung aus, und klicken Sie dann auf **Erstellen**.
 
-    -   Wählen Sie die Tabelle **Besuche** aus.
+4.  Wählen Sie die Tabelle **Besuche** aus.
 
-    -   Auf **Verbinden**klicken
+5.  Auf **Verbinden**klicken
 
-    -   Das Fenster **Willkommen bei Power Apps Studio** wird möglicherweise angezeigt. Klicken Sie auf **Überspringen**.
+6.  Das Fenster **Willkommen bei Power Apps Studio** wird möglicherweise angezeigt. Klicken Sie auf **Überspringen**.
 
-4.  Anwendung speichern
+7.  Anwendung speichern
 
     -   Klicken Sie auf **Datei > Speichern**.
 
@@ -80,13 +79,13 @@ In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlag
 
     -   Klicken Sie auf **Speichern**.
 
-## Aufgabe 2: Konfigurieren des Detailformulars für Besuche
+## Aufgabe Nr. 2: Konfigurieren des Detailformulars für Besuche
 
 In dieser Aufgabe konfigurieren Sie das Detailformular, um Informationen zu einzelnen Besuchsaufzeichnungen anzuzeigen.
 
-1.  Klicken Sie oben links auf den Pfeil „Zurück“, um zur App-Definition zurückzukehren.
+1.  Klicken Sie oben links auf den **Zurück**-Pfeil, um zur App-Definition zurückzukehren.
 
-2. Erweitern Sie **DetailScreen1** unter **Strukturansicht**.
+2. Erweitern Sie **DetailScreen1** unter **Strukturansicht**
 
 3.  **DetailForm1** auswählen
 
@@ -115,13 +114,13 @@ In dieser Aufgabe konfigurieren Sie das Detailformular, um Informationen zu einz
 8.  Ordnen Sie Felder im Bereich **Felder** neu an, indem Sie Feldnamen nach oben oder unten ziehen und ablegen. Empfohlene Bestellung ist:
     * Code, Name, Gebäude, Besucher, geplanter Start, geplantes Ende, tatsächlicher Start, tatsächliches Ende
     
-9.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Pfeil „Zurück“, um zur App zurückzukehren.
+9.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
-## Aufgabe 3: Konfigurieren Sie das Bearbeitungsformular für Besuche 
+## Aufgabe Nr. 3: Konfigurieren Sie das Bearbeitungsformular für Besuche 
 
 In dieser Aufgabe konfigurieren Sie ein Formular zum Bearbeiten von Informationen zu einzelnen Besuchsaufzeichnungen.
 
-1.  Erweitern Sie**EditScreen1** unter **Strukturansicht**.
+1.  Erweitern Sie **EditScreen1** unter **Strukturansicht**
 
 2.  **EditForm1** auswählen
 
@@ -151,9 +150,9 @@ In dieser Aufgabe konfigurieren Sie ein Formular zum Bearbeiten von Informatione
 
 ![Canvas-Bearbeitungsformular](media/2-canvas-edit-form.png)
 
-9.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Pfeil „Zurück“, um zur App zurückzukehren.
+9.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
-## Aufgabe 4: Konfigurieren Sie die Besuchsgalerie
+## Aufgabe Nr. 4: Konfigurieren Sie die Besuchsgalerie
 
 In dieser Aufgabe konfigurieren Sie den vorab generierten Katalog so, dass Titel, Start- und Enddatum für den Besuch angezeigt werden. 
 
@@ -161,7 +160,7 @@ In dieser Aufgabe konfigurieren Sie den vorab generierten Katalog so, dass Titel
 
 2.  **BrowseGallery1** auswählen
 
-3.  Wählen Sie im Bereich „Eigenschaft“ die Eigenschaft **TemplateSize** aus.
+3.  Wählen Sie rechts im Eigenschaftenpanel die Eigenschaft **TemplateSize** aus.
 
 4.  Ersetzen Sie den Ausdruck durch `Min (150, BrowseGallery1.Height - 60)`. Dadurch wird ausreichend Platz für zusätzliche Informationen garantiert.
 
@@ -169,23 +168,23 @@ In dieser Aufgabe konfigurieren Sie den vorab generierten Katalog so, dass Titel
 
 6.  Wählen Sie das Feld „Datum/Uhrzeit“ aus.
 
-7.  Ändern Sie in der Bearbeitungsleiste oben `ThisItem.'Created On'`in`ThisItem.'Scheduled Start'` um.
+7.  Ändern Sie in der Bearbeitungsleiste oben **ThisItem.'Created On'** in `ThisItem.'Scheduled Start'` um.
 
 8.  Wählen Sie das Feld erneut aus.
 
-9.  Drücken Sie `STRG+C` und dann `STRG+V`, um eine Kopie des Felds zu erstellen.
+9.  Drücken Sie **STRG+C** und dann **STRG+V**, um eine Kopie des Felds zu erstellen.
 
 10.  Bewegen Sie das kopierte Steuerelement mit der Maus oder der Tastatur nach unten, und richten Sie es an den anderen Steuerelementen im Katalog aus, unter dem anderen Feld „Datum/Uhrzeit“.
 
-11.  Ändern Sie in der Bearbeitungsleiste oben `ThisItem.'Scheduled Start'`in`ThisItem.'Scheduled End'` um.
+11.  Ändern Sie in der Bearbeitungsleiste oben **ThisItem.'Scheduled Start'** in `ThisItem.'Scheduled End'` um.
 
-12.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Pfeil „Zurück“, um zur App zurückzukehren.
+12.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
-## Aufgabe 5: Fügen Sie einen Datumsfilter hinzu.
+## Aufgabe Nr. 5: Fügen Sie einen Datumsfilter hinzu.
 
 Da die Anzahl der Besuche kontinuierlich zunimmt, benötigen Benutzer eine Funktion zum Filtern der Besuchergalerie. Beispielsweise möchte der Benutzer möglicherweise nur die zukünftigen Besuche sehen. In dieser Aufgabe können Sie Besuche erst nach einem vom Benutzer ausgewählten Datum anzeigen.
 
-1. Wählen Sie **BrowseScreen1** aus, um sicherzustellen, dass „BrowseGallery1“ deaktiviert ist.
+1. **BrowseScreen1** auswählen
 
 2. Wählen Sie oben das Menü **Einfügen** aus.
 
@@ -197,11 +196,11 @@ Da die Anzahl der Besuche kontinuierlich zunimmt, benötigen Benutzer eine Funkt
 
 6. Ändern Sie die Größe des Katalogsteuerelements, und verschieben Sie es so, dass es sich unter der Datumsauswahl befindet und den Bildschirm abdeckt. Klicken Sie dazu oben in der Mitte des Katalogsteuerelements auf das Symbol zum Ändern der Größe, und ändern Sie die Größe des Steuerelements, um nach der Datumsauswahl zu beginnen.
 
-7. Während **BrowseGallery1** noch ausgewählt ist, klicken Sie im Bereich „Eigenschaften“ auf die Registerkarte **Erweitert**.
+7. Während **BrowseGallery1** noch ausgewählt ist, klicken Sie im Eigenschaftenbereich auf die Registerkarte **Erweitert**.
 
 8. Suchen Sie die Eigenschaft **Items**, und klicken Sie in das Textfeld.
 
-8. Suchen Sie im Ausdruck nach `[@Visits]` und ersetzen Sie diese Zeichenfolge durch `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Der gesamte Ausdruck sollte wie folgt aussehen:
+9. Suchen Sie im Ausdruck nach **[@Visits]**, und ersetzen Sie diese Zeichenfolge durch `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Der komplette Ausdruck sollte wie folgt aussehen:
 
    ```
    SortByColumns(
@@ -218,22 +217,21 @@ Da die Anzahl der Besuche kontinuierlich zunimmt, benötigen Benutzer eine Funkt
    )
    ```
    
-   Ihr Bildschirm sollte ungefähr wie folgt aussehen:
+Ihr Bildschirm sollte ungefähr wie folgt aussehen:
 
 ![Canvasfilterkatalog](media/2-canvas-browse.png)
 
-9. Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Pfeil „Zurück“, um zur App zurückzukehren.
+10. Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
-# Übung 2: Fertigstellen der App
+# Übung Nr. 2: Fertigstellen der App
 
 In dieser Übung testen Sie die Anwendung und fügen sie bei Erfolg Ihrer Lösung hinzu.
 
-Aufgabe 1: App testen
---------------------------
+## Aufgabe Nr. 1: App testen
 
 1.  Starten Sie die Anwendung
 
-    -   Wählen Sie **BrowseScreen1** aus, und drücken Sie die **F5**-Taste, oder klicken Sie auf das Wiedergabesymbol in der oberen rechten Ecke, um eine Vorschau der App anzuzeigen.
+    -   Wählen Sie **BrowseScreen1** aus, und drücken Sie die **F5**-Taste, oder klicken Sie auf das **Wiedergabesymbol** in der oberen rechten Ecke, um eine Vorschau der App anzuzeigen.
     
     -   Die Anwendung sollte eine Liste der Besuche laden und anzeigen. 
     
@@ -241,7 +239,7 @@ Aufgabe 1: App testen
     
     -   Wählen Sie einen Besuch aus, und überprüfen Sie, ob das Anzeigeformular ordnungsgemäß funktioniert.
     
-    -   Kehren Sie zur Galerie zurück und drücken Sie +, um einen neuen Besuch zu erstellen. Überprüfen Sie, dass das Bearbeitungsformular die erforderlichen Felder enthält, einschließlich Besucher, Gebäude sowie geplante Start- und Enddaten.
+    -   Kehren Sie zum Katalog zurück, und drücken Sie **+**, um einen neuen Besuch zu erstellen. Überprüfen Sie, dass das Bearbeitungsformular die erforderlichen Felder enthält, einschließlich Besucher, Gebäude sowie geplante Start- und Enddaten.
     
     -   Geben Sie die Informationen an und senden Sie sie. Überprüfen Sie, dass der neue Datensatz in der Galerie angezeigt wird.
     
@@ -257,14 +255,13 @@ Aufgabe 1: App testen
 
     -   Klicken Sie auf **Diese Version veröffentlichen**.
 
-    -   Klicken Sie auf den Pfeil „Zurück“, um zur App zurückzukehren.
+    -   Klicken Sie auf den **Zurück**-Pfeil, um zur App zurückzukehren.
 
     -   Schließen Sie das Browserfenster oder die Registerkarte **Designer**.
 
     -   Klicken Sie auf **Beenden**, wenn Sie aufgefordert werden, das Browserfenster zu schließen.
 
-
-## Aufgabe 2: App zur Lösung hinzufügen und veröffentlichen 
+## Aufgabe Nr. 2: App zur Lösung hinzufügen und veröffentlichen 
 
 1. Öffnen Sie die Campus Management-Lösung.
 
@@ -274,7 +271,7 @@ Aufgabe 1: App testen
    
    * Wählen Sie **Lösungen** aus.
    
-   * Klicken Sie, um Ihre **Campus Management**-Lösung zu öffnen.
+   * Klicken Sie, um Ihre **Campusverwaltung**-Lösung zu öffnen.
    
 2. Wählen Sie **Vorhandene hinzufügen** aus, klicken Sie auf **App**, und klicken Sie dann auf **Canvas-App**.
 

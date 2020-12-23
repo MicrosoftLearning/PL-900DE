@@ -4,7 +4,7 @@ lab:
     module: 'Modul 0: Einführung in den Kurs'
 ---
 
-Modul 0: Einführung in den Kurs
+Modul 0: Einführung in den Kurs
 =================================
 
 ## Lab: Lab-Umgebung überprüfen
@@ -18,10 +18,11 @@ Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wob
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
-In diesem Modul-0-Lab werden Sie einen Power Platform-Testmandanten erhalten und auf das Power Platform Admin Center zugreifen. Im Admin Center werden wir eine individuelle Umgebung für die Konfiguration während des Kurses erstellen.
+In diesem Modul-0-Lab werden Sie einen Power Platform-Testmandanten erhalten und auf das Power Platform Admin Center zugreifen. Im Admin Center erstellen Sie dann Ihre **Übungsumgebung**, in der Sie den größten Teil Ihrer Lab-Arbeiten erledigen werden.
 
-Übung 1 – Erhalt Ihres Power Platform-Testmandanten 
-------------------------------------------
+## Übung 1 – Einrichtung
+
+### Aufgabe 1 – Beziehen Ihres Power Platform-Testmandanten
 
 1. Kopieren Sie Ihre **Microsoft 365-Anmeldeinformationen** vom autorisierten Lab-Hoster.
 
@@ -35,15 +36,9 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testmandanten erhalten und
 
 6. Wählen Sie **Ja** aus, um angemeldet zu bleiben.
 
+### Aufgabe 2 – Erstellen der Umgebung
 
-Übung 2 – Umgebung erstellen 
-------------------------------------------
-
-In dieser Übung erstellen Sie Ihre **Übungsumgebung**, in der Sie den größten Teil Ihrer Lab-Arbeiten erledigen werden.
-
-### Aufgabe 1 – Umgebung erstellen
-
-1.  Greifen Sie auf <https://admin.Powerplatform.microsoft.com> zu, und melden Sie sich mit Ihren Microsoft 365-Anmeldeinformationen an, falls Sie wieder dazu aufgefordert werden.
+1.  Greifen Sie auf <https://admin.powerplatform.microsoft.com> zu, und melden Sie sich mit Ihren Microsoft 365-Anmeldeinformationen an, falls Sie erneut dazu aufgefordert werden.
 
 2. Wählen Sie **Umgebungen** aus, und klicken Sie auf **+Neu**.
 
@@ -59,6 +54,30 @@ In dieser Übung erstellen Sie Ihre **Übungsumgebung**, in der Sie den größte
 
 3. Ihre **Übungsumgebung** sollte nun in der Liste der Umgebungen angezeigt werden. 
 
-4. Ihre Umgebung kann einige Minuten zur Bereitstellung benötigen. Falls erforderlich, aktualisieren Sie die Seite. Wenn Ihre Umgebung vorbereitet ist, wählen Sie Ihre **Übungsumgebung** aus, indem Sie auf die Schaltfläche mit den drei Punkten neben ihrem Namen klicken, um das Dropdownmenü zu erweitern, und wählen Sie **Einstellungen** aus. 
+    > Ihre Umgebung kann einige Minuten zur Bereitstellung benötigen. Falls erforderlich, aktualisieren Sie die Seite.
 
-5.  Erkunden Sie die verschiedenen Bereiche in **Einstellungen**, die Sie möglicherweise interessieren, aber nehmen Sie noch keine Änderungen vor. 
+# Übung Nr. 2: Ein Power Apps-Portal bereitstellen
+
+**Ziel:** Das Bereitstellen eines Power Apps-Portals kann einige Zeit dauern. In dieser Übung erstellen Sie Ihr Power Apps-Portal in Ihrer Umgebung, damit der Bereitstellungsprozess gestartet werden kann. Sie verwenden dieses Portal in einem späteren Lab.
+
+## Aufgabe Nr. 1: Erstellen des Power Apps-Portals
+
+1.  Anmelden bei <https://make.powerapps.com>
+
+2.  Wenn die oben rechts angezeigte **Umgebung** nicht Ihre Übungsumgebung ist, wählen Sie Ihre Umgebung aus.
+
+3.  Klicken Sie unter **Ihre eigene App erstellen** auf das Panel **Portal aus leerer Vorlage**
+
+    > Wenn diese Option nicht angezeigt wird, versuchen Sie, die Ansicht zu verkleinern.
+
+4.  Geben Sie neue Portaldetails an
+
+    -   Geben Sie **Bellows College-Besucher** als **Name** des Portals ein
+
+    -   Geben Sie eine eindeutige URL an; **etwas**.powerappsportals.com (wenn der Name bereits verwendet wird, wählen Sie einen anderen)
+
+    -   Wählen Sie eine **Sprache** für das Basisportal aus
+
+    -   Klicken Sie auf **Erstellen**.
+
+    > Der Portal-Bereitstellungsprozess dauert zwischen 30 und 45 Minuten. Sie müssen nicht warten, da dieser Vorgang fortgesetzt wird, während Sie mit dem nächsten Modul fortfahren.

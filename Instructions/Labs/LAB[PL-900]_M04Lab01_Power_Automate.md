@@ -7,8 +7,7 @@ lab:
 # Modul 4: Erste Schritte mit Power Automate
 ## Lab: Erstellen einer automatisierten Lösung
 
-Szenario
-========
+## Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesucher werden derzeit auf Papier erfasst. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
@@ -18,8 +17,7 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab erstellen Sie Power Automate-Flows, um verschiedene Aspekte der Campusverwaltung zu automatisieren. 
 
-Weiterführende Schritte des Lab
-======================
+# Weiterführende Schritte des Lab
 
 Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschließen.
 
@@ -28,24 +26,21 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ## Voraussetzungen
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
 * Beendigung von **Modul 2 Lab 1 – Einführung in Common Data Service**
 * Campusmitarbeiter-App, erstellt in **Modul 3, Lab 2 – Erstellen einer Canvas-App, Teil 2** (zum Testen)
 * John Doe-Kontakt, erstellt mit einer persönlichen E-Mail-Adresse in **Modul 3, Lab 4 – Erstellen einer modellgesteuerten App** (zum Testen)
 
-Vor dem Beginn zu beachtende Dinge
------------------------------------
+## Vor dem Beginn zu beachtende Dinge
 
 -   Welcher Verteilungsmechanismus ist für die Besuchercodes am besten geeignet?
 -   Wie können Überschreitungen gemessen und strenge Richtlinien durchgesetzt werden?
 
-Übung Nr. 1: Einen Besuchsbenachrichtigungsfluss erstellen
-===============================
+# Übung Nr. 1: Einen Besuchsbenachrichtigungsfluss erstellen
 
 **Ziel:** In dieser Übung erstellen Sie einen Power Automate-Flow, der die Anforderung implementiert. Dem Besucher sollte eine E-Mail gesendet werden, die den eindeutigen Code enthält, der dem Besuch zugewiesen ist.
 
-Aufgabe Nr. 1: Flow erstellen
----------------------------
+## Aufgabe Nr. 1: Flow erstellen
 
 1.  Öffnen Sie Ihre Campusverwaltung-Lösung.
 
@@ -69,7 +64,7 @@ Aufgabe Nr. 1: Flow erstellen
    
    * Wählen Sie im **Bereich** **Organisation** aus
    
-   * Klicken Sie im Triggerschritt auf die Schaltfläche mit den drei Punkten (**...**), und klicken Sie auf **Umbenennen**. Benennen Sie diesen Trigger in **„Wenn ein Besuch erstellt wird“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+   * Klicken Sie im Triggerschritt auf die Schaltfläche mit den Auslassungspunkten ([...]), und klicken Sie dann auf **Umbenennen**. Benennen Sie diesen Trigger in **„Wenn ein Besuch erstellt wird“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
 5.  Klicken Sie auf **Neuer Schritt**. Dieser Schritt ist erforderlich, um Besucherinformationen einschließlich der E-Mail-Adresse abzurufen.
 
@@ -81,7 +76,7 @@ Aufgabe Nr. 1: Flow erstellen
    
    * Fügen Sie im Feld **Element-ID** den Eintrag **Besucher (Wert)** aus der Liste für dynamische Inhalte aus.
    
-   * Klicken Sie bei dieser Aktion auf die Schaltfläche mit den drei Punkten (**...**), und klicken Sie auf **Umbenennen**. Benennen Sie diese Aktion in **„Den Besucher abrufen“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+   * Klicken Sie bei dieser Aktion auf die Schaltfläche mit den Auslassungspunkten ([...]), und klicken Sie dann auf **Umbenennen**. Benennen Sie diese Aktion in **„Den Besucher abrufen“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
 8. Klicken Sie auf **Neuer Schritt**. Dies ist der Schritt, in dem eine E-Mail erstellt und an den Besucher gesendet wird.
 
@@ -89,13 +84,13 @@ Aufgabe Nr. 1: Flow erstellen
 
    * Wenn Sie aufgefordert werden, die Nutzungsbedingungen für diese Aktion zu akzeptieren, klicken Sie auf **Akzeptieren**.
    
-   * Wählen Sie das Feld **An** aus, und wählen Sie **E-Mail** aus der Liste für dynamische Inhalte aus. Beachten Sie, dass sich diese unterhalb der grauen Kopfzeile **Den Besucher abrufen** befindet. Das bedeutet, dass Sie die E-Mail-Adresse auswählen, die zu dem Besucher gehört, den Sie im vorherigen Schritt nachgeschlagen haben. 
+   * Wählen Sie das Feld **An** aus, und wählen Sie **E-Mail** aus der Liste für dynamische Inhalte aus. Beachten Sie, dass sich diese unterhalb der Kopfzeile **Den Besucher abrufen** befindet. Das bedeutet, dass Sie die E-Mail-Adresse auswählen, die zu dem Besucher gehört, den Sie im vorherigen Schritt nachgeschlagen haben. 
 
    * Geben Sie **Ihr geplanter Besuch am Bellows College** in das Feld **Betreff** ein.
 
    * Geben Sie den folgenden Text in **E-Mail-Text** ein:  
         
-        > Dynamischer Inhalt muss dort platziert werden, wo Feldernamen in Klammern angegeben sind. Es wird empfohlen, zuerst den gesamten Text zu kopieren und einzufügen und dann dynamischen Inhalt an den richtigen Stellen hinzuzufügen.*
+        > Dynamischer Inhalt muss dort platziert werden, wo Feldernamen in Klammern angegeben sind. Es wird empfohlen, zuerst den gesamten Text zu kopieren und einzufügen und dann dynamischen Inhalt an den richtigen Stellen hinzuzufügen.
    
         ```
         Hallo {First Name},
@@ -118,8 +113,7 @@ Aufgabe Nr. 1: Flow erstellen
 
 ![Power Automate-Besucherbenachrichtigungs-Flow](media/4-power-automate-notify.png)
 
-Aufgabe Nr. 2: Flow überprüfen und aktivieren
---------------------------------
+## Aufgabe Nr. 2: Flow überprüfen und aktivieren
 
 1.  Öffnen Sie in Ihrem Browser eine neue Registerkarte, und navigieren Sie zu <https://make.powerapps.com>.
 
@@ -139,7 +133,7 @@ Aufgabe Nr. 2: Flow überprüfen und aktivieren
 
 9.  Wählen Sie als **Geplanter Start** und **Geplantes Ende** beliebige Zeitpunkte in der Zukunft aus.
 
-10.  Wählen Sie **Speichern** aus
+10.  Klicken Sie auf das **Häkchensymbol**, um den neuen Besuch zu speichern.
 
 11.  Navigieren Sie wieder zurück zur vorherigen Registerkarte mit dem Flow, der getestet werden soll. Beobachten Sie, wie der Flow ausgeführt wird. Beim Auftreten von Fehlern gehen Sie zurück, und vergleichen Sie Ihren Flow mit dem obigen Beispiel. Wenn die E-Mail erfolgreich gesendet wurde, erhalten Sie sie in Ihrem Posteingang. 
 
@@ -147,13 +141,15 @@ Aufgabe Nr. 2: Flow überprüfen und aktivieren
 
 13.  Beachten Sie, dass im Abschnitt **Details** der **Status** auf **Ein** gesetzt ist. Dies bedeutet, dass Ihr Flow immer dann ausgeführt wird, wenn ein neuer Besuch erstellt wird, bis Sie ihn deaktivieren. Jedes Mal, wenn der Flow ausgeführt wird, wird er der Liste **28-tägiger Ausführungsverlauf** hinzugefügt.
 
-14.  Schalten Sie den Flow aus, indem Sie auf der Befehlsleiste auf **Ausschalten** klicken.
+14.  Schalten Sie den Flow aus, indem Sie auf der Befehlsleiste auf **Ausschalten** klicken. Möglicherweise müssen Sie auf die Schaltfläche mit den Auslassungspunkten klicken (**...**), um diese Option zu sehen.
+
+15.  Schließen Sie dieses Fenster.
 
 # Übung Nr. 2: Erstellen eines Security Sweep-Flows
 
 **Ziel:** In dieser Übung erstellen Sie einen Power Automate-Flow, der die Anforderung implementiert. Alle 15 Minuten muss eine Sicherheitsprüfung durchgeführt werden. Sollte einer der Besucher seine geplante Aufenthaltszeit überschritten haben, ist die Sicherheit zu benachrichtigen.
 
-## Aufgabe Nr. 1: Einen Flow zum Abrufen von Datensätzen erstellen
+## Aufgabe Nr. 1: Einen Flow zum Abrufen von Datensätzen erstellen
 
 1. Öffnen Sie Ihre Campusverwaltung-Lösung.
 
@@ -184,14 +180,14 @@ Aufgabe Nr. 2: Flow überprüfen und aktivieren
    ```
    
    * Das bedeutet:
-       * `statecode eq 0` filtert aktive Besuche (wobei „Status“ gleich „Aktiv“ ist)
-       * `bc_actualstart ne null` beschränkt die Suche auf Besuche, bei denen „Tatsächlicher Start“ einen Wert hat, d. h. es wurde eingecheckt
-       * `bc_actualend eq null` beschränkt die Suche auf Besuche, bei denen kein Auschecken stattgefunden hat („Tatsächliches Ende“ hat keinen Wert) 
-       * `Microsoft.Dynamics.CRM.OlderThanXMinutes (PropertyName = 'bc_scheduledend', PropertyValue = 15)` beschränkt Besuche, die vor mehr als 15 Minuten abgeschlossen werden sollten.  
+       * **statecode eq 0** filtert aktive Besuche (wobei „Status“ gleich „Aktiv“ ist).
+       * **bc_actualstart ne null** beschränkt die Suche auf Besuche, bei denen „Tatsächlicher Beginn“ einen Wert hat, d. h. es wurde eingecheckt.
+       * **bc_actualend eq null** beschränkt die Suche auf Besuche, bei denen kein Auschecken stattgefunden hat („Tatsächliches Ende“ hat keinen Wert). 
+       * **Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)** beschränkt Besuche, die vor mehr als 15 Minuten abgeschlossen werden sollten.
 
-   * Klicken Sie bei dieser Aktion auf die Schaltfläche mit den drei Punkten (**...**), und klicken Sie auf **Umbenennen**. Benennen Sie diese Aktion in **„Aktive Besuche auflisten, die vor mehr als 15 Minuten geendet haben“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+   * Klicken Sie bei dieser Aktion auf die Schaltfläche mit den Auslassungspunkten (**...**), und klicken Sie dann auf **Umbenennen**. Benennen Sie diese Aktion in **„Aktive Besuche auflisten, die vor mehr als 15 Minuten geendet haben“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
-6.  Klicken Sie auf **Neuer Schritt**. Such Sie nach **Anwenden**, und wählen Sie Aktion **Auf jedes anwenden** aus. 
+6.  Klicken Sie auf **Neuer Schritt**. Such Sie nach *Anwenden*, und wählen Sie Aktion **Auf jedes anwenden** aus. 
 
 7.  Wählen Sie **Wert** aus Dynamics-Inhalt im Feld **Eine Ausgabe aus vorherigen Schritten auswählen** aus. Beachten Sie, dass sich dieser unter der grauen Kopfzeile **Aktive Besuche auflisten, die vor mehr als 15 Minuten geendet haben** befindet. Dies bedeutet, dass Sie die Liste der Besuche auswählen, die Sie im vorherigen Schritt nachgeschlagen haben. 
 
@@ -223,35 +219,39 @@ Aufgabe Nr. 2: Flow überprüfen und aktivieren
     
     * Klicken Sie auf **...** neben **Einen Datensatz abrufen**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **Besucher abrufen** ein.
     
-11.  Fügen Sie die Aktion **Eine E-Mail-Benachrichtigung senden** aus der **Mail**-Verbindung hinzu, und bleiben Sie dabei innerhalb der Schleife **Auf jedes anwenden**.
+11.  Senden Sie eine E-Mail-Benachrichtigung.
+
+     * Klicken Sie auf **Eine Aktion hinzufügen** innerhalb der Schleife „Auf jedes anwenden“. Fügen Sie die Aktion **E-Mail-Benachrichtigung senden** aus **Mail**verbindung hinzu.
 
 12.  Ihre E-Mail-Adresse als **An** eingeben
 
-13.  Geben Sie Folgendes in das Feld **Betreff** ein. **Besucher (Wert)** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
+13.  Geben Sie Folgendes in das Feld **Betreff** ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
 
-       ```
-         {Full Name} hat seine/ihre Aufenthaltszeit überschritten
-       ```
+   ```
+   {Full Name} hat seine/ihre Aufenthaltszeit überschritten
+   ```
    
 14.  Geben Sie Folgendes in das Feld **Text** ein. **Name** ist ein dynamischer Inhalt aus dem Schritt **Gebäude abrufen**.
 
-       ```
-         Im Gebäude {Name} hat jemand seine Zeit überschritten.
+   ```
+   Im Gebäude {Name} hat jemand seine Zeit überschritten.
          
-         Beste Grüße
+   Beste Grüße
          
-         Campus-Sicherheit
-       ```
+   Campus-Sicherheit
+   ```
 
 17.  Wählen Sie den Flow-Namen **Ohne Titel** in der oberen linken Ecke aus, und benennen Sie ihn in **Sicherheitsüberprüfung** um.
 
-18. Wählen Sie **Speichern** aus
+18.  Wählen Sie **Speichern** aus
 
     Ihr Flow sollte in etwa wie folgt aussehen:
 
 ![Sicherheitsüberprüfung, geplanter Flow, Teil 1](media/4-power-automate-security-sweep.png)
 
-## Aufgabe Nr. 2: Flow überprüfen und aktivieren
+## Aufgabe Nr. 2: Flow überprüfen und aktivieren
+
+Ihr Flow beginnt, Ihnen E-Mails zu senden (an die E-Mail-Adresse, die Sie bei der Erstellung des Kontakts „Bernhard Schmid“ zuvor angegeben haben), wenn es Besuche gibt, die den im Flow festgelegten Anforderungen entsprechen.
 
 1. Überprüfen Sie, ob Sie Datensätze zu Besuchen haben, für die Folgendes gilt:
 
@@ -261,7 +261,7 @@ Aufgabe Nr. 2: Flow überprüfen und aktivieren
    
    3. Wert für „Tatsächlicher Start“
    
-         >**Hinweis**: Navigieren Sie zum Anzeigen dieser Daten auf einer neuen Registerkarte zu <make.powerapps.com>. Klicken Sie im linken Bereich auf „Lösungen“, um Ihre Lösung zu finden. Wählen Sie die Entität „Besuch“ aus, und wählen Sie dann die Registerkarte „Daten“ aus. Klicken Sie oben rechts auf „Aktive Besuche“, um die Ansichtsauswahl anzuzeigen, und wählen Sie dann „Alle Felder“ aus.
+   > **Hinweis**: Navigieren Sie zum Anzeigen dieser Daten auf einer neuen Registerkarte zu „make.powerapps.com“. Klicken Sie im linken Bereich auf „Lösungen“, um Ihre Lösung zu finden. Wählen Sie die Entität „Besuch“ aus, und wählen Sie dann die Registerkarte „Daten“ aus. Klicken Sie oben rechts auf „Aktive Besuche“, um die Ansichtsauswahl anzuzeigen, und wählen Sie dann „Alle Felder“ aus.
    
 2. Navigieren Sie zu Ihrer Lösung, und suchen Sie den Flow **Sicherheitsüberprüfung**. Klicken Sie auf **...**, und klicken Sie dann auf **Bearbeiten**.
 

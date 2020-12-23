@@ -4,7 +4,7 @@ lab:
     module: 'Modul 6: Einführung in Power Virtual Agents'
 ---
 
-# Modul 6: Einführung in Power Virtual Agents
+# Modul 6: Einführung in Power Virtual Agents
 ## Lab: So erstellen Sie einen grundlegenden Chatbot
 
 # Szenario
@@ -57,7 +57,7 @@ In dieser Übung registrieren Sie sich für die Testversion von Power Virtual Ag
 
 5. Geben Sie **Krisenbot** als **Name** ein, und wählen Sie eine Sprache aus.
 
-6. Wählen Sie Ihre Übungsumgebung aus, um den Bot zu erstellen, und klicken Sie auf **Erstellen**. Warten Sie, bis der Bot erstellt ist.
+6. Wählen Sie Ihre Übungsumgebung aus, um den Bot zu erstellen, und klicken Sie auf **Erstellen**. Warten Sie, bis der Bot erstellt ist. Klicken Sie auf **Bot erkunden**, wenn Sie dazu aufgefordert werden.
 
 7. Testen Sie den Bot. Geben Sie **Hallo** in das Meldungsfeld ein, und klicken Sie auf **Senden**. Der Bot sollte Sie begrüßen und Ihnen sagen, was er tun kann.
 
@@ -65,7 +65,7 @@ In dieser Übung registrieren Sie sich für die Testversion von Power Virtual Ag
 
 9. Wählen Sie **Themen** aus. Der Bot enthält einige Beispielbenutzerthemen und Systemthemen. Die Standardbegrüßung stammte aus den Systemthemen.
 
-10. In der nächsten Übung generieren Sie Ihre eigenen Themen aus der CDC-FAQ-Website. Navigieren Sie nicht von diesem Browserfenster weg.
+> In der nächsten Übung generieren Sie Ihre eigenen Themen aus der CDC-FAQ-Website. Navigieren Sie nicht von diesem Browserfenster weg.
 
 # Übung Nr. 2: Themen erstellen
 
@@ -85,35 +85,37 @@ In dieser Übung generieren Sie Themen von der CDC-FAQ-Website.
 
 7.  Klicken Sie auf **Start**, und warten Sie. Dies kann einige Minuten dauern.
 
-8.  Es sollten einige vorgeschlagene Themen für Sie erstellt werden.
+8.  Es sollten einige vorgeschlagene Themen für Sie erstellt werden. Klicken Sie, um eines der vorgeschlagenen Themen zu öffnen.
 
-9.  Klicken Sie, um eines der vorgeschlagenen Themen zu öffnen.
-
-10. Sie sollten die Triggerbegriffe und die Antwort des Bots sehen. **Klicken Sie auf „Zu Themen hinzufügen“.**
+9. Sie sollten die Triggerbegriffe und die Antwort des Bots sehen. **Klicken Sie auf „Zu Themen hinzufügen“.**
     
-11. Das vorgeschlagene Thema sollte zu Ihren Themen hinzugefügt werden. Wählen Sie alle vorgeschlagenen Themen aus, und klicken Sie auf **Zu Themen hinzufügen** (mithilfe des Symbols links neben der Spalte „Name“ können Sie alle auswählen). Wenn Sie eine Fehlermeldung erhalten, versuchen Sie es erneut.
+10. Das vorgeschlagene Thema sollte zu Ihren Themen hinzugefügt werden. Wählen Sie alle vorgeschlagenen Themen aus, und klicken Sie auf **Zu Themen hinzufügen**. 
 
-12. Wenn die vorgeschlagenen Themen hinzugefügt wurden, wählen Sie die Registerkarte **Vorhandene** aus. Sie sollten die neuen Themen mit dem Status „Aus“ sehen.
+    > Sie können mithilfe des Symbols links neben der Spalte „Name“ alle Themen auswählen. Wenn Sie eine Fehlermeldung erhalten, versuchen Sie es erneut.
 
-13. Klicken Sie auf die Umschaltfläche der Spalte **Status**, um sie alle auf **Ein** zu schalten. Wenn Sie wenig Zeit haben, können Sie die ersten zehn einschalten, aber stellen Sie sicher, dass Sie  „**Sollte ich eine Maske tragen?**“ auf **Ein** geschaltet haben.
+11. Wenn die vorgeschlagenen Themen hinzugefügt wurden, wählen Sie die Registerkarte **Vorhandene** aus. Sie sollten die neuen Themen mit dem Status „Aus“ sehen.
 
-14. Navigieren Sie nicht von diesem Browserfenster weg.
+12. Verwenden Sie die Umschaltfläche in der Spalte **Status**, um einige der Themen auf **Ein** umzuschalten. 
+
+13. Notieren Sie sich die Triggerphrase für eines der Themen, die Sie aktiviert haben, damit Sie später damit testen können.
+
+> Navigieren Sie nicht von diesem Browserfenster weg.
 
 # Übung Nr. 3: Themen testen
 
 In dieser Aufgabe testen Sie die Themen, die Sie hinzugefügt haben.
 
-1.  Klicken Sie auf **Ihren Bot testen**.
+1.  Klicken Sie unten links auf **Ihren Bot testen**.
 
 2.  Klicken Sie auf **Zurücksetzen**.
 
-3.  Geben Sie **Sollte ich eine Maske tragen?** ein, und klicken Sie auf **Senden**.
+3.  Geben Sie die Triggerphrase ein, die Sie in der vorherigen Aufgabe aufgezeichnet haben, und klicken Sie auf **Senden**.
 
 4.  Der Bot sollte Ihnen die richtigen Informationen liefern und fragen, ob er Ihre Frage beantwortet hat. Klicken Sie auf **Ja**.
 
 5.  Der Bot sollte Sie nach Ihrer Bewertung, wie er funktioniert hat, fragen. Geben Sie ihm eine hervorragende Bewertung.
 
-6.  Der Bot sollte fragen, ob er Ihnen noch anderweitig helfen kann. Klicken Sie auf **Nein**.
+6.  Der Bot sollte fragen, ob er Ihnen noch anderweitig helfen kann. Klicken Sie auf **Nein, danke**.
 
 7.  Der Bot sollte die Chatsitzung beenden.
 
@@ -129,11 +131,11 @@ In dieser Aufgabe ändern Sie die Begrüßung in eine COVID-19-spezifische Begr�
 
 2.  Reduzieren Sie den Abschnitt **Benutzerthemen**.
 
-3.  Klicken Sie, um das Thema **Begrüßung** der Systemthemen zu öffnen.
+3.  Klicken Sie, um das Thema **Begrüßung** der Systemthemen zu öffnen. Sie können im Suchfeld auch die Option **Bestehende Themen suchen** verwenden.
 
 4.  Das Begrüßungsthema enthält 52 Triggerbegriffe. Klicken Sie auf **Zum Dokumenterstellungsbereich**.
 
-5.  Gehen Sie zur ersten Nachricht, und ersetzen Sie sie durch **Hallo, ich bin ein virtueller Agent. Ich kann Ihnen sagen, wie sich COVID-19 verbreitet, wie Sie sich schützen, wie Sie Ihr Zuhause und Ihre Familie auf COVID-19 vorbereiten, Symptome, Tests und vieles mehr.**
+5.  Navigieren Sie zur ersten Nachricht, und ersetzen Sie sie durch `Hallo, ich bin ein virtueller Agent. Ich kann Ihnen sagen, wie sich COVID-19 verbreitet, wie Sie sich schützen, wie Sie Ihr Zuhause und Ihre Familie auf COVID-19 vorbereiten, Symptome, Tests und vieles mehr.`
 
 6.  Klicken Sie auf **Speichern**.
 
@@ -157,19 +159,28 @@ In dieser Übung veröffentlichen Sie den Bot.
 
 5.  Sie erhalten eine Liste der verfügbaren Kanäle, auf denen Sie Ihren Bot veröffentlichen können. Wählen Sie **Demo-Website** aus.
 
-6.  Ändern Sie die Begrüßungsnachricht in **Probieren Sie meinen COVID-19 FAQ-Bot aus**.
+6.  Ändern Sie die Begrüßungsnachricht in `Probieren Sie meinen COVID-19 FAQ-Bot aus` um.
 
-7.  Geben Sie als Unterhaltungsstarter „Wer hat ein erhöhtes Risiko für eine schwere Erkrankung durch COVID-19?“, „Was bedeutet eine schwerere Erkrankung?“ und „Was unternimmt CDC gegen COVID-19?“ ein, und klicken Sie auf **Speichern**.
+7.  Geben Sie Folgendes in **Gesprächsstarter** ein:
+    ```
+     „Wer unterliegt einem höheren Risiko für schwere Erkrankungen durch COVID-19?“
+     „Was bedeutet schwerere Erkrankung“
+     „Was unternimmt die CDC gegen COVID-19?“
+    ```
+    
+8.  Klicken Sie auf **Speichern**.
 
-8.  Kopieren Sie die **URL**.
+9.  Kopieren Sie die **URL**.
 
-9.  Sie können die URL mit Ihren Kollegen teilen und Feedback von ihnen erhalten. Starten Sie ein neues Browserfenster oder eine neue Registerkarte, und navigieren Sie zu der URL, die Sie kopiert haben. Die Demo-Website sollte der nachfolgenden Abbildung ähneln.
+> Sie können die URL mit Ihren Kollegen teilen und Feedback von ihnen erhalten. 
 
-10. Fangen Sie an, mit dem Bot zu chatten.  
+10.  Starten Sie ein neues Browserfenster oder eine neue Registerkarte, und navigieren Sie zu der URL, die Sie kopiert haben. Die Demo-Website sollte der nachfolgenden Abbildung ähneln.
+
+11. Fangen Sie an, mit dem Bot zu chatten.  
     
 Wenn Sie fertig sind, sollte Ihr veröffentlichter Bot ungefähr so aussehen:
 
 ![Bot-Demowebsite – Screenshot](./media/8-image1.png)
 
 # Herausforderungen 
-* Betten Sie Ihren Chatbot in Ihr Bellows College-Besucherportal ein (weitere Informationen dazu finden Sie unter **Bot zu Power Apps hinzufügen** [hier](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).)
+* Betten Sie Ihren Chatbot in Ihr Bellows College-Besucherportal ein (weitere Informationen dazu finden Sie unter **Bot zu Power Apps hinzufügen** [hier](https://docs.microsoft.com/de-de/power-virtual-agents/publication-connect-bot-to-web-channels).)

@@ -4,7 +4,7 @@ lab:
     module: 'Modul 3: Erste Schritte mit Power Apps'
 ---
 
-# Modul 3: Erste Schritte mit Power Apps
+# Modul 3: Erste Schritte mit Power Apps
 
 ## Lab 4: Erstellen eines Power Apps-Portals
 
@@ -26,88 +26,56 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
 ## Voraussetzungen
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
 * Beendigung von **Modul 2 Lab 1 – Einführung in Common Data Service**
 
 ## Vor dem Beginn zu beachtende Dinge
 
-* Power Apps-Portale-Apps werden immer anhand einer Vorlage anstelle einer leeren Anwendung gestartet. Wenn Sie ein Portal bereitstellen, enthält es bereits Seiten, Menüs und ein Standarddesign.
+* Power Apps-Portale-Apps werden immer anhand einer Vorlage anstelle einer leeren Anwendung gestartet. Ihr Portal sollte in Modul 0 – Lab 0 erstellt worden sein. Wenn Sie ein Portal bereitstellen, enthält es bereits Seiten, Menüs und ein Standarddesign. 
 
-# Übung Nr. 1: Ein Power Apps-Portal bereitstellen
-
-**Ziel:** In dieser Übung stellen Sie ein Power Apps-Portal in Ihrer Umgebung bereit, auf das überall im World Wide Web zugegriffen werden kann.
-
-## Aufgabe Nr. 1: Power Apps-Portal bereitstellen
-
-1.  Erstellen Sie eine neue Portal-App.
-
-    -   Anmelden bei <https://make.powerapps.com>
-
-    -   Wenn die oben rechts angezeigte **Umgebung** nicht Ihre Übungsumgebung ist, wählen Sie Ihre Umgebung aus.
-
-    -   Klicken Sie unter **Ihre eigene App erstellen** auf das Panel **Portal aus leerer Vorlage**
-
-2.  Geben Sie neue Portaldetails an
-
-    -   Geben Sie **Bellows College-Besucher** als **Name** des Portals ein
-
-    -   Geben Sie eine eindeutige URL an; **etwas**.powerappsportals.com (wenn der Name bereits verwendet wird, wählen Sie einen anderen)
-
-    -   Wählen Sie eine **Sprache** für das Basisportal aus
-
-    -   Klicken Sie auf **Erstellen**.
-
-3. Der Portal-Bereitstellungsprozess dauert zwischen 30 und 45 Minuten.  Bitte haben Sie Geduld.
-
-Aufgabe Nr. 2: Navigieren Sie zum Portal
---------------------------------
-
-1.  Sie erhalten eine Benachrichtigung in<https://make.powerapps.com>, wenn das Portal bereitgestellt wurde
-
-2.  Öffnen Sie das neue Portal
-
-    -   Klicken Sie auf **Apps**
-
-    -   Suchen Sie die App mit dem **Typ** **Portal**
-
-    -   Klicken Sie auf den Namen der App
-
-3.  Sie sollten auf eine Portal-Website mit der Angebotsseite und mit einer Begrüßungsnachricht weitergeleitet werden
-
-Übung Nr. 2: Eine Portal-Webseite erstellen
-===============================
+# Übung Nr. 1: Eine Portal-Webseite erstellen
 
 **Ziel:** In dieser Übung erstellen Sie eine neue Webseite, auf der statische Inhalte sowie eine Liste der Gebäude aus Common Data Service angezeigt werden.
 
-Aufgabe Nr. 1: Eine Webseite erstellen
---------------------------------
+## Aufgabe Nr. 1: Navigieren Sie zum Portal
+
+1.  Navigieren Sie zu <https://make.powerapps.com>.
+
+2.  Klicken Sie auf **Apps**
+
+3.  Suchen Sie die App mit dem **Typ** **Portal**
+
+4.  Klicken Sie auf den Namen der App, um das Portal zu öffnen.
+
+    > Sie sollten auf Ihre Portalwebsite mit der Angebotsseite und einer Begrüßungsnachricht weitergeleitet werden.
+
+## Aufgabe Nr. 2: Eine Webseite erstellen
 
 1.  Öffnen Sie Power Apps-Portale Studio
 
     -   Melden Sie sich bei <https://make.powerapps.com> an (möglicherweise ist dies noch auf Ihren Registerkarten geöffnet)
 
+    -   Wählen Sie **Apps** aus.
+    
     -   Suchen Sie die App mit dem **Typ** **Portal**
 
-    -   Klicken Sie auf die Schaltfläche mit den drei Punkten (**...**), und wählen Sie **Bearbeiten** aus
+    -   Klicken Sie auf die Schaltfläche mit den Auslassungspunkten (**...**) rechts neben dem Namen der Portal-App, und wählen Sie **Bearbeiten** aus.
 
-2.  Sie befinden sich jetzt in Power Apps-Portale Studio. Hier können Sie Portalinhalte ändern und erstellen.
+Sie befinden sich jetzt in Power Apps-Portale Studio. Hier können Sie Portalinhalte ändern und erstellen.
 
-3.  Erstellen Sie eine neue Seite
+2.  Erstellen Sie eine neue Seite
 
     -   Wählen Sie auf der Befehlsleiste **Neue Seite** aus
 
     -   Zeigen Sie auf **Feste Layouts**, und wählen Sie **Seite mit Titel** aus
 
-4.  Ändern Sie die Seiteneigenschaften
+3.  Ändern Sie im Eigenschaftenbereich unter **Anzeige** den **Namen** von **Neue Seite (1)** in `Gebäudeverzeichnis` um.
 
-    -   Im Eigenschaftenbereich unter **Anzeige** ändern Sie den **Namen** von **Neue Seite (1)** in **Gebäudeverzeichnis** und drücken die Tabulatortaste (um das automatische Speichern zu starten)
+4.  Ändern Sie den Wert in der **Teil-URL** in `gebäudeverzeichnis` um, und drücken Sie die TAB-TASTE (um den automatischen Speichervorgang zu starten).
 
-    -   Der Titel der Seite sollte jetzt **Gebäudeverzeichnis** lauten
-
-    -   In der **Teil-URL** ändern Sie den Wert in **Gebäudeverzeichnis** und drücken die Tabulatortaste (um das automatische Speichern zu starten)
-
-Aufgabe Nr. 2: Statischen Inhalt hinzufügen
---------------------------------
+    > Der Titel der Seite sollte jetzt **Gebäudeverzeichnis** lauten
+    
+## Aufgabe Nr. 3: Statischen Inhalt hinzufügen
 
 1.  Fügen Sie der Webseite einen neuen Abschnitt hinzu
 
@@ -141,14 +109,15 @@ Aufgabe Nr. 2: Statischen Inhalt hinzufügen
 
     -   Klicken Sie im Eigenschaftenbereich auf **Ein Bild auswählen**. Suchen Sie und wählen Sie **Produkt A.png**
     
-    -   Klicken Sie im Eigenschaftenbereich auf die Dropdownliste des Formatierungsabschnitts, und ändern Sie die **Breite** in 70 % (geben Sie unbedingt % ein). Sie können verschiedene Bildgrößen ausprobieren, bis alles wunschgemäß aussieht.
+    -   Klicken Sie im Eigenschaftenbereich auf die Dropdownliste des Abschnitts **Formatierung**, und ändern Sie die **Breite** in 70 % (geben Sie unbedingt „%“ ein). Sie können verschiedene Bildgrößen ausprobieren, bis alles wunschgemäß aussieht.
 
-4.  Klicken Sie auf **Website durchsuchen** um die Seite, wie sie jetzt ist, anzuzeigen.  Beachten Sie, dass die Option **Gebäudeverzeichnis** im Hauptmenü verfügbar ist.
+4.  Klicken Sie auf **Website durchsuchen** um die Seite, wie sie jetzt ist, anzuzeigen.  Beachten Sie, dass die Option **Gebäudeverzeichnis** jetzt im Hauptmenü verfügbar ist.
 
-Aufgabe Nr. 3: Eine Listenkomponente hinzufügen
---------------------------------
+    > Möglicherweise müssen Sie Ihren Browser für die Zulassung von Popups konfigurieren.
 
-1.  Öffnen Sie Power Apps-Portale Studio
+## Aufgabe Nr. 4: Eine Listenkomponente hinzufügen
+
+1.  Navigieren Sie zur vorherigen Registerkarte, und fahren Sie mit Schritt 2 fort. Falls nicht verfügbar, führen Sie die folgenden Schritte aus, um zu diesem Speicherort zurückkehren.
 
     -   Melden Sie sich bei <https://make.powerapps.com> an (möglicherweise ist dies noch auf Ihren Registerkarten geöffnet)
 
@@ -156,13 +125,11 @@ Aufgabe Nr. 3: Eine Listenkomponente hinzufügen
 
     -   Klicken Sie auf die Schaltfläche mit den drei Punkten (**...**), und wählen Sie **Bearbeiten** aus
     
-2.  Bearbeiten Sie die vorhandene Seite, die Sie zuvor erstellt haben
-
     -   Wählen Sie auf dem Toolbelt (linke Seite) die Option **Seiten** 
 
     -   Suchen und wählen Sie die Seite **Gebäudeverzeichnis**, die Sie zuvor erstellt haben
     
-3.  Fügen Sie eine Listenkomponente hinzu
+2.  Fügen Sie der Seite „Gebäudeverzeichnis“ eine Listenkomponente hinzu.
 
     -   Wählen Sie auf dem Toolbelt (linke Seite) das Symbol **Komponenten** aus
 
@@ -174,29 +141,29 @@ Aufgabe Nr. 3: Eine Listenkomponente hinzufügen
 
     -   Wählen Sie aus dem Bereich **Portalkomponenten** die Option **Liste** aus (eine Listenkomponente wird im neuen Abschnitt angezeigt)
     
-4.  Konfigurieren Sie die Listenkomponente
+3.  Konfigurieren Sie die Listenkomponente
 
     -   Wählen Sie die Listenkomponente auf der Canvas aus
 
-    -   Geben Sie im Eigenschaftenbereich (rechte Seite) im Feld **Name** die Zeichenfolge **Gebäudeliste** ein
+    -   Geben Sie im Eigenschaftenbereich (rechte Seite) im Feld **Name** die Zeichenfolge `Gebäudeliste` ein.
 
-    -   Wählen Sie aus der Dropdownliste im Feld **Entität** die Option **Gebäude** aus
+    -   Wählen Sie aus der Dropdownliste im Feld **Entität** die Option **Gebäude (bc_building)** aus.
 
     -   In **Ansichten** wählen Sie **Aktive Gebäude** aus
 
     -   Behalten Sie die verbleibenden Standardeinstellungen bei
     
-5.  Klicken Sie auf **Website durchsuchen**, um die Seite anzuzeigen. Die Liste der Gebäude aus dem Common Data Service sollte auf der Webseite angezeigt werden.
+4.  Klicken Sie auf **Website durchsuchen**, um die Seite anzuzeigen. 
 
-Übung Nr. 3: Das Portaldesign ändern
-===============================
+    > Die Liste der Gebäude aus dem Common Data Service sollte auf der Webseite angezeigt werden.
+
+# Übung Nr. 2: Das Portaldesign ändern
 
 **Ziel:** In dieser Übung erstellen Sie ein neues Design, das das Farbschema Ihres Portals ändert. 
 
-Aufgabe Nr. 1: Design anwenden und bearbeiten
---------------------------------
+## Aufgabe Nr. 1: Design anwenden und bearbeiten
 
-1.  Öffnen Sie Power Apps-Portale Studio
+1.  Navigieren Sie zur vorherigen Registerkarte, und fahren Sie mit Schritt 2 fort. Falls nicht verfügbar, führen Sie die folgenden Schritte aus, um zu diesem Speicherort zurückkehren.
 
     -   Melden Sie sich bei <https://make.powerapps.com> an (möglicherweise ist dies noch auf Ihren Registerkarten geöffnet)
 
@@ -206,7 +173,7 @@ Aufgabe Nr. 1: Design anwenden und bearbeiten
     
 2.  Wenden Sie ein Basisdesign an, und passen Sie es an
 
-    -   Wählen Sie auf dem Toolbelt (linke Seite) das Symbol **Komponenten** aus
+    -   Wählen Sie in der Werkzeugleiste (linke Seite) das Symbol **Designs** aus.
     
     -   Klicken Sie auf den Schalter für **Basisdesign aktivieren**, um diese Funktion einzuschalten.
     
@@ -218,10 +185,7 @@ Aufgabe Nr. 1: Design anwenden und bearbeiten
     
     -   Benennen Sie Ihr Design um
     
-3.  Änderungen speichern
-
-    -   Klicken Sie auf der Befehlsleiste auf **Synchronisierungskonfiguration**
-
+3.  Klicken Sie auf der Befehlsleiste auf **Synchronisierungskonfiguration**
 
 Ihr App-Layout sollte etwa die folgende Struktur aufweisen:
 
@@ -232,5 +196,5 @@ Ihr App-Layout sollte etwa die folgende Struktur aufweisen:
 * Erstellen Sie eine andere Ansicht von „Gebäude“, in der nur der Gebäudename angezeigt wird. Sie müssen in Portal Studio **Website durchsuchen** auswählen, um die Änderungen anzuzeigen.
 * Klicken Sie im Toolbelt auf das Symbol **Designs**, und bearbeiten Sie das CSS Ihres benutzerdefinierten Designs.
 * Erstellen Sie eine Seite mit der Komponente **Formular**, und ändern Sie eine Komponente **Liste**, um mit dem Formular Common Data Service-Datensätze hinzuzufügen oder zu bearbeiten.
-* Aktivieren Sie **Entitätsberechtigungen** für die **Einstellungen** einer Komponente **Liste**. Was geschieht mit den Daten?
+* Aktivieren Sie **Entitätsberechtigungen** für die ** Einstellungen** einer Komponente **Liste**. Was geschieht mit den Daten?
 * Wählen Sie in Portal Studio das Quellcode-Editor-Symbol `</>` aus, um die Seitenquelle anzuzeigen. Wenn Sie mit HTML vertraut sind, nehmen Sie einige Änderungen vor, und zeigen die Ergebnisse an.
