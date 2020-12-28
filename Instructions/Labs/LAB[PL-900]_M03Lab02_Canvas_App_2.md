@@ -176,7 +176,7 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
    
    * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in „`Einchecken`“ (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
-   * Klicken Sie neben dem Schaltflächennamen in einer Strukturansicht (Button1) auf [...], wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `CheckInButton`
+   * Klicken Sie neben dem Schaltflächennamen in einer Strukturansicht (Button1) auf **...**, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `CheckInButton`
 
 3. Fügen Sie die Schaltfläche „Auschecken“ hinzu.   
 
@@ -184,7 +184,7 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
    
    * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in „`Auschecken`“ (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
-   * Benennen Sie die Schaltfläche in `Auscheckschaltläche` um
+   * Benennen Sie die Schaltfläche in `CheckOutButton` um
    
    * Positionieren Sie die Schaltflächen unter dem Suchfeld, wobei Sie **Einchecken** über **Auschecken** positionieren. 
    

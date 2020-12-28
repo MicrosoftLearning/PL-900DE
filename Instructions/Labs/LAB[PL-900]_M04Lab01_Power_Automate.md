@@ -93,16 +93,16 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
         > Dynamischer Inhalt muss dort platziert werden, wo Feldernamen in Klammern angegeben sind. Es wird empfohlen, zuerst den gesamten Text zu kopieren und einzufügen und dann dynamischen Inhalt an den richtigen Stellen hinzuzufügen.
    
         ```
-        Hallo {First Name},
+        Dear {First Name},
 
-        für Ihren Besuch auf dem Bellows Campus wurde der Zeitraum von {Scheduled Start} bis {Scheduled End} vermerkt.
+        You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-        Ihr Sicherheitscode lautet {Code}. Bitte geben Sie ihn nicht weiter! Sie müssen diesen Code während Ihres Besuchs erzeugen.
+        Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
 
-        Mit freundlichen Grüßen
+        Best regards,
 
-        Campusverwaltung
-        Bellows College
+        Campus Administration
+        Bellows College
         ```
    
 10.  Wählen Sie oben den Flow-Namen **Ohne Titel** aus, und benennen Sie ihn in `Besuchsbenachrichtigung` um.
@@ -228,17 +228,17 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 13.  Geben Sie Folgendes in das Feld **Betreff** ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
 
    ```
-   {Full Name} hat seine/ihre Aufenthaltszeit überschritten
+   {Full Name} overstayed their welcome
    ```
    
 14.  Geben Sie Folgendes in das Feld **Text** ein. **Name** ist ein dynamischer Inhalt aus dem Schritt **Gebäude abrufen**.
 
    ```
-   Im Gebäude {Name} hat jemand seine Zeit überschritten.
+   There is an overstay in building {Name}
          
-   Beste Grüße
+   Best,
          
-   Campus-Sicherheit
+   Campus Security
    ```
 
 17.  Wählen Sie den Flow-Namen **Ohne Titel** in der oberen linken Ecke aus, und benennen Sie ihn in **Sicherheitsüberprüfung** um.
