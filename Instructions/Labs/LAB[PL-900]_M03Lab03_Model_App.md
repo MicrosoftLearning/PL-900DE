@@ -227,15 +227,15 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
      
 11.  Klicken Sie auf **Überprüfen**, um die in der Anwendung vorgenommenen Änderungen zu überprüfen. 
 
-    >  Es werden einige Warnungen angezeigt, die wir aber ignorieren können, da wir nicht auf eine bestimmte Ansicht und ein bestimmtes Formular für die Entitäten verwiesen haben und die Benutzer Zugriff auf alle Ansichten und Formulare für die Entitäten **Besuch** und **Gebäude** haben.
+>  Es werden einige Warnungen angezeigt, die wir aber ignorieren können, da wir nicht auf eine bestimmte Ansicht und ein bestimmtes Formular für die Entitäten verwiesen haben und die Benutzer Zugriff auf alle Ansichten und Formulare für die Entitäten **Besuch** und **Gebäude** haben.
      
-14.  Klicken Sie auf **Speichern und schließen**, um den App-Designer zu schließen.
+12.  Klicken Sie auf **Speichern und schließen**, um den App-Designer zu schließen.
 
-15.  Klicken Sie auf **Fertig**.
+13.  Klicken Sie auf **Fertig**.
 
-16.  Wählen Sie **Lösungen** und **Alle Anpassungen veröffentlichen** aus.
+14.  Wählen Sie **Lösungen** und **Alle Anpassungen veröffentlichen** aus.
 
-17.  Wählen Sie **Apps** aus. Ihre Anwendung sollte jetzt aufgelistet werden.
+15.  Wählen Sie **Apps** aus. Ihre Anwendung sollte jetzt aufgelistet werden.
 
 ## Aufgabe Nr. 2: Testanwendung
 
