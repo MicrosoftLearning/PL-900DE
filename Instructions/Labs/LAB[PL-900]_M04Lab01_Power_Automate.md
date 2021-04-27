@@ -8,9 +8,9 @@ lab:
 ## Lab: Erstellen einer automatisierten Lösung
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel wurde „Entität“ in „Tabelle“ geändert. Felder und Datensätze in Dataverse-Datenbanken werden nun als „Spalten“ und „Zeilen“ bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
 
-Die Anwendungen arbeiten gerade an einer Verbesserung ihrer Benutzerfreundlichkeit. Im Zuge dessen sind möglicherweise manche Verweise auf Terminologie für Microsoft Dataverse wie „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) mittlerweile veraltet. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein. 
+Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird. 
 
 Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -24,7 +24,7 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab erstellen Sie Power Automate-Flows, um verschiedene Aspekte der Campusverwaltung zu automatisieren. 
 
-# Weiterführende Schritte des Lab
+# Allgemeine Schritte des Lab
 
 Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschließen.
 
@@ -34,9 +34,9 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 ## Voraussetzungen
 
 * Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
-* Beendigung von **Modul 2 Lab 1 – Einführung in Common Data Service**
-* Campusmitarbeiter-App, erstellt in **Modul 3, Lab 2 – Erstellen einer Canvas-App, Teil 2** (zum Testen)
-* John Doe-Kontakt, erstellt mit einer persönlichen E-Mail-Adresse in **Modul 3, Lab 4 – Erstellen einer modellgesteuerten App** (zum Testen)
+* Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
+* Campusmitarbeiter-App, erstellt in **Modul 3, Lab 2 – So erstellen Sie eine Canvas-App, Teil 2** (zu Testzwecken)
+* John Doe-Kontakt, erstellt mit einer persönlichen E-Mail-Adresse in **Modul 3, Lab 4 – So erstellen Sie eine modellgesteuerte App** (zu Testzwecken)
 
 ## Vor dem Beginn zu beachtende Dinge
 
@@ -59,7 +59,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
     -   Klicken Sie, um Ihre **Campusverwaltung**-Lösung zu öffnen.
 
-2.  Klicken Sie auf  **Neu** und wählen Sie  **Flow** aus. Dadurch wird der Power Automate-Flow-Editor in einem neuen Fenster geöffnet.
+2.  Klicken Sie auf **Neu**, und wählen Sie **Cloud-Flow** aus. Dadurch wird der Power Automate-Flow-Editor in einem neuen Fenster geöffnet.
 
 3. Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
 
@@ -67,23 +67,23 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
    * Wählen Sie**Erstellen** für **Triggerbedingung**
    
-   * Wählen Sie **Besuche** als **Entitätsnamen** aus
+   * Wählen Sie **Besuche** als **Tabellenname** aus.
    
-   * Wählen Sie im **Bereich** **Organisation** aus
+   * Wählen Sie im **Organisation** als **Bereich** aus.
    
-   * Klicken Sie im Triggerschritt auf die Schaltfläche mit den Auslassungspunkten ([...]), und klicken Sie dann auf **Umbenennen**. Benennen Sie diesen Trigger in **„Wenn ein Besuch erstellt wird“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+   * Klicken Sie im Triggerschritt auf die Schaltfläche mit den Auslassungspunkten **(...**), und klicken Sie auf **Umbenennen**. Benennen Sie diesen Trigger in **„Wenn ein Besuch erstellt wird“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
 5.  Klicken Sie auf **Neuer Schritt**. Dieser Schritt ist erforderlich, um Besucherinformationen einschließlich der E-Mail-Adresse abzurufen.
 
 6. Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
 
-7. Wählen Sie die Aktion **Einen Datensatz abrufen** aus. 
+7. Wählen Sie die Aktion **Get a row by ID** aus. 
 
-   * Wählen Sie **Kontakte** als **Entitätsname** aus
+   * Wählen Sie **Kontakte** als **Tabellenname** aus.
    
-   * Fügen Sie im Feld **Element-ID** den Eintrag **Besucher (Wert)** aus der Liste für dynamische Inhalte aus.
+   * Fügen Sie im Feld **Zeilen-ID** den Eintrag **Besucher (Wert)** in der Liste für dynamische Inhalte aus.
    
-   * Klicken Sie bei dieser Aktion auf die Schaltfläche mit den Auslassungspunkten ([...]), und klicken Sie dann auf **Umbenennen**. Benennen Sie diese Aktion in **„Den Besucher abrufen“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+   * Klicken Sie bei dieser Aktion auf die Schaltfläche mit den Auslassungspunkten (**...**), und klicken Sie dann auf **Umbenennen**. Benennen Sie diese Aktion in **„Den Besucher abrufen“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
 8. Klicken Sie auf **Neuer Schritt**. Dies ist der Schritt, in dem eine E-Mail erstellt und an den Besucher gesendet wird.
 
@@ -100,16 +100,16 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
         > Dynamischer Inhalt muss dort platziert werden, wo Feldernamen in Klammern angegeben sind. Es wird empfohlen, zuerst den gesamten Text zu kopieren und einzufügen und dann dynamischen Inhalt an den richtigen Stellen hinzuzufügen.
    
         ```
-        Dear {First Name},
+        Hallo {First Name},
 
-        You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
+        für Ihren Besuch auf dem Bellows Campus wurde der Zeitraum von {Scheduled Start} bis {Scheduled End} vermerkt.
 
-        Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
+        Ihr Sicherheitscode lautet {Code}. Bitte geben Sie ihn nicht weiter! Sie müssen diesen Code während Ihres Besuchs erzeugen.
 
-        Best regards,
+        Mit freundlichen Grüßen
 
-        Campus Administration
-        Bellows College
+        Campusverwaltung
+        Bellows College
         ```
    
 10.  Wählen Sie oben den Flow-Namen **Ohne Titel** aus, und benennen Sie ihn in `Besuchsbenachrichtigung` um.
@@ -118,7 +118,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
     Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. Ihr Flow sollte in etwa wie folgt aussehen:
 
-![Power Automate-Besucherbenachrichtigungs-Flow](media/4-power-automate-notify.png)
+![Power Automate-Besucherbenachrichtigungs-Flow](media/4-power-automate-notification.png)
 
 ## Aufgabe Nr. 2: Flow überprüfen und aktivieren
 
@@ -128,9 +128,9 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 3.  Lassen Sie diese Registerkarte geöffnet, und navigieren Sie wieder zurück zu der vorherigen Registerkarte mit Ihrem Flow. 
 
-4.  Klicken Sie in der Befehlsleiste auf **Testen**. Wählen Sie **Ich werde die Triggeraktion ausführen** und dann auf **Speichern und testen**.
+4.  Klicken Sie in der Befehlsleiste auf **Testen**. Wählen Sie **Manuell** aus, und klicken Sie dann auf **Speichern und testen**.
 
-5.  Lassen Sie die Flow-Registerkarte geöffnet, und navigieren Sie wieder zurück zur vorherigen Registerkarte mit der **Campus-Mitarbeiter**-App.
+5.  Lassen Sie die Registerkarte mit dem Flow geöffnet, und navigieren Sie wieder zurück zur vorherigen Registerkarte mit der App **Campus-Mitarbeiter**.
 
 6.  Klicken Sie auf **+**, um einen neuen Datensatz hinzuzufügen.
 
@@ -168,19 +168,19 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
    -   Klicken Sie, um Ihre **Campusverwaltung**-Lösung zu öffnen.
 
-2. Klicken Sie auf  **Neu** und wählen Sie  **Flow** aus. Dadurch wird der Power Automate-Flow-Editor in einem neuen Fenster geöffnet.
+2. Klicken Sie auf **Neu**, und wählen Sie **Cloud-Flow** aus. Dadurch wird der Power Automate-Flow-Editor in einem neuen Fenster geöffnet.
 
 3. Suchen Sie nach *Wiederholung*, wählen Sie den **Zeitplan**-Connector und den **Wiederholung**-Trigger aus.
 
 4. **Intervall** auf **15 Minuten** einstellen
 
-5. Klicken Sie auf **Neuer Schritt**. Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. Wählen Sie die Aktion **Datensätze auflisten**.
+5. Klicken Sie auf **Neuer Schritt**. Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. Wählen Sie die Aktion **Zeilen auflisten** aus.
 
-   * Geben Sie unter **Entitätsname** **Besuche** ein
+   * Geben Sie **Besuche** als **Tabellenname** ein.
    
    * Klicken Sie auf **Erweiterte Optionen anzeigen**.
 
-   * Den folgenden Ausdruck als **Filterabfrage** eingeben
+   * Geben Sie den folgenden Ausdruck in das Feld **Zeilen filtern** ein.
 
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
@@ -204,7 +204,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
     
     * Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. 
     
-    * Wählen Sie die Aktion **Einen Datensatz abrufen** aus.
+    * Wählen Sie die Aktion **Get a row by ID** aus.
     
     * Wählen Sie **Gebäude** als **Entitätsname** aus
     
@@ -218,7 +218,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
     
     * Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
     
-    * Wählen Sie die Aktion **Einen Datensatz abrufen** aus.
+    * Wählen Sie die Aktion **Get a row by ID** aus.
     
     * Wählen Sie **Kontakte** als **Entitätsname** aus
     
@@ -235,17 +235,17 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 13.  Geben Sie Folgendes in das Feld **Betreff** ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
 
    ```
-   {Full Name} overstayed their welcome
+   {Full Name} hat seine/ihre Aufenthaltszeit überschritten
    ```
    
 14.  Geben Sie Folgendes in das Feld **Text** ein. **Name** ist ein dynamischer Inhalt aus dem Schritt **Gebäude abrufen**.
 
    ```
-   There is an overstay in building {Name}
+   Im Gebäude {Name} hat jemand seine Aufenthaltszeit überschritten.
          
-   Best,
+   Beste Grüße
          
-   Campus Security
+   Campus-Sicherheit
    ```
 
 17.  Wählen Sie den Flow-Namen **Ohne Titel** in der oberen linken Ecke aus, und benennen Sie ihn in **Sicherheitsüberprüfung** um.
@@ -254,7 +254,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
     Ihr Flow sollte in etwa wie folgt aussehen:
 
-![Sicherheitsüberprüfung, geplanter Flow, Teil 1](media/4-power-automate-security-sweep.png)
+![Sicherheitsüberprüfung, geplanter Flow, Teil 1](media/4-power-automate-security-sweep-flow.png)
 
 ## Aufgabe Nr. 2: Flow überprüfen und aktivieren
 
@@ -270,19 +270,19 @@ Ihr Flow beginnt, Ihnen E-Mails zu senden (an die E-Mail-Adresse, die Sie bei de
    
    > **Hinweis**: Navigieren Sie zum Anzeigen dieser Daten auf einer neuen Registerkarte zu „make.powerapps.com“. Klicken Sie im linken Bereich auf „Lösungen“, um Ihre Lösung zu finden. Wählen Sie die Entität „Besuch“ aus, und wählen Sie dann die Registerkarte „Daten“ aus. Klicken Sie oben rechts auf „Aktive Besuche“, um die Ansichtsauswahl anzuzeigen, und wählen Sie dann „Alle Felder“ aus.
    
-2. Navigieren Sie zu Ihrer Lösung, und suchen Sie den Flow **Sicherheitsüberprüfung**. Klicken Sie auf **...**, und klicken Sie dann auf **Bearbeiten**.
+2. Navigieren Sie zum Flow **Sicherheitsüberprüfung**, wenn dieser noch nicht aktiv ist.
 
 3. Wenn Ihr Flow geöffnet ist, klicken Sie auf **Testen**.
 
-4. Wählen Sie **Ich werde die Triggeraktion ausführen** aus.
+4. Wählen Sie **Manuell** aus.
 
-5. Klicken Sie auf **Testen** und auf **Flow ausführen**.
+5. Klicken Sie auf **Speichern und testen** und auf **Flow ausführen**.
 
 6. Wenn der Flow abgeschlossen ist, klicken Sie auf **Fertig**. 
 
 7. Erweitern Sie **Auf jedes anwenden** und dann den Schritt **Eine E-Mail-Benachrichtigung senden**. Überprüfen Sie die Werte **Betreff**, **E-Mail-Text**.
 
-8. Navigieren Sie zur Lösung, klicken Sie auf **...** neben dem Flow, und wählen Sie **Deaktivieren** aus. Dies soll verhindern, dass der Datenfluss nach einem Zeitplan auf dem Testsystem ausgeführt wird.
+8. Klicken Sie auf den Zurück-Pfeil, um zu Details des Sicherheitsüberprüfungs-Flows zurückzukehren. Wählen Sie auf der Befehlsleiste **Ausschalten** aus. Dies soll verhindern, dass der Flow nach einem Zeitplan auf dem Testsystem ausgeführt wird.
 
 # Herausforderungen
 

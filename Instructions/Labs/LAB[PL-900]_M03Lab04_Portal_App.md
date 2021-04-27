@@ -9,9 +9,9 @@ lab:
 ## Lab 4: Erstellen eines Power Apps-Portals
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel wurde „Entität“ in „Tabelle“ geändert. Felder und Datensätze in Dataverse-Datenbanken werden nun als „Spalten“ und „Zeilen“ bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
 
-Die Anwendungen arbeiten gerade an einer Verbesserung ihrer Benutzerfreundlichkeit. Im Zuge dessen sind möglicherweise manche Verweise auf Terminologie für Microsoft Dataverse wie „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) mittlerweile veraltet. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein. 
+Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird. 
 
 Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -23,18 +23,18 @@ Die Campusverwaltung möchte den Besuchern Informationen über die Gebäude auf 
 
 In diesem Lab stellen Sie ein Power Apps-Portal bereit und erstellen eine Portalwebseite, auf der eine Liste der Gebäude auf dem Campus angezeigt wird.
 
-# Weiterführende Schritte des Lab
+# Allgemeine Schritte des Lab
 
 Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederung:
 
-* Ein Power Apps-Portal in der Common Data Service-Umgebung bereitstellen
+* Ein Power Apps-Portal in der Dataverse-Umgebung bereitstellen
 * Eine Webseite erstellen und konfigurieren, die eine Liste der Gebäude anzeigt
 * Ein neues Design erstellen und auf das Portal anwenden
 
 ## Voraussetzungen
 
 * Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
-* Beendigung von **Modul 2 Lab 1 – Einführung in Common Data Service**
+* Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
 ## Vor dem Beginn zu beachtende Dinge
 
@@ -42,19 +42,21 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
 # Übung Nr. 1: Eine Portal-Webseite erstellen
 
-**Ziel:** In dieser Übung erstellen Sie eine neue Webseite, auf der statische Inhalte sowie eine Liste der Gebäude aus Common Data Service angezeigt werden.
+**Ziel:** In dieser Übung erstellen Sie eine neue Webseite, auf der statische Inhalte sowie eine Liste der Gebäude aus Dataverse angezeigt werden.
 
 ## Aufgabe Nr. 1: Navigieren Sie zum Portal
 
 1.  Navigieren Sie zu <https://make.powerapps.com>.
 
-2.  Klicken Sie auf **Apps**
+2.  Überprüfen Sie, ob Sie sich in der Übungsumgebung befinden. Wenn dies nicht der Fall ist, ändern Sie die Umgebung in der oberen rechten Ecke.
 
-3.  Suchen Sie die App mit dem **Typ** **Portal**
+3.  Klicken Sie auf **Apps**.
 
-4.  Klicken Sie auf den Namen der App, um das Portal zu öffnen.
+4.  Suchen Sie die App mit dem **Typ** **Portal**
 
-    > Sie sollten auf Ihre Portalwebsite mit der Angebotsseite und einer Begrüßungsnachricht weitergeleitet werden.
+5.  Klicken Sie auf den Namen der App, um das Portal zu öffnen.
+
+    > Sie sollten zur Landing Page Ihre Portalwebsite mit einer Begrüßungsnachricht weitergeleitet werden. Navigieren Sie in Ihrem Portal, um herauszufinden, welche Elemente beim Bereitstellen des Portals standardmäßig erstellt wurden. 
 
 ## Aufgabe Nr. 2: Eine Webseite erstellen
 
@@ -68,7 +70,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     -   Klicken Sie auf die Schaltfläche mit den Auslassungspunkten (**...**) rechts neben dem Namen der Portal-App, und wählen Sie **Bearbeiten** aus.
 
-Sie befinden sich jetzt in Power Apps-Portale Studio. Hier können Sie Portalinhalte ändern und erstellen.
+    > Sie befinden sich jetzt in Power Apps-Portale Studio. Hier können Sie Portalinhalte ändern und erstellen.
 
 2.  Erstellen Sie eine neue Seite
 
@@ -138,6 +140,8 @@ Sie befinden sich jetzt in Power Apps-Portale Studio. Hier können Sie Portalinh
     
 2.  Fügen Sie der Seite „Gebäudeverzeichnis“ eine Listenkomponente hinzu.
 
+    -   Wählen Sie den Abschnitt mit zwei Spalten aus.
+
     -   Wählen Sie auf dem Toolbelt (linke Seite) das Symbol **Komponenten** aus
 
     -   Wählen Sie aus dem Bereich **Abschnittslayout** die Option **Einspaltiger Abschnitt** aus (ein Abschnitt wird unter dem Bild und dem Text auf der Webseite angezeigt)
@@ -154,15 +158,15 @@ Sie befinden sich jetzt in Power Apps-Portale Studio. Hier können Sie Portalinh
 
     -   Geben Sie im Eigenschaftenbereich (rechte Seite) im Feld **Name** die Zeichenfolge `Gebäudeliste` ein.
 
-    -   Wählen Sie aus der Dropdownliste im Feld **Entität** die Option **Gebäude (bc_building)** aus.
+    -   Wählen Sie aus der Dropdownliste im Feld **Tabelle** die Option **Gebäude (bc_building)** aus.
 
-    -   In **Ansichten** wählen Sie **Aktive Gebäude** aus
+    -   Wählen Sie unter **Ansichten** die Option **Aktive Gebäude** aus.
 
     -   Behalten Sie die verbleibenden Standardeinstellungen bei
     
 4.  Klicken Sie auf **Website durchsuchen**, um die Seite anzuzeigen. 
 
-    > Die Liste der Gebäude aus dem Common Data Service sollte auf der Webseite angezeigt werden.
+    > Die Liste der Gebäude aus der Dataverse-Datenbank sollte auf der Webseite angezeigt werden.
 
 # Übung Nr. 2: Das Portaldesign ändern
 
@@ -192,7 +196,7 @@ Sie befinden sich jetzt in Power Apps-Portale Studio. Hier können Sie Portalinh
     
     -   Benennen Sie Ihr Design um
     
-3.  Klicken Sie auf der Befehlsleiste auf **Synchronisierungskonfiguration**
+3.  Klicken Sie auf der Befehlsleiste auf **Synchronisierungsdatei**.
 
 Ihr App-Layout sollte etwa die folgende Struktur aufweisen:
 
@@ -202,6 +206,6 @@ Ihr App-Layout sollte etwa die folgende Struktur aufweisen:
 
 * Erstellen Sie eine andere Ansicht von „Gebäude“, in der nur der Gebäudename angezeigt wird. Sie müssen in Portal Studio **Website durchsuchen** auswählen, um die Änderungen anzuzeigen.
 * Klicken Sie im Toolbelt auf das Symbol **Designs**, und bearbeiten Sie das CSS Ihres benutzerdefinierten Designs.
-* Erstellen Sie eine Seite mit der Komponente **Formular**, und ändern Sie eine Komponente **Liste**, um mit dem Formular Common Data Service-Datensätze hinzuzufügen oder zu bearbeiten.
+* Erstellen Sie eine Seite mit der Komponente **Formular**, und ändern Sie eine Komponente **Liste**, um Dataverse-Zeilen mit dem Formular hinzuzufügen oder zu bearbeiten.
 * Aktivieren Sie **Entitätsberechtigungen** für die **Einstellungen** einer Komponente **Liste**. Was geschieht mit den Daten?
 * Wählen Sie in Portal Studio das Quellcode-Editor-Symbol `</>` aus, um die Seitenquelle anzuzeigen. Wenn Sie mit HTML vertraut sind, nehmen Sie einige Änderungen vor, und zeigen die Ergebnisse an.

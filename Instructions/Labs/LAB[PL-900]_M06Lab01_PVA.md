@@ -35,7 +35,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
   - Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
 
-  - Beendigung von **Modul 2 Lab 1 – Einführung in Common Data Service**
+  - Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
   - Nur Bonusübung: Abschluss von **Modul 6 Lab 4 – Einführung in Power Apps-Portale** 
 
@@ -145,7 +145,7 @@ In dieser Aufgabe ändern Sie die Begrüßung in eine COVID-19-spezifische Begr�
 
 9.  Der Bot sollte nun mit der neuen Begrüßung antworten.
 
-# Übung Nr. 5: Veröffentlichen Sie den Bot
+# Übung Nr. 5: Den Bot veröffentlichen
 
 In dieser Übung veröffentlichen Sie den Bot.
 

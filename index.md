@@ -6,9 +6,9 @@ layout: home
 
 # Inhaltsverzeichnis
 
-Hyperlinks zu den einzelnen Lab-Übungen und Demos sind unten aufgeführt.
+Hyperlinks zu den Lab-Übungen und Demos sind nachfolgend aufgelistet.
 
-## Übungseinheiten
+## Labs
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 | Modul | Lab |

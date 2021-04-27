@@ -1,16 +1,16 @@
 ---
 lab:
     title: 'Lab 1: Datenmodellierung'
-    module: 'Modul 2: Einführung in Common Data Service'
+    module: 'Modul 2: Einführung in Microsoft Dataverse'
 ---
 
-# Modul 2: Einführung in Common Data Service
+# Modul 2: Einführung in Microsoft Dataverse
 ## Lab: Datenmodellierung
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel wurde „Entität“ in „Tabelle“ geändert. Felder und Datensätze in Dataverse-Datenbanken werden nun als „Spalten“ und „Zeilen“ bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
 
-Die Anwendungen arbeiten gerade an einer Verbesserung ihrer Benutzerfreundlichkeit. Im Zuge dessen sind möglicherweise manche Verweise auf Terminologie für Microsoft Dataverse wie „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) mittlerweile veraltet. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein. 
+Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs.
 
 Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -22,22 +22,22 @@ Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wob
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann. 
 
-In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine CDS-Datenbank (Common Data Service) und eine Lösung zum Nachverfolgen Ihrer Änderungen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
+In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Microsoft Dataverse-Datenbank und eine Lösung zum Nachverfolgen Ihrer Änderungen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
 -   R1 –  Verfolgen Sie Standorte (Gebäude) der Campusbesuche
 -   R2 –  Aufzeichnen der grundlegende Informationen, um die Besucher zu identifizieren und nachzuverfolgen 
 -   R3 – Planen, Aufzeichnen und Verwalten von Besuchen 
 
-Zum Abschluss werden Sie Beispieldaten in Common Data Service importieren.
+Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
-# Weiterführende Schritte des Lab
+# Allgemeine Schritte des Lab
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
 * eine Lösung und einen Herausgeber erstellen
-* sowohl neue als auch vorhandene Komponenten hinzufügen, die zur Erfüllung der Anwendungsanforderungen erforderlich sind. Beschreibungen zu den Metadaten (Entitäten und Beziehungen) finden Sie im [Datenmodelldokument](../../Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
+* sowohl neue als auch vorhandene Komponenten hinzufügen, die zur Erfüllung der Anwendungsanforderungen erforderlich sind. Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://raw.githubusercontent.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/update-march-2021/Allfiles/Campus%20Management.png). Sie können mit gedrückter STRG-Taste oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
 
-Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
+Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
 -   Kontakt
 -   Gebäude
@@ -71,9 +71,9 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 
 2.  Publisher erstellen
 
-    -   Klicken Sie auf das Dropdownmenü **Herausgeber**, und wählen Sie **Herausgeber** aus.
+    -   Klicken Sie auf das Dropdown-Menü **Publisher**, und wählen Sie **+ Publisher** aus.
 
-    -   Geben Sie in dem Fenster, das daraufhin eingeblendet wird, **Bellows College** als **Anzeigename** ein. 
+    -   Geben Sie in dem daraufhin eingeblendeten Fenster **Bellows College** als **Anzeigename** ein. 
     
     -   Geben Sie **bc** als **Präfix** ein.
 
@@ -90,11 +90,15 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
     
     -   Klicken Sie auf **Erstellen**.
 
-## Aufgabe Nr. 2: Eine vorhandene Entität hinzufügen
+# Übung Nr. 2: Vorhandene Tabelle hinzufügen und neue Tabellen erstellen
 
-1.  Klicken Sie, um Ihre **Campusverwaltung**-Lösung, die Sie gerade erstellt haben, zu öffnen.
+**Ziel:** In dieser Übung fügen Sie die Standardtabelle „Kontakt“ hinzu und erstellen neue benutzerdefinierte Tabellen für Gebäude und Besuche in der Lösung. 
 
-2.  Klicken Sie auf **Vorhandene hinzufügen**, und wählen Sie **Entität** aus.
+## Aufgabe Nr. 1: Vorhandene Tabelle hinzufügen
+
+1.  Klicken Sie, um die soeben erstellte Lösung **Campusverwaltung** zu öffnen.
+
+2.  Klicken Sie auf **Vorhandene hinzufügen**, und wählen Sie **Tabelle** aus.
 
 3.  Suchen Sie **Kontakt**, und wählen Sie diese Option aus.
 
@@ -113,35 +117,30 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Entitäten enthalten:
 
     > Sie sollten **1 Ansicht** und **1 Formular** ausgewählt haben. 
     
-10.  Klicken Sie erneut auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Entität „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt. 
+10.  Klicken Sie erneut auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Tabelle „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt. 
     
-11.  Ihre Lösung sollte jetzt eine Entität haben: Kontakt.
+    > Ihre Lösung sollte jetzt eine Tabelle enthalten: Kontakt.
 
-# Übung Nr. 2: Entitäten und Beziehungen erstellen
+## Aufgabe Nr. 2: Tabelle „Gebäude“ erstellen
 
-**Ziel:** In dieser Übung erstellen Sie Entitäten und fügen Beziehungen
-zwischen den Entitäten hinzu.
-
-## Aufgabe Nr. 1: Entität „Gebäude“ und Felder erstellen
-
-1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
+1.  In Ihrem Browser sollte weiterhin die Lösung „Campusverwaltung“ geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
 
     * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie noch nicht angemeldet sind)
     
     * Wählen Sie **Lösungen** aus, und klicken Sie zum Öffnen der Lösung **[Ihr Nachname] Campusverwaltung**,
           die Sie gerade erstellt haben.
           
-2.  Die Entität „Gebäude“ erstellen
+2.  Tabelle „Gebäude“ erstellen
 
-    -   Klicken Sie auf **Neu**, und wählen Sie **Entität** aus.
+    -   Klicken Sie auf **Neu**, und wählen Sie **Tabelle** aus.
     
     -   Geben Sie **Gebäude** als **Anzeigename** ein. 
     
-    -   Klicken Sie auf **Fertig**. Dadurch wird die Entität im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Entitäten und Felder hinzuzufügen.
+    -   Klicken Sie auf **Erstellen**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Tabellen und Spalten hinzuzufügen.
 
-## Aufgabe Nr. 2: Erstellen der Entität „Besuch“ und von Feldern
+## Aufgabe Nr. 3: Tabelle „Besuch“ und Spalten erstellen
 
-Die Entität **Besuch** wird Informationen zu den Campusbesuchen enthalten, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
+Die Tabelle **Besuch** wird Informationen zu den Campusbesuchen enthalten, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
 
 Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besucher leicht eingegeben und interpretiert werden kann, wenn er beim Einchecken gefragt wird.
 
@@ -149,81 +148,81 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie Ihre **Campusverwaltung**-Lösung aus.
 
-2. Entität „Besuch“ erstellen
+2. Tabelle „Besuch“ erstellen
 
-   * Klicken Sie auf **Neu**, und wählen Sie **Entität** aus.
+   * Klicken Sie auf **Neu**, und wählen Sie **Tabelle** aus.
    
    * Geben Sie **Besuch** als **Anzeigename** ein. 
    
-   * Klicken Sie auf **Fertig**. Dadurch wird die Entität im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Felder hinzuzufügen.
+   * Klicken Sie auf **Erstellen**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Spalten hinzuzufügen.
 
-3. Erstellen Sie das Feldes „Geplanter Start“
+3. Spalte „Geplanter Start“ erstellen
 
-   * Stellen Sie sicher, dass Sie die Registerkarte **Felder** ausgewählt haben, und klicken Sie auf **Feld hinzufügen**.
+   * Stellen Sie sicher, dass die Registerkarte **Spalten** ausgewählt ist, und klicken Sie auf **Spalte hinzufügen**.
    
    * Geben Sie **Geplanter Start** als **Anzeigename** ein.
    
    * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
    
-   * Wählen Sie im Feld **Erforderlich** die Option **Erforderlich** aus.
+   * Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
    
    * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
    
-   * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+   * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
    
    * Klicken Sie auf **Fertig**.
 
-4.  Erstellen des Feldes „Geplantes Ende“
+4.  Spalte „Geplantes Ende“ erstellen
 
-    * Klicken Sie auf **Feld hinzufügen**.
+    * Klicken Sie auf **Spalte hinzufügen**.
     
     * Geben Sie **Geplantes Ende** als **Anzeigename** ein.
     
     * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
     
-    * Wählen Sie im Feld **Erforderlich** die Option **Erforderlich** aus.
+    * Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
     
     * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
     
-    * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
     
     * Klicken Sie auf **Fertig**.
     
-5.  Erstellen des Feldes „Tatsächlicher Start“
+5.  Spalte „Tatsächlicher Start“ erstellen
 
-    * Klicken Sie auf **Feld hinzufügen**.
+    * Klicken Sie auf **Spalte hinzufügen**.
     
     * Geben Sie **Tatsächlicher Start** als **Anzeigename** ein.
     
     * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
     
-    * Belassen Sie im Feld **Erforderlich** die Einstellung **Optional**.
+    * Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
     
     * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
     
-    * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
     
     * Klicken Sie auf **Fertig**.
     
-6.  Erstellen Sie das Feld „Tatsächliches Ende“
+6.  Spalte „Tatsächliches Ende“ erstellen
 
-    * Klicken Sie auf **Feld hinzufügen**.
+    * Klicken Sie auf **Spalte hinzufügen**.
     
     * Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
     
     * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
     
-    * Belassen Sie im Feld **Erforderlich** die Einstellung **Optional**.
+    * Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
     
     * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
     
-    * Wählen Sie im Feld **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
     
     * Klicken Sie auf **Fertig**.
     
-7.  Erstellen Sie das Feld „Code“
+7.  Spalte „Code“ erstellen
 
-    * Klicken Sie auf **Feld hinzufügen**.
+    * Klicken Sie auf **Spalte hinzufügen**.
     
     * Geben Sie **Code** als **Anzeigename** ein.
     
@@ -233,11 +232,15 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
     
     * Klicken Sie auf **Fertig**.
     
-8.  Klicken Sie auf **Entität speichern**
+8.  Klicken Sie auf **Tabelle speichern**.
 
-## Aufgabe Nr. 3: Beziehungen erstellen
+# Übung Nr. 3: Beziehungen erstellen
 
-1.  Stellen Sie sicher, dass Sie weiterhin die Entität **Besuch** Ihrer **Campusverwaltung**-Lösung anzeigen. Navigieren Sie andernfalls dorthin.
+**Ziel:** In dieser Übung fügen Sie Beziehungen zwischen Tabellen hinzu.
+
+## Aufgabe Nr. 1: Beziehungen erstellen
+
+1.  Vergewissern Sie sich, dass weiterhin die Tabelle **Besuch** der Lösung **Campusverwaltung** angezeigt wird. Navigieren Sie andernfalls dorthin.
 
 2.  Erstellen der Beziehung „Besuch zu Kontakt“
 
@@ -247,7 +250,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
     
     * Wählen Sie **Kontakt** als **Verknüpft (Eins)** aus. 
     
-    * Geben Sie **Besucher** als **Anzeigename des Nachschlagefelds** ein 
+    * Geben Sie **Besucher** als **Anzeigename der Nachschlagespalte** ein. 
     
     * Klicken Sie auf **Fertig**.
     
@@ -259,23 +262,23 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
     
     * Klicken Sie auf **Fertig**.
     
-4.  Klicken Sie auf **Entität speichern**.
+4.  Klicken Sie auf **Tabelle speichern**.
 
 5.  Wählen Sie im oberen Menü **Lösungen** aus, und klicken Sie auf **Alle Anpassungen veröffentlichen**.
 
-# Übung Nr. 3: Daten importieren
+# Übung Nr. 4: Daten importieren
 
-**Ziel:** In dieser Übung importieren Sie Beispieldaten in die Common Data Service-Datenbank.
+**Ziel:** In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
 ## Aufgabe Nr. 1: Lösung importieren
 
 In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enthält, der erforderlich ist, um den Datenimport abzuschließen.
 
-1. Die Datei **DataImport_managed.zip** sollten Sie auf Ihrem Desktop gespeichert haben. Laden Sie soweit noch nicht geschehen die [Datenimportlösung](../../Allfiles/DataImport_managed.zip) herunter.
+1. Die Datei **DataImport_managed.zip** sollte auf Ihrem Desktop gespeichert sein. Laden Sie, soweit noch nicht geschehen, die [Datenimportlösung](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/update-march-2021/Allfiles/DataImport_managed.zip?raw=true) herunter.
 
 2. Melden Sie sich bei <https://make.powerapps.com> an.
 
-3. Wählen Sie oben rechts Ihre Umgebung ***Meine Initialen* Übung** aus, falls diese noch nicht ausgewählt ist.
+3. Wählen Sie oben rechts Ihre Umgebung **[Ihre Initialen] Übung** aus, falls diese noch nicht ausgewählt ist.
 
 4. Wählen Sie im linken Navigationsbereich **Lösungen** aus.
 
@@ -286,24 +289,22 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 >   Es fehlen Abhängigkeiten. Installieren Sie die folgenden Lösungen, bevor Sie diese installieren...
 >
 >   Diese Meldung bedeutet entweder, dass das Datenmodell nicht vollständig ist, das
->   Herausgeberpräfix nicht **bc** lautet oder für die Entitäten **Gebäude** und **Besuch**
+>   Herausgeberpräfix nicht **bc** lautet oder für die Tabelle **Gebäude** und **Besuch**
 >   andere Namen als in den vorherigen Schritten angegeben sind.
 
 6. Klicken Sie auf **Weiter**. Sie sollten aufgefordert werden, Verbindungen neu herzustellen. 
 
-7. Erweitern Sie die Dropdownliste **Wählen Sie eine Verbindung aus**, und wählen Sie **Neue Verbindung** aus.
+7. Erweitern Sie die Dropdownliste **Wählen Sie eine Verbindung aus**, und wählen Sie **+Neue Verbindung** aus.
 
-8. Es wird ein neues Browserfenster oder eine neue Browserregisterkarte geöffnet. Wählen Sie **Erstellen** aus, wenn Sie aufgefordert werden, eine Common Data Service-Verbindung herzustellen. Falls erforderlich, melden Sie sich an, um das Erstellen der Verbindung abzuschließen.
+8. Es wird ein neues Browserfenster oder eine neue Browserregisterkarte geöffnet. Wählen Sie **Erstellen** aus, wenn Sie aufgefordert werden, eine Verbindung herzustellen. Falls erforderlich, melden Sie sich an, um das Erstellen der Verbindung abzuschließen.
 
-9. Wechseln Sie zurück zur vorherigen Registerkarte, auf der Sie die Lösung importiert haben.
+9. Schließen Sie die aktuelle Registerkarte, sodass Sie sich wieder auf der vorherigen Registerkarte **Lösung importieren** befinden.
 
-10. Klicken Sie auf **Aktualisieren**, um die Liste der Verbindungen zu aktualisieren. 
+10. Vergewissern Sie sich, dass die Verbindung, die Sie gerade erstellt haben, ausgewählt ist. Wenn diese Verbindung nicht angezeigt wird, klicken Sie auf **Aktualisieren**, um die Liste der Verbindungen zu aktualisieren. 
 
-11. Vergewissern Sie sich, dass die Verbindung, die Sie gerade erstellt haben, ausgewählt ist.
+11. Klicken Sie auf **Importieren**.
 
-12. Klicken Sie auf **Importieren**.
-
-13. Warten Sie, bis der Importvorgang abgeschlossen ist.
+12. Warten Sie, bis der Importvorgang abgeschlossen ist.
 
 ## Aufgabe Nr. 2: Daten importieren  
 
@@ -313,7 +314,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 3. Wenn **Status** auf **Aus** gesetzt ist, klicken Sie auf die Schaltfläche mit den Auslassungspunkten ([...]) neben **Daten importieren**, und wählen Sie dann **Einschalten** aus.
 
-   > **Wichtig:** Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die von Ihnen erstellten Entitäten und Felder mit den obigen Anweisungen übereinstimmen.
+   > **Wichtig:** Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die von Ihnen erstellten Tabellen und Spalten mit den obigen Anweisungen übereinstimmen.
 
 4. Öffnen Sie die Komponente **Daten importieren**. Power Automate wird auf einer neuen Registerkarte geöffnet. 
 
@@ -329,17 +330,19 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 ## Aufgabe Nr. 3: Datenimport überprüfen
 
-1. Navigieren Sie zurück zur vorherigen Power Apps-Registerkarte. Klicken Sie in dem Popupfenster auf **Fertig**. Wählen Sie in der linken Navigationsleiste **Lösungen** aus, und öffnen Sie Ihre **Campusverwaltung**-Lösung.
+1. Navigieren Sie zurück zur vorherigen Power Apps-Registerkarte. Klicken Sie in dem Popupfenster auf **Fertig**. 
 
-2. Klicken Sie, um die Entität **Besuch** zu öffnen, und wählen Sie dann die Registerkarte **Daten** aus.
+2. Wählen Sie in der linken Navigationsleiste **Lösungen** aus, und öffnen Sie Ihre **Campusverwaltung**-Lösung.
 
-3. Klicken Sie in der oberen rechten Ecke auf **Aktive Besuche**, um die Ansichtsauswahl einzublenden, und wählen Sie dann **Alle Felder** aus. Dadurch wird die Ansicht geändert, die zum Anzeigen der Besuchsdaten verwendet wird. 
+2. Klicken Sie, um die Tabelle **Besuch** zu öffnen, und wählen Sie dann die Registerkarte **Daten** aus.
+
+3. Klicken Sie oben rechts auf **Aktive Besuche**, um die Ansichtsauswahl anzuzeigen, und wählen Sie dann **Alle Spalten** aus. Dadurch wird die Ansicht geändert, die zum Anzeigen der Besuchsdaten verwendet wird. 
 
     > Wenn Sie aufgrund geringerer Auflösung **Aktive Besuche** nicht sehen, sollte an derselben Stelle ein Augensymbol angezeigt werden.
 
-    > Wenn der Import erfolgreich war, sollte eine Liste der Besuchseinträge angezeigt werden.
+    > Wenn der Import erfolgreich war, sollte eine Liste der Besuchszeilen angezeigt werden.
 
-4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass in einem separaten Fenster das Gebäudeformular geöffnet wird. 
+4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass das Gebäudeformular in einem separaten Fenster geöffnet wird. 
 
 5. Schließen Sie das kürzlich gestartete Fenster.
 

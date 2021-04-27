@@ -10,9 +10,9 @@ Modul 0: Einführung in den Kurs
 ## Lab: Lab-Umgebung überprüfen
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel wurde „Entität“ in „Tabelle“ geändert. Felder und Datensätze in Dataverse-Datenbanken werden nun als „Spalten“ und „Zeilen“ bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
 
-Die Anwendungen arbeiten gerade an einer Verbesserung ihrer Benutzerfreundlichkeit. Im Zuge dessen sind möglicherweise manche Verweise auf Terminologie für Microsoft Dataverse wie „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) mittlerweile veraltet. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein. 
+Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird. 
 
 Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -71,9 +71,9 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testmandanten erhalten und
 
 1.  Anmelden bei <https://make.powerapps.com>
 
-2.  Wenn die oben rechts angezeigte **Umgebung** nicht Ihre Übungsumgebung ist, wählen Sie Ihre Umgebung aus.
+2.  Wenn die oben rechts angezeigte **Umgebung** nicht Ihre Übungsumgebung ist, klicken Sie, um Ihre Umgebung auszuwählen.
 
-3.  Klicken Sie unter **Ihre eigene App erstellen** auf das Panel **Portal aus leerer Vorlage**
+3.  Klicken Sie auf der Startseite unter **Eigene App erstellen** auf das Panel **Portal aus leerer Vorlage**
 
     > Wenn diese Option nicht angezeigt wird, versuchen Sie, die Ansicht zu verkleinern.
 

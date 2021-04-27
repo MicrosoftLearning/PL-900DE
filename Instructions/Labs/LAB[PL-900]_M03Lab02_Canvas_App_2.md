@@ -8,9 +8,9 @@ lab:
 ## Lab 2: So erstellen Sie eine Canvas-App, Teil 2
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel wurde „Entität“ in „Tabelle“ geändert. Felder und Datensätze in Dataverse-Datenbanken werden nun als „Spalten“ und „Zeilen“ bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
 
-Die Anwendungen arbeiten gerade an einer Verbesserung ihrer Benutzerfreundlichkeit. Im Zuge dessen sind möglicherweise manche Verweise auf Terminologie für Microsoft Dataverse wie „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) mittlerweile veraltet. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein. 
+Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird.  
 
 Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -24,27 +24,27 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In Teil 2 dieses Labs erstellen Sie eine Power Apps-Canvas-App, mit deren Hilfe das Sicherheitspersonal an den Gebäudeeingängen die Besucher schnell bestätigen und registrieren kann.
 
-# Weiterführende Schritte des Lab
+# Allgemeine Schritte des Lab
 
 Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 
 -   Erstellen der App mit dem Formfaktor „Smartphone“
--   Eine Verbindung zum Common Data Service als Datenquelle herstellen
--   Die Eingabe (Besuchercode) erfassen und den Besucherdatensatz suchen
--   Ein Formularansicht-Steuerelement konfigurieren, um die Besucherinformationen anzuzeigen
--   Nutzen Sie eine Common Data Service-Ansicht, um den Katalog aufzufüllen
+-   Herstellen einer Verbindung mit Dataverse als Datenquelle
+-   Erfassen der Eingabe (Besuchercode) und Suchen der Besucherzeile
+-   Konfigurieren eines Formularansicht-Steuerelements, um die Besucherinformationen anzuzeigen
+-   Verwenden einer Dataverse-Ansicht zum Füllen des Katalogs
 -   Ausführen des Ein- und Auscheckvorgangs für einen Besucher
 
 ## Voraussetzungen
 
 * Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
-* Beendigung von **Modul 2 Lab 1 – Einführung in Common Data Service**
+* Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
 ## Vor dem Beginn zu beachtende Dinge
 
 -   Auf welche Informationen würde ein Sicherheitsbeauftragter schnell zugreifen müssen?
--   Was sollte geschehen, wenn ein Besuchercode ungültig ist?
--   Was soll geschehen, wenn der Besucher außerhalb der geplanten Zeiten ankommt? 
+-   Was soll geschehen, wenn ein Besuchercode ungültig ist?
+-   Was soll geschehen, wenn der Besucher außerhalb der geplanten Zeiten ankommt?
 
 # Übung Nr. 1: Erstellen einer Sicherheits-Canvas-App
 
@@ -60,11 +60,11 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 
     -   Wählen Sie **Lösungen** aus.
 
-    -   Klicken Sie, um die **Campus Management**-Lösung zu öffnen.
+    -   Klicken Sie, um Ihre **Campusverwaltung**-Lösung zu öffnen.
     
-2.  Erstellen Sie eine neue Canvas-Anwendung
+2.  Erstellen Sie eine neue Canvas-Anwendung.
 
-    -   Klicken Sie auf **Neu**, und wählen Sie aus.**App \| Canvas-App \| Formfaktor „Telefon“**.
+    -   Klicken Sie auf **Neu**, und wählen Sie **App \** aus.**| Canvas-App \| Formfaktor „Telefon“ **.
         Dadurch wird der App-Editor in einem neuen Fenster geöffnet.
         
     -   Klicken Sie auf **Überspringen**, wenn das Dialogfeld „Willkommen bei Power Apps Studio“ angezeigt wird.
@@ -83,9 +83,11 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 
     -   Klicken Sie auf **Ansicht \| Datenquellen**
     
-    -   Klicken Sie auf **Alle Entitäten anzeigen**
+    -   Klicken Sie auf **+ Daten hinzufügen**.
+
+    -   Klicken Sie auf **Alle Entitäten anzeigen** (oder Tabellen).
     
-    -   Wählen Sie **Besuche** aus, und warten Sie, bis die Entität „Besuche“ unter den Daten **In Ihrem App**-Bereich angezeigt wird.
+    -   Wählen Sie **Besuche** aus, und warten Sie, bis die Tabelle „Besuch“ auf der Registerkarte „Daten“ angezeigt wird.
     
 4.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
@@ -105,33 +107,33 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 
     -   Wählen Sie bei ausgewähltem Texteingabeobjekt den Text in der Eigenschaft **Standard** aus, und löschen Sie den Wert.
     
-    -   Wählen Sie die Eigenschaft **HintText** aus, und geben Sie `"Besuchercode eingeben"` als Wert ein (einschließlich doppelter Anführungszeichen)
+    -   Wählen Sie die Eigenschaft **Hinweistext** aus, und geben Sie `Besuchercode eingeben` als Wert ein (einschließlich doppelter Anführungszeichen).
     
-    -   Klicken Sie neben dem Steuerelementnamen in einer Strukturansicht (TextInput1) auf die Schaltfläche mit den Auslassungspunkten (**...**), wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `textCode` um.
+    -   Klicken Sie neben dem Steuerelementnamen in der Strukturansicht (TextInput1) auf die Schaltfläche mit den Auslassungspunkten ([...]), wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `textCode`.
     
 3.  Fügen Sie eine Formularansicht hinzu.
 
-    -   Klicken Sie auf der Registerkarte **Einfügen** auf **Formulare**, und wählen Sie dann **Anzeige** aus
+    -   Klicken Sie auf der Registerkarte **Einfügen** auf **Formulare**, und wählen Sie dann **Anzeigen** aus (möglicherweise müssen Sie auf der rechten Seite des Menübands auf den Pfeil nach unten klicken, damit „Formulare“ angezeigt wird).
    
-    -   Positionieren Sie das Formular mithilfe von Größenziehpunkten unter dem Suchtextfeld.
+    -   Ziehen Sie, um das Formular zu positionieren und am unteren Bildschirmrand auszurichten.
    
-    -   Wählen Sie die Eigenschaft **DataSource** aus, und wählen Sie **Besuche** aus.
+    -   Wählen Sie während der Auswahl des neuen Formulars die Eigenschaft **Datenquelle** aus, und wählen Sie **Besuche** aus.
    
-    -   Wählen Sie im Eigenschaftenbereich die Option **Horizontal** als **Layout** aus
+    -   Wählen Sie im Eigenschaftenbereich die Option **Horizontal** als **Layout** aus.
 
 4.  Bearbeiten Sie die Formularansicht.
 
-    -   Klicken Sie auf **Felder bearbeiten**.
-   
+    -   Klicken Sie während der Auswahl des neuen Formulars auf **Felder bearbeiten**.
+
+    -   Entfernen Sie die beiden Felder **Name** und **Erstellt am**.
+
     -   Klicken Sie auf **Feld hinzufügen**, und wählen Sie die folgenden Felder aus: **Tatsächliches Ende**, **Tatsächlicher Start**, **Gebäude**, **Geplantes Ende**, **Geplanter Start**, **Besucher**
    
     -   Drücken Sie auf **Hinzufügen**.
    
-    -   Entfernen Sie die beiden Felder **Name** und **Erstellt am**.
+    -   Ändern Sie die Reihenfolge der ausgewählten Felder, indem Sie die Feldkarten in die Liste ziehen. Empfohlene Bestellung ist: „Besucher“, „Gebäude“, „Geplanter Start“, „Geplantes Ende“, „Tatsächlicher Start“, „Tatsächliches Ende“ (Sie können die Felder reduzieren, um sie leichter ziehen zu können).
    
-    -   Ändern Sie die Reihenfolge der ausgewählten Felder, indem Sie die Feldkarten in die Liste ziehen. Empfohlene Bestellung ist: Besucher, Gebäude, Geplanter Start, Geplantes Ende, Tatsächlicher Start, Tatsächliches Ende.
-   
-    -   Klicken Sie auf das **X**, um den Felderbereich zu schließen
+    -   Klicken Sie auf das **X**, um den Bereich „Felder“ zu schließen.
    
 5.  Wählen Sie bei ausgewählter Formularansicht im Bereich „Eigenschaften“ die Registerkarte „Erweitert“ aus. Wählen Sie die Eigenschaft **Element**, und geben Sie `LookUp(Visits, Code = textCode.Text)` ein 
 
@@ -140,16 +142,18 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 7.  Bereiten Sie das Testen der App vor.
 
     -   Wechseln Sie zur Registerkarte „Browser“, die die Lösung enthält
+
+    -   Klicken Sie im Popupfenster auf **Fertig**.
    
-    -   Wählen Sie die Entität **Besuch** aus
+    -   Wählen Sie die Tabelle **Besuch** aus.
    
     -   Wählen Sie die Registerkarte **Daten** aus
    
     -   Öffnen Sie die Ansichtsauswahl oben rechts, indem Sie auf den aktuellen Ansichtsnamen, **Aktive Besuche**, klicken
    
-    -   Ändern Sie die Ansicht in **Alle Felder**
+    -   Ändern Sie die Ansicht in **Alle Spalten**.
    
-    -   Suchen Sie einen Besuchsdatensatz, der keinen tatsächlichen Start- oder tatsächlichen Endwert hat. Wählen Sie den **Code** für diesen Besuch aus, und kopieren Sie ihn.
+    -   Suchen Sie eine Besuchszeile, die keinen Wert für „Tatsächlicher Start“ oder „Tatsächliches Ende“ hat (d. h. für die beide Spalten leer sind). Wählen Sie den **Code** für diesen Besuch aus, und kopieren Sie ihn.
 
 8.  Testen der App
 
@@ -181,7 +185,7 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
    
    * Klicken Sie auf **Schaltfläche**
    
-   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in „`Einchecken`“ (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
+   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Einchecken` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
    * Klicken Sie neben dem Schaltflächennamen in einer Strukturansicht (Button1) auf **...**, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `CheckInButton`
 
@@ -189,17 +193,17 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
 
    * Klicken Sie auf der Registerkarte „Einfügen“ auf **Schaltfläche**, um eine weitere Schaltfläche hinzuzufügen.
    
-   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in „`Auschecken`“ (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
+   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Auschecken` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
-   * Benennen Sie die Schaltfläche in `CheckOutButton` um
+   * Benennen Sie die Schaltfläche in `Auscheckschaltläche` um
    
    * Positionieren Sie die Schaltflächen unter dem Suchfeld, wobei Sie **Einchecken** über **Auschecken** positionieren. 
    
 ## Aufgabe Nr. 4: Aktivieren und Deaktivieren von Schaltflächen abhängig von den Besuchsdaten
 
-Wir möchten die Schaltfläche **Einchecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer), der Datensatzstatus aktiv ist, und der Besuch noch nicht begonnen hat, d. h. der tatsächliche Startwert leer ist.
+Sobald Benutzer den Besuch nachgeschlagen haben, sollen sie die Schaltfläche „Einchecken“ verwenden, um für diesen Besuch einzuchecken. Wir möchten die Schaltfläche **Einchecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer), der Datensatzstatus aktiv ist, und der Besuch noch nicht begonnen hat, d. h. der Wert für den tatsächlichen Start ist.
 
-1. Wählen Sie die Schaltfläche **Einchecken** aus, und klicken Sie auf die Eigenschaft **DisplayMode** der Schaltfläche auf der Registerkarte „Eigenschaften“.
+1. Wählen Sie die Schaltfläche **Einchecken** aus, und klicken Sie auf der Registerkarte „Eigenschaften“ auf die Eigenschaft **Anzeigemodus** der Schaltfläche.
 
 2. Geben Sie den folgenden Ausdruck in die Funktionsleiste ein:
 
@@ -215,14 +219,14 @@ Wir möchten die Schaltfläche **Einchecken** aktivieren, wenn der Besuchsdatens
    Der Ausdruck kann wie folgt unterteilt werden:
 
    * **!IsBlank(Visit)** - Besuchsdatensatz wurde gefunden
-   * **&&** – Logischer UND-Operator
-   * **Visit.Status = 'Status (Visits)'.Active** – Status des Datensatzes ist *Aktiv*
-   * **IsBlank(Visit.'Actual Start')** - Das Feld „Aktiver Start“ enthält keine Daten
+   * **&&** - logischer UND-Operator
+   * **Visit.Status = 'Status (Besuche)‘.Activ** – Status des Datensatzes ist *Aktiv*
+   * **IsBlank(Visit.'Tatsächlicher Start')** - Das Feld „Aktiver Start“ enthält keine Daten
    * **DisplayMode.Edit, DisplayMode.Disabled** - Wenn die oben genannten Bedingungen erfüllt sind, kann die Schaltfläche bearbeitet werden. Andernfalls bleibt die Schaltfläche deaktiviert.
 
 Wir möchten die Schaltfläche **Auschecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer ist), der Datensatzstatus aktiv ist und der Besuch bereits gestartet wurde, d. h., der tatsächliche Startwert ist nicht leer.
 
-3. Wählen Sie die Schaltfläche „Auschecken“ aus, und klicken Sie auf die Eigenschaft **DisplayMode** der Schaltfläche auf der Registerkarte „Eigenschaften“
+3. Wählen Sie die Schaltfläche „Auschecken“ aus, und klicken Sie auf der Registerkarte „Eigenschaften“ auf die Eigenschaft **Anzeigemodus** der Schaltfläche.
 
 4. Geben Sie den folgenden Ausdruck in die Funktionsleiste ein:
 
@@ -239,7 +243,7 @@ Wir möchten die Schaltfläche **Auschecken** aktivieren, wenn der Besuchsdatens
 
 6. Drücken Sie **F5** zum Ausführen der App. 
 
-7. Beide Tasten sollten deaktiviert sein. Geben Sie den zuvor kopierten Code ein, und drücken Sie **Tab**, um den Fokus vom Textfeld zu nehmen. Die Schaltfläche **Einchecken** sollte aktiviert werden. 
+7. Beide Tasten sollten deaktiviert sein. Geben Sie den zuvor kopierten Codewert ein, und drücken Sie die **TAB**-Taste, um den Fokus vom Textfeld zu nehmen. (Alternativ können Sie auch außerhalb des Textfelds klicken.) Die Schaltfläche **Einchecken** sollte aktiviert werden. 
 
 8. Löschen Sie den Inhalt des Suchfelds.
 
@@ -247,9 +251,9 @@ Wir möchten die Schaltfläche **Auschecken** aktivieren, wenn der Besuchsdatens
 
 ## Aufgabe Nr. 5: Ein- und Auscheckvorgang abschließen
 
-Um den Ein- und Auscheckvorgang durchzuführen, müssen die Common Data Service-Besuchsdaten wie folgt aktualisiert werden:
+Um den Ein- und Auscheckvorgang durchzuführen, müssen die Dataverse-Besuchsdaten wie folgt aktualisiert werden:
 
-* Wenn der Besucher eincheckt, setzen Sie das Feld *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit.
+* Wenn der Besucher eincheckt, legen Sie das Feld *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit fest.
 * Wenn der Besucher auscheckt, setzen Sie das Feld *Tatsächliches Ende* auf das aktuelle Datum und die aktuelle Uhrzeit. 
 * Setzen Sie den Datensatzstatus nach dem Auschecken auf inaktiv, um anzuzeigen, dass der Besuch abgeschlossen wurde.
 
@@ -269,11 +273,11 @@ Um den Ein- und Auscheckvorgang durchzuführen, müssen die Common Data Service-
 
    Dieser Ausdruck enthält die folgenden Informationen:
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. Die *Patch*-Methode aktualisiert die Entität **Besuche**, der durch die Variable **Besuch** (der aktuelle Besuch) identifizierte Datensatz. Der Ausdruck legt den Wert des Felds *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit (*Jetzt()* Methode) fest.
-   * **Refresh([@Visits]);**. Dieser Ausdruck aktualisiert die Besuchsdatensätze, wenn sich die zugrunde liegenden Werte geändert haben.
-   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Dieser Ausdruck aktualisiert die Variable *Besuch* mit aktuellen Daten aus Common Data Service.
+   * **Patch(Besuche, Besuch, {'Tatsächlicher Start': Now()});**. Die Methode *Patch* aktualisiert die Tabelle **Besuche**, die durch die Variable **Besuch** (der aktuelle Besuch) identifizierte Zeile. Der Ausdruck legt den Wert der Spalte *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit fest (Methode *Now()*).
+   * **Refresh([@Visits]);**. Dieser Ausdruck aktualisiert die Besuchszeilen, wenn sich die zugrunde liegenden Werte geändert haben.
+   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Dieser Ausdruck aktualisiert die Variable *Visit* mit aktuellen Daten aus Dataverse.
    
-   > Wenn ein Benutzer auf diese Schaltfläche klickt, wird der tatsächliche Start des Besuchs auf das aktuelle Datum und die aktuelle Uhrzeit eingestellt und die Daten werden aktualisiert.
+   > Wenn ein Benutzer auf diese Schaltfläche klickt, wird der tatsächliche Start des Besuchs auf das aktuelle Datum und die aktuelle Uhrzeit festgelegt, und die Daten werden aktualisiert.
 
 3. Wählen Sie die Schaltfläche **Auschecken**.
 
@@ -292,7 +296,7 @@ Um den Ein- und Auscheckvorgang durchzuführen, müssen die Common Data Service-
    Set(Visit, LookUp(Visits, Code = textCode.Text));
    ```
 
-   Wenn ein Benutzer auf diese Schaltfläche klickt, wird das tatsächliche Ende auf das aktuelle Datum und die aktuelle Uhrzeit eingestellt, der Status des Besuchsdatensatzes wird auf „Inaktiv“ gesetzt und die Daten werden aktualisiert.
+   Wenn ein Benutzer auf diese Schaltfläche klickt, wird das tatsächliche Ende auf das aktuelle Datum und die aktuelle Uhrzeit festgelegt, der Status des Besuchs wird auf „Inaktiv“ festgelegt, und die Daten werden aktualisiert.
 
 5. Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den **Zurück**-Pfeil, um zur App zurückzukehren.
 
@@ -322,7 +326,7 @@ Die Benutzerfreundlichkeit einer mobilen App wird erheblich verbessert, wenn vis
 
 1. Wählen Sie die Registerkarte **Einfügen** aus
 
-2. Wählen Sie **Symbole \** aus **| Hinzufügen**. An dieser Stelle spielt es keine Rolle, welches Symbol wir auswählen, da der Wert dynamisch sein soll.
+2. Wählen Sie **Symbole**  aus **\| Hinzufügen**. Wählen Sie Symbol aus. An dieser Stelle spielt es keine Rolle, welches Symbol Sie auswählen, da der Wert dynamisch sein soll.
 
 3. Ändern Sie die Größe des Symbols, und platzieren Sie es links neben den Schaltflächen.
 

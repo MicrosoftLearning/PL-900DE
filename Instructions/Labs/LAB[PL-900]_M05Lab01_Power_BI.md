@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 7: So erstellen Sie ein einfaches Dashboard'
+    title: 'Lab 7: Ein einfaches Dashboard erstellen'
     module: 'Modul 5: Erste Schritte mit Power BI'
 ---
 
 # Modul 5: Erste Schritte mit Power BI
-## Lab: So erstellen Sie ein einfaches Dashboard
+## Lab: Ein einfaches Dashboard erstellen
 
 # Szenario
 
@@ -17,12 +17,12 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab erstellen Sie ein Power BI-Dashboard, das Daten zu Campusbesuchen visualisiert.
 
-# Weiterführende Schritte des Lab
+# Allgemeine Schritte des Lab
 
 Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwerfen und zu erstellen:
 
--   Eine Verbindung zum Common Data Service herstellen 
--   Die Daten so transformieren, dass sie benutzerfreundliche Beschreibungen für die zugehörigen Datensätze enthalten (Lookups)
+-   Eine Verbindung zu Dataverse herstellen
+-   Die Daten so transformieren, dass sie benutzerfreundliche Beschreibungen für die zugehörigen Zeilen enthalten (Lookups)
 -   Einen Bericht mit verschiedenen Visualisierungen der Informationen zu Campusbesuchen erstellen und veröffentlichen
 -   Eine Abfrage in natürlicher Sprache zum Erstellen zusätzlicher Visualisierungen verwenden
 -   Eine mobile Ansicht des Power BI-Dashboards erstellen
@@ -31,7 +31,7 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
 ## Voraussetzungen
 
 * Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
-* Beendigung von **Modul 2 Lab 1 – Einführung in Common Data Service**
+* Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
 ## Vor dem Beginn zu beachtende Dinge
 
@@ -42,7 +42,7 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
 
 # Übung Nr. 1: Power BI-Bericht erstellen 
 
-**Ziel:** In dieser Übung erstellen Sie, basierend auf Daten aus der Common Data Service-Datenbank, einen Power BI-Bericht.
+**Ziel:** In dieser Übung erstellen Sie einen Power BI-Bericht auf Basis von Daten aus der Dataverse-Datenbank.
 
 ## Aufgabe Nr. 1: Power BI Desktop installieren/Power BI-Dienst vorbereiten
 
@@ -94,7 +94,7 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
     
     * Wählen Sie in der linken Navigationsseite „Umgebungen“ aus, und öffnen Sie dann Ihre Übungsumgebung.
     
-    * Klicken Sie im Bereich **Details** mit der rechten Maustaste auf **Umgebungs-URL**, und wählen Sie dann **Link kopieren** aus.
+    * Klicken Sie im Panel **Details** mit der rechten Maustaste auf **Umgebungs-URL**, und wählen Sie dann **Linkadresse kopieren** aus.
     
 2. Öffnen Sie Power BI Desktop, und melden Sie sich mit Ihren Anmeldeinformationen an, wenn Sie dazu aufgefordert werden.
 
@@ -108,9 +108,9 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
 
 7. Klicken Sie in der linken vertikalen Symbolleiste auf das Symbol für **Modell**.
 
-8. Ziehen Sie die Spalte **bc_buildingid** aus der Tabelle **bc_Building** in die Spalte **bc_building** in der Tabelle **bc_Visit**. Dadurch wird eine Beziehung zwischen den beiden Entitäten erstellt, mit deren Hilfe Power BI dann zusammengehörige Daten anzeigen kann.
+8. Ziehen Sie die Spalte **bc_buildingid** aus der Tabelle **bc_Building** in die Spalte **bc_building** in der Tabelle **bc_Visit**. Dadurch wird eine Beziehung zwischen den beiden Tabellen erstellt, mit deren Hilfe Power BI dann zusammengehörige Daten anzeigen kann.
 
-9. Wählen Sie in der linken Symbolleiste das Symbol **Bericht** aus.
+9. Wählen Sie auf der linken Symbolleiste das Symbol **Bericht** aus.
 
 10. Erweitern Sie den Knoten **bc_Visit** im Bereich **Felder**.
 
@@ -119,7 +119,7 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
 12. Stellen Sie die Formel wie folgt fertig:
 
     ```
-    Column = RELATED(bc_Building[bc_name])
+    Spalte = RELATED(bc_Building[bc_name])
     ```
 
     , und drücken Sie die EINGABETASTE. Dadurch wird den Besuchsdaten ein neues Feld mit dem Gebäudenamen hinzugefügt.
@@ -180,9 +180,9 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
 
 3. Wählen Sie bei der Eingabeaufforderung **An Dashboard anheften** die Option **Neues Dashboard** aus.
 
-4. Geben Sie ***Ihr Nachname* Campusverwaltung** als **Dashboardname** ein, und klicken Sie auf **Live anheften**.
+4. Geben Sie **[Ihr Nachname] Campusverwaltung** als **Dashboardname** ein, und klicken Sie auf **Live anheften**.
 
-5. Wählen Sie **Mein Arbeitsbereich** am oberen Rand aus, und wählen Sie dann das Dashboard ***Ihr Nachname* Campusverwaltung** aus.
+5. Wählen Sie am oberen Rand **Mein Arbeitsbereich** aus, und wählen Sie dann das Dashboard **[Ihr Nachname] Campusverwaltung** aus.
 
 6. Testen Sie die Interaktivität der angezeigten Kreis- und Balkendiagramme.
 
@@ -194,11 +194,11 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
 
 3. Wählen Sie **Visualisierung anheften** aus.
 
-4. Wählen Sie **Vorhandenes Dashboard** aus, wählen Sie Ihr Dashboard ***Ihr Nachname* Campusverwaltung** aus, und klicken Sie dann auf **Anheften**.
+4. Wählen Sie **Vorhandenes Dashboard** aus, wählen Sie Ihr Dashboard **[Ihr Nachname] Campusverwaltung** aus, und klicken Sie dann auf **Anheften**.
 
-5. Klicken Sie auf **F&A beenden**.
+5. Klicken Sie auf **Q&A beenden**.
 
-Ihr Dashboard ***Dein Nachname* Campusverwaltung** sollte angezeigt werden. Möglicherweise müssen Sie nach unten scrollen, um das neue Visuelle Q&A-Element anzuzeigen. 
+Ihr Dashboard **[Ihr Nachname] Campusverwaltung** sollte angezeigt werden. Möglicherweise müssen Sie nach unten scrollen, um das neue visuelle Q&A-Element anzuzeigen. 
 
 Ihr Dashboard sollte ungefähr wie folgt aussehen:
 
