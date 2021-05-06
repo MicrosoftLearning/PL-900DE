@@ -135,7 +135,7 @@ In dieser Aufgabe ändern Sie die Begrüßung in eine COVID-19-spezifische Begr�
 
 4.  Das Begrüßungsthema enthält 52 Triggerbegriffe. Klicken Sie auf **Zum Dokumenterstellungsbereich**.
 
-5.  Navigieren Sie zur ersten Nachricht, und ersetzen Sie sie durch `Hallo, ich bin ein virtueller Agent. Ich kann Ihnen sagen, wie sich COVID-19 verbreitet, wie Sie sich schützen, wie Sie Ihr Zuhause und Ihre Familie auf COVID-19 vorbereiten, Symptome, Tests und vieles mehr.`
+5.  Navigieren Sie zur ersten Nachricht, und ersetzen Sie sie durch `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`
 
 6.  Klicken Sie auf **Speichern**.
 
@@ -159,13 +159,13 @@ In dieser Übung veröffentlichen Sie den Bot.
 
 5.  Sie erhalten eine Liste der verfügbaren Kanäle, auf denen Sie Ihren Bot veröffentlichen können. Wählen Sie **Demo-Website** aus.
 
-6.  Ändern Sie die Begrüßungsnachricht in `Probieren Sie meinen COVID-19 FAQ-Bot aus` um.
+6.  Ändern Sie die Begrüßungsnachricht in `Try my COVID-19 FAQ bot.` um.
 
 7.  Geben Sie Folgendes in **Gesprächsstarter** ein:
     ```
-     „Wer unterliegt einem höheren Risiko für schwere Erkrankungen durch COVID-19?“
-     „Was bedeutet schwerere Erkrankung“
-     „Was unternimmt die CDC gegen COVID-19?“
+     “Who is at higher risk for serious illness from COVID-19”
+     “What does more severe illness mean”
+     “What is the CDC doing about COVID-19”
     ```
     
 8.  Klicken Sie auf **Speichern**.

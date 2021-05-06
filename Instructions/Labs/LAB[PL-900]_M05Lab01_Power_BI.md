@@ -122,7 +122,7 @@ Wir werden die folgenden Schritte ausführen, um das Power BI-Dashboard zu entwe
     Spalte = RELATED(bc_Building[bc_name])
     ```
 
-    , und drücken Sie die EINGABETASTE. Dadurch wird den Besuchsdaten ein neues Feld mit dem Gebäudenamen hinzugefügt.
+    und drücken Sie die EINGABETASTE. Dadurch wird den Besuchsdaten ein neues Feld mit dem Gebäudenamen hinzugefügt.
 
 13. Klicken Sie auf **...** neben dem Feld **Spalte**, das Sie gerade erstellt haben, und wählen Sie **Umbenennen** aus. Geben Sie **Gebäude** als Feldnamen ein.
 

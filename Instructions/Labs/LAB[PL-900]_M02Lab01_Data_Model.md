@@ -119,7 +119,7 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
     
 10.  Klicken Sie erneut auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Tabelle „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt. 
     
-    > Ihre Lösung sollte jetzt eine Tabelle enthalten: Kontakt.
+> Ihre Lösung sollte jetzt eine Tabelle enthalten: Kontakt.
 
 ## Aufgabe Nr. 2: Tabelle „Gebäude“ erstellen
 

@@ -252,7 +252,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 18.  Wählen Sie **Speichern** aus
 
-    Ihr Flow sollte in etwa wie folgt aussehen:
+Ihr Flow sollte in etwa wie folgt aussehen:
 
 ![Sicherheitsüberprüfung, geplanter Flow, Teil 1](media/4-power-automate-security-sweep-flow.png)
 

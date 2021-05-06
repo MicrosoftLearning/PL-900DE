@@ -64,7 +64,7 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
     
 2.  Erstellen Sie eine neue Canvas-Anwendung.
 
-    -   Klicken Sie auf **Neu**, und wählen Sie **App** aus. **\| Canvas-App \| Formfaktor „Telefon“ **.
+    -   Klicken Sie auf **Neu**, und wählen Sie **App** aus. **\| Canvas-App \| Formfaktor „Telefon“**.
         Dadurch wird der App-Editor in einem neuen Fenster geöffnet.
         
     -   Klicken Sie auf **Überspringen**, wenn das Dialogfeld „Willkommen bei Power Apps Studio“ angezeigt wird.
@@ -107,7 +107,7 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 
     -   Wählen Sie bei ausgewähltem Texteingabeobjekt den Text in der Eigenschaft **Standard** aus, und löschen Sie den Wert.
     
-    -   Wählen Sie die Eigenschaft **Hinweistext** aus, und geben Sie `Besuchercode eingeben` als Wert ein (einschließlich doppelter Anführungszeichen).
+    -   Wählen Sie die Eigenschaft **Hinweistext** aus, und geben Sie `"Enter visitor code"` als Wert ein (einschließlich doppelter Anführungszeichen).
     
     -   Klicken Sie neben dem Steuerelementnamen in der Strukturansicht (TextInput1) auf die Schaltfläche mit den Auslassungspunkten ([...]), wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `textCode`.
     
@@ -185,7 +185,7 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
    
    * Klicken Sie auf **Schaltfläche**
    
-   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Einchecken` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
+   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Check In` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
    * Klicken Sie neben dem Schaltflächennamen in einer Strukturansicht (Button1) auf **...**, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `CheckInButton`
 
@@ -193,9 +193,9 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
 
    * Klicken Sie auf der Registerkarte „Einfügen“ auf **Schaltfläche**, um eine weitere Schaltfläche hinzuzufügen.
    
-   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Auschecken` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
+   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Check Out` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
-   * Benennen Sie die Schaltfläche in `Auscheckschaltläche` um
+   * Benennen Sie die Schaltfläche in `CheckOutButton` um
    
    * Positionieren Sie die Schaltflächen unter dem Suchfeld, wobei Sie **Einchecken** über **Auschecken** positionieren. 
    

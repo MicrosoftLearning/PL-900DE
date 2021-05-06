@@ -78,9 +78,9 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     -   Zeigen Sie auf **Feste Layouts**, und wählen Sie **Seite mit Titel** aus
 
-3.  Ändern Sie im Eigenschaftenbereich unter **Anzeige** den **Namen** von **Neue Seite (1)** in `Gebäudeverzeichnis` um.
+3.  Ändern Sie im Eigenschaftenbereich unter **Anzeige** den **Namen** von **Neue Seite (1)** in `Building Directory` um.
 
-4.  Ändern Sie den Wert in der **Teil-URL** in `gebäudeverzeichnis` um, und drücken Sie die TAB-TASTE (um den automatischen Speichervorgang zu starten).
+4.  Ändern Sie den Wert in der **Teil-URL** in `building-directory` um, und drücken Sie die TAB-TASTE (um den automatischen Speichervorgang zu starten).
 
     > Der Titel der Seite sollte jetzt **Gebäudeverzeichnis** lauten
     
@@ -104,7 +104,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     -   Geben Sie im neuen Textbereich folgenden Text ein:
           ```
-          Nachfolgend ist das Gebäudeverzeichnis dargestellt.
+          The following is the building directory.
           ```
     -   Wählen Sie das Textfeld über dem gerade bearbeiteten Textfeld aus, und klicken Sie in der Befehlsleiste auf **Löschen**, um den Standardtext zu entfernen.
 
@@ -156,7 +156,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     -   Wählen Sie die Listenkomponente auf der Canvas aus
 
-    -   Geben Sie im Eigenschaftenbereich (rechte Seite) im Feld **Name** die Zeichenfolge `Gebäudeliste` ein.
+    -   Geben Sie im Eigenschaftenbereich (rechte Seite) im Feld **Name** die Zeichenfolge `Buildings List` ein.
 
     -   Wählen Sie aus der Dropdownliste im Feld **Tabelle** die Option **Gebäude (bc_building)** aus.
 
