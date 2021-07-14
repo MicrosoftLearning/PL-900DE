@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: 'Lab 5: Erstellen eines Power Apps-Portals'
     module: 'Modul 3: Erste Schritte mit Power Apps'
@@ -9,11 +9,9 @@ lab:
 ## Lab 4: Erstellen eines Power Apps-Portals
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel: „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) sind möglicherweise nicht mehr aktuell. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein. 
 
-Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird. 
-
-Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Szenario
 
@@ -23,7 +21,7 @@ Die Campusverwaltung möchte den Besuchern Informationen über die Gebäude auf 
 
 In diesem Lab stellen Sie ein Power Apps-Portal bereit und erstellen eine Portalwebseite, auf der eine Liste der Gebäude auf dem Campus angezeigt wird.
 
-# Allgemeine Schritte des Lab
+# Weiterführende Schritte des Lab
 
 Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederung:
 
@@ -33,24 +31,24 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
 ## Voraussetzungen
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 * Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
 ## Vor dem Beginn zu beachtende Dinge
 
 * Power Apps-Portale-Apps werden immer anhand einer Vorlage anstelle einer leeren Anwendung gestartet. Ihr Portal sollte in Modul 0 – Lab 0 erstellt worden sein. Wenn Sie ein Portal bereitstellen, enthält es bereits Seiten, Menüs und ein Standarddesign. 
 
-# Übung Nr. 1: Eine Portal-Webseite erstellen
+# Übung 1: Eine Portal-Webseite erstellen
 
 **Ziel:** In dieser Übung erstellen Sie eine neue Webseite, auf der statische Inhalte sowie eine Liste der Gebäude aus Dataverse angezeigt werden.
 
-## Aufgabe Nr. 1: Navigieren Sie zum Portal
+## Aufgabe 1: Navigieren Sie zum Portal
 
 1.  Navigieren Sie zu <https://make.powerapps.com>.
 
 2.  Überprüfen Sie, ob Sie sich in der Übungsumgebung befinden. Wenn dies nicht der Fall ist, ändern Sie die Umgebung in der oberen rechten Ecke.
 
-3.  Klicken Sie auf **Apps**.
+3.  Klicken Sie auf **Apps**
 
 4.  Suchen Sie die App mit dem **Typ** **Portal**
 
@@ -58,7 +56,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     > Sie sollten zur Landing Page Ihre Portalwebsite mit einer Begrüßungsnachricht weitergeleitet werden. Navigieren Sie in Ihrem Portal, um herauszufinden, welche Elemente beim Bereitstellen des Portals standardmäßig erstellt wurden. 
 
-## Aufgabe Nr. 2: Eine Webseite erstellen
+## Aufgabe 2: Eine Webseite erstellen
 
 1.  Öffnen Sie Power Apps-Portale Studio
 
@@ -84,7 +82,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     > Der Titel der Seite sollte jetzt **Gebäudeverzeichnis** lauten
     
-## Aufgabe Nr. 3: Statischen Inhalt hinzufügen
+## Aufgabe Nr. 3: Statischen Inhalt hinzufügen
 
 1.  Fügen Sie der Webseite einen neuen Abschnitt hinzu
 
@@ -104,7 +102,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     -   Geben Sie im neuen Textbereich folgenden Text ein:
           ```
-          The following is the building directory.
+          Nachfolgend ist das Gebäudeverzeichnis dargestellt.
           ```
     -   Wählen Sie das Textfeld über dem gerade bearbeiteten Textfeld aus, und klicken Sie in der Befehlsleiste auf **Löschen**, um den Standardtext zu entfernen.
 
@@ -124,7 +122,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     > Möglicherweise müssen Sie Ihren Browser für die Zulassung von Popups konfigurieren.
 
-## Aufgabe Nr. 4: Eine Listenkomponente hinzufügen
+## Aufgabe 4: Eine Listenkomponente hinzufügen
 
 1.  Navigieren Sie zur vorherigen Registerkarte, und fahren Sie mit Schritt 2 fort. Falls nicht verfügbar, führen Sie die folgenden Schritte aus, um zu diesem Speicherort zurückkehren.
 
@@ -160,7 +158,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
     -   Wählen Sie aus der Dropdownliste im Feld **Tabelle** die Option **Gebäude (bc_building)** aus.
 
-    -   Wählen Sie unter **Ansichten** die Option **Aktive Gebäude** aus.
+    -   In **Ansichten** wählen Sie **Aktive Gebäude** aus
 
     -   Behalten Sie die verbleibenden Standardeinstellungen bei
     
@@ -172,7 +170,7 @@ Sie halten sich beim Design des Power Apps-Portals an die nachstehende Gliederun
 
 **Ziel:** In dieser Übung erstellen Sie ein neues Design, das das Farbschema Ihres Portals ändert. 
 
-## Aufgabe Nr. 1: Design anwenden und bearbeiten
+## Aufgabe Nr. 1: Design anwenden und bearbeiten
 
 1.  Navigieren Sie zur vorherigen Registerkarte, und fahren Sie mit Schritt 2 fort. Falls nicht verfügbar, führen Sie die folgenden Schritte aus, um zu diesem Speicherort zurückkehren.
 

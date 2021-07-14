@@ -1,18 +1,16 @@
----
+﻿---
 lab:
     title: 'Lab 1: Datenmodellierung'
     module: 'Modul 2: Einführung in Microsoft Dataverse'
 ---
 
-# Modul 2: Einführung in Microsoft Dataverse
+# Modul 2: Einführung in Common Data Service
 ## Lab: Datenmodellierung
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel: „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) sind möglicherweise nicht mehr aktuell. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein.
 
-Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs.
-
-Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Szenario
 
@@ -24,18 +22,18 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Microsoft Dataverse-Datenbank und eine Lösung zum Nachverfolgen Ihrer Änderungen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
--   R1 –  Verfolgen Sie Standorte (Gebäude) der Campusbesuche
--   R2 –  Aufzeichnen der grundlegende Informationen, um die Besucher zu identifizieren und nachzuverfolgen 
+-   R1 – Verfolgen Sie Standorte (Gebäude) der Campusbesuche
+-   R2 – Aufzeichnen der grundlegende Informationen, um die Besucher zu identifizieren und nachzuverfolgen 
 -   R3 – Planen, Aufzeichnen und Verwalten von Besuchen 
 
 Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
-# Allgemeine Schritte des Lab
+# Weiterführende Schritte des Lab
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
-* eine Lösung und einen Herausgeber erstellen
-* sowohl neue als auch vorhandene Komponenten hinzufügen, die zur Erfüllung der Anwendungsanforderungen erforderlich sind. Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://raw.githubusercontent.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/update-march-2021/Allfiles/Campus%20Management.png). Sie können mit gedrückter STRG-Taste oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
+* eine Lösung und einen Herausgeber erstellen.
+* sowohl neue als auch vorhandene Komponenten hinzufügen, die zur Erfüllung der Anwendungsanforderungen erforderlich sind. Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
 
 Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
@@ -45,7 +43,7 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
 ## Voraussetzungen:
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 
 ## Bevor Sie beginnen, sollten Sie Folgendes berücksichtigen:
 
@@ -55,9 +53,9 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
 * Datetime-Formatierung zur Unterstützung einer einfachen Lokalisierung
 
-# Übung Nr. 1: Lösung erstellen
+# Übung 1: Lösung erstellen
 
-## Aufgabe Nr. 1: Lösung und Publisher erstellen
+## Aufgabe 1: Lösung und Publisher erstellen
 
 1.  Lösung erstellen
 
@@ -73,7 +71,7 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
     -   Klicken Sie auf das Dropdown-Menü **Publisher**, und wählen Sie **+ Publisher** aus.
 
-    -   Geben Sie in dem daraufhin eingeblendeten Fenster **Bellows College** als **Anzeigename** ein. 
+    -   Geben Sie in dem Fenster, das daraufhin eingeblendet wird, **Bellows College** als **Anzeigename** ein. 
     
     -   Geben Sie **bc** als **Präfix** ein.
 
@@ -94,9 +92,9 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
 **Ziel:** In dieser Übung fügen Sie die Standardtabelle „Kontakt“ hinzu und erstellen neue benutzerdefinierte Tabellen für Gebäude und Besuche in der Lösung. 
 
-## Aufgabe Nr. 1: Vorhandene Tabelle hinzufügen
+## Aufgabe 1: Vorhandene Tabelle hinzufügen
 
-1.  Klicken Sie, um die soeben erstellte Lösung **Campusverwaltung** zu öffnen.
+1.  Klicken Sie, um Ihre **Campusverwaltung**-Lösung, die Sie gerade erstellt haben, zu öffnen.
 
 2.  Klicken Sie auf **Vorhandene hinzufügen**, und wählen Sie **Tabelle** aus.
 
@@ -119,11 +117,11 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
     
 10.  Klicken Sie erneut auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Tabelle „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt. 
     
-> Ihre Lösung sollte jetzt eine Tabelle enthalten: Kontakt.
+    > Ihre Lösung sollte jetzt eine Tabelle enthalten: Kontakt.
 
-## Aufgabe Nr. 2: Tabelle „Gebäude“ erstellen
+## Aufgabe Nr. 2: Tabelle „Gebäude“ erstellen
 
-1.  In Ihrem Browser sollte weiterhin die Lösung „Campusverwaltung“ geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
+1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
 
     * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie noch nicht angemeldet sind)
     
@@ -138,7 +136,7 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
     
     -   Klicken Sie auf **Erstellen**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Tabellen und Spalten hinzuzufügen.
 
-## Aufgabe Nr. 3: Tabelle „Besuch“ und Spalten erstellen
+## Aufgabe 3: Tabelle „Besuch“ und Spalten erstellen
 
 Die Tabelle **Besuch** wird Informationen zu den Campusbesuchen enthalten, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
 
@@ -238,7 +236,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 **Ziel:** In dieser Übung fügen Sie Beziehungen zwischen Tabellen hinzu.
 
-## Aufgabe Nr. 1: Beziehungen erstellen
+## Aufgabe Nr. 1: Beziehungen erstellen
 
 1.  Vergewissern Sie sich, dass weiterhin die Tabelle **Besuch** der Lösung **Campusverwaltung** angezeigt wird. Navigieren Sie andernfalls dorthin.
 
@@ -270,11 +268,11 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 **Ziel:** In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
-## Aufgabe Nr. 1: Lösung importieren
+## Aufgabe Nr. 1: Lösung importieren
 
 In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enthält, der erforderlich ist, um den Datenimport abzuschließen.
 
-1. Die Datei **DataImport_managed.zip** sollte auf Ihrem Desktop gespeichert sein. Laden Sie, soweit noch nicht geschehen, die [Datenimportlösung](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/update-march-2021/Allfiles/DataImport_managed.zip?raw=true) herunter.
+1. Die Datei **DataImport_managed.zip** sollte auf Ihrem Desktop gespeichert sein. Laden Sie soweit noch nicht geschehen die [Datenimportlösung](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true) herunter.
 
 2. Melden Sie sich bei <https://make.powerapps.com> an.
 
@@ -306,13 +304,13 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 12. Warten Sie, bis der Importvorgang abgeschlossen ist.
 
-## Aufgabe Nr. 2: Daten importieren  
+## Aufgabe Nr. 2: Daten importieren  
 
 1. Öffnen Sie die **Datenimport**-Lösung.
 
 2. Überprüfen Sie den **Status** des Flows **Daten importieren**.
 
-3. Wenn **Status** auf **Aus** gesetzt ist, klicken Sie auf die Schaltfläche mit den Auslassungspunkten ([...]) neben **Daten importieren**, und wählen Sie dann **Einschalten** aus.
+3. Wenn **Status** auf **Aus** gesetzt ist, klicken Sie auf die Schaltfläche **[...]** neben **Daten importieren**, und wählen Sie dann **Einschalten** aus.
 
    > **Wichtig:** Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die von Ihnen erstellten Tabellen und Spalten mit den obigen Anweisungen übereinstimmen.
 
@@ -328,7 +326,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
     > Der Zweck dieses Flows bestand darin, Beispieldaten für die nächsten Labs zu generieren. In der nächsten Aufgabe werden Sie überprüfen, ob der Datenimport erfolgreich war. 
 
-## Aufgabe Nr. 3: Datenimport überprüfen
+## Aufgabe 3: Datenimport überprüfen
 
 1. Navigieren Sie zurück zur vorherigen Power Apps-Registerkarte. Klicken Sie in dem Popupfenster auf **Fertig**. 
 
@@ -342,7 +340,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
     > Wenn der Import erfolgreich war, sollte eine Liste der Besuchszeilen angezeigt werden.
 
-4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass das Gebäudeformular in einem separaten Fenster geöffnet wird. 
+4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass in einem separaten Fenster das Gebäudeformular geöffnet wird. 
 
 5. Schließen Sie das kürzlich gestartete Fenster.
 
