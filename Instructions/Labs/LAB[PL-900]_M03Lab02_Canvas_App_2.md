@@ -8,11 +8,9 @@ lab:
 ## Lab 2: So erstellen Sie eine Canvas-App, Teil 2
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel: „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) sind möglicherweise nicht mehr aktuell. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein.
 
-Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird.  
-
-Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Szenario
 
@@ -24,20 +22,20 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In Teil 2 dieses Labs erstellen Sie eine Power Apps-Canvas-App, mit deren Hilfe das Sicherheitspersonal an den Gebäudeeingängen die Besucher schnell bestätigen und registrieren kann.
 
-# Allgemeine Schritte des Lab
+# Weiterführende Schritte des Lab
 
 Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 
 -   Erstellen der App mit dem Formfaktor „Smartphone“
 -   Herstellen einer Verbindung mit Dataverse als Datenquelle
 -   Erfassen der Eingabe (Besuchercode) und Suchen der Besucherzeile
--   Konfigurieren eines Formularansicht-Steuerelements, um die Besucherinformationen anzuzeigen
+-   Ein Formularansicht-Steuerelement konfigurieren, um die Besucherinformationen anzuzeigen
 -   Verwenden einer Dataverse-Ansicht zum Füllen des Katalogs
 -   Ausführen des Ein- und Auscheckvorgangs für einen Besucher
 
 ## Voraussetzungen
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 * Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
 ## Vor dem Beginn zu beachtende Dinge
@@ -46,11 +44,11 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 -   Was soll geschehen, wenn ein Besuchercode ungültig ist?
 -   Was soll geschehen, wenn der Besucher außerhalb der geplanten Zeiten ankommt?
 
-# Übung Nr. 1: Erstellen einer Sicherheits-Canvas-App
+# Übung 1: Erstellen einer Sicherheits-Canvas-App
 
 **Ziel:** In dieser Übung erstellen Sie eine Canvas-App.
 
-## Aufgabe Nr. 1: Canvas-App erstellen
+## Aufgabe 1: Canvas-App erstellen
 
 1.  Öffnen Sie Ihre Campusverwaltung-Lösung.
 
@@ -62,9 +60,9 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
 
     -   Klicken Sie, um Ihre **Campusverwaltung**-Lösung zu öffnen.
     
-2.  Erstellen Sie eine neue Canvas-Anwendung.
+2.  Erstellen Sie eine neue Canvas-Anwendung
 
-    -   Klicken Sie auf **Neu**, und wählen Sie **App** aus. **\| Canvas-App \| Formfaktor „Telefon“**.
+    -   Klicken Sie auf **Neu**, und wählen Sie **App \** aus. **| Canvas-App \| Formfaktor „Telefon“**.
         Dadurch wird der App-Editor in einem neuen Fenster geöffnet.
         
     -   Klicken Sie auf **Überspringen**, wenn das Dialogfeld „Willkommen bei Power Apps Studio“ angezeigt wird.
@@ -85,13 +83,13 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
     
     -   Klicken Sie auf **+ Daten hinzufügen**.
 
-    -   Klicken Sie auf **Alle Entitäten anzeigen** (oder Tabellen).
+    -   Klicken Sie auf **Alle Tabellen anzeigen**.
     
     -   Wählen Sie **Besuche** aus, und warten Sie, bis die Tabelle „Besuch“ auf der Registerkarte „Daten“ angezeigt wird.
     
 4.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
-## Aufgabe Nr. 2: Besucherinformationen anzeigen
+## Aufgabe 2: Besucherinformationen anzeigen
 
 1.  Suchfeld hinzufügen
 
@@ -109,7 +107,7 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
     
     -   Wählen Sie die Eigenschaft **Hinweistext** aus, und geben Sie `"Enter visitor code"` als Wert ein (einschließlich doppelter Anführungszeichen).
     
-    -   Klicken Sie neben dem Steuerelementnamen in der Strukturansicht (TextInput1) auf die Schaltfläche mit den Auslassungspunkten ([...]), wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `textCode`.
+    -   Klicken Sie neben dem Steuerelementnamen in der Strukturansicht (TextInput1) auf die Schaltfläche **[...]**, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `textCode`.
     
 3.  Fügen Sie eine Formularansicht hinzu.
 
@@ -133,7 +131,7 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
    
     -   Ändern Sie die Reihenfolge der ausgewählten Felder, indem Sie die Feldkarten in die Liste ziehen. Empfohlene Bestellung ist: „Besucher“, „Gebäude“, „Geplanter Start“, „Geplantes Ende“, „Tatsächlicher Start“, „Tatsächliches Ende“ (Sie können die Felder reduzieren, um sie leichter ziehen zu können).
    
-    -   Klicken Sie auf das **X**, um den Bereich „Felder“ zu schließen.
+    -   Klicken Sie auf das **X**, um den Felderbereich zu schließen
    
 5.  Wählen Sie bei ausgewählter Formularansicht im Bereich „Eigenschaften“ die Registerkarte „Erweitert“ aus. Wählen Sie die Eigenschaft **Element**, und geben Sie `LookUp(Visits, Code = textCode.Text)` ein 
 
@@ -165,7 +163,7 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
    
 10.  Drücken Sie **ESC** um die laufende App zu beenden.
 
-## Aufgabe Nr. 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
+## Aufgabe Nr. 3: Fügen Sie Eincheck- und Auscheck-Schaltflächen hinzu
 
 In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Besuch ein- und auschecken kann. 
 
@@ -185,23 +183,23 @@ In dieser Aufgabe erstellen wir Schaltflächen, mit denen der Benutzer seinen Be
    
    * Klicken Sie auf **Schaltfläche**
    
-   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Check In` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
+   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in "`Check In`" (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
-   * Klicken Sie neben dem Schaltflächennamen in einer Strukturansicht (Button1) auf **...**, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `CheckInButton`
+   * Klicken Sie neben dem Schaltflächennamen in der Strukturansicht (Button1) auf **[...]**, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in `CheckInButton`
 
 3. Fügen Sie die Schaltfläche „Auschecken“ hinzu.   
 
    * Klicken Sie auf der Registerkarte „Einfügen“ auf **Schaltfläche**, um eine weitere Schaltfläche hinzuzufügen.
    
-   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in `Check Out` (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
+   * Ändern Sie im Eigenschaftenbereich die Eigenschaft der Schaltfläche **Text** in "`Check Out`" (Sie können dies innerhalb der vorhandenen Anführungszeichen eingeben).
    
-   * Benennen Sie die Schaltfläche in `CheckOutButton` um
+   * Benennen Sie die Schaltfläche in  `CheckOutButton` um
    
    * Positionieren Sie die Schaltflächen unter dem Suchfeld, wobei Sie **Einchecken** über **Auschecken** positionieren. 
    
-## Aufgabe Nr. 4: Aktivieren und Deaktivieren von Schaltflächen abhängig von den Besuchsdaten
+## Aufgabe 4: Aktivieren und Deaktivieren von Schaltflächen abhängig von den Besuchsdaten
 
-Sobald Benutzer den Besuch nachgeschlagen haben, sollen sie die Schaltfläche „Einchecken“ verwenden, um für diesen Besuch einzuchecken. Wir möchten die Schaltfläche **Einchecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer), der Datensatzstatus aktiv ist, und der Besuch noch nicht begonnen hat, d. h. der Wert für den tatsächlichen Start ist.
+Sobald Benutzer den Besuch nachgeschlagen haben, sollen sie die Schaltfläche „Einchecken“ verwenden, um für diesen Besuch einzuchecken. Wir möchten die Schaltfläche **Einchecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer), der Datensatzstatus aktiv ist, und der Besuch noch nicht begonnen hat, d. h. der tatsächliche Startwert leer ist.
 
 1. Wählen Sie die Schaltfläche **Einchecken** aus, und klicken Sie auf der Registerkarte „Eigenschaften“ auf die Eigenschaft **Anzeigemodus** der Schaltfläche.
 
@@ -220,8 +218,8 @@ Sobald Benutzer den Besuch nachgeschlagen haben, sollen sie die Schaltfläche �
 
    * **!IsBlank(Visit)** - Besuchsdatensatz wurde gefunden
    * **&&** - logischer UND-Operator
-   * **Visit.Status = 'Status (Besuche)‘.Activ** – Status des Datensatzes ist *Aktiv*
-   * **IsBlank(Visit.'Tatsächlicher Start')** - Das Feld „Aktiver Start“ enthält keine Daten
+   * **Visit.Status = 'Status (Visits)'.Active** – Status des Datensatzes ist *Aktiv*
+   * **IsBlank(Visit.'Actual Start')** - Das Feld „Aktiver Start“ enthält keine Daten
    * **DisplayMode.Edit, DisplayMode.Disabled** - Wenn die oben genannten Bedingungen erfüllt sind, kann die Schaltfläche bearbeitet werden. Andernfalls bleibt die Schaltfläche deaktiviert.
 
 Wir möchten die Schaltfläche **Auschecken** aktivieren, wenn der Besuchsdatensatz gefunden wurde (nicht leer ist), der Datensatzstatus aktiv ist und der Besuch bereits gestartet wurde, d. h., der tatsächliche Startwert ist nicht leer.
@@ -249,11 +247,11 @@ Wir möchten die Schaltfläche **Auschecken** aktivieren, wenn der Besuchsdatens
 
 9. Drücken Sie **ESC** um die laufende App zu beenden.
 
-## Aufgabe Nr. 5: Ein- und Auscheckvorgang abschließen
+## Aufgabe 5: Ein- und Auscheckvorgang abschließen
 
 Um den Ein- und Auscheckvorgang durchzuführen, müssen die Dataverse-Besuchsdaten wie folgt aktualisiert werden:
 
-* Wenn der Besucher eincheckt, legen Sie das Feld *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit fest.
+* Wenn der Besucher eincheckt, setzen Sie das Feld *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit.
 * Wenn der Besucher auscheckt, setzen Sie das Feld *Tatsächliches Ende* auf das aktuelle Datum und die aktuelle Uhrzeit. 
 * Setzen Sie den Datensatzstatus nach dem Auschecken auf inaktiv, um anzuzeigen, dass der Besuch abgeschlossen wurde.
 
@@ -273,11 +271,11 @@ Um den Ein- und Auscheckvorgang durchzuführen, müssen die Dataverse-Besuchsdat
 
    Dieser Ausdruck enthält die folgenden Informationen:
 
-   * **Patch(Besuche, Besuch, {'Tatsächlicher Start': Now()});**. Die Methode *Patch* aktualisiert die Tabelle **Besuche**, die durch die Variable **Besuch** (der aktuelle Besuch) identifizierte Zeile. Der Ausdruck legt den Wert der Spalte *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit fest (Methode *Now()*).
+   * **Patch(Besuche, Besuch, {'Actual Start': Now()});**. Die Methode *Patch* aktualisiert die Tabelle **Besuche**, die durch die Variable **Besuch** (der aktuelle Besuch) identifizierte Zeile. Der Ausdruck legt den Wert der Spalte *Tatsächlicher Start* auf das aktuelle Datum und die aktuelle Uhrzeit fest (Methode *Now()*).
    * **Refresh([@Visits]);**. Dieser Ausdruck aktualisiert die Besuchszeilen, wenn sich die zugrunde liegenden Werte geändert haben.
    * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Dieser Ausdruck aktualisiert die Variable *Visit* mit aktuellen Daten aus Dataverse.
    
-   > Wenn ein Benutzer auf diese Schaltfläche klickt, wird der tatsächliche Start des Besuchs auf das aktuelle Datum und die aktuelle Uhrzeit festgelegt, und die Daten werden aktualisiert.
+   > Wenn ein Benutzer auf diese Schaltfläche klickt, wird der tatsächliche Start des Besuchs auf das aktuelle Datum und die aktuelle Uhrzeit eingestellt und die Daten werden aktualisiert.
 
 3. Wählen Sie die Schaltfläche **Auschecken**.
 
@@ -320,13 +318,13 @@ Um den Ein- und Auscheckvorgang durchzuführen, müssen die Dataverse-Besuchsdat
 
 10. Drücken Sie **ESC** um die laufende App zu beenden.
 
-## Aufgabe Nr. 6: Visuelle Indikatoren hinzufügen
+## Aufgabe 6: Visuelle Indikatoren hinzufügen
 
 Die Benutzerfreundlichkeit einer mobilen App wird erheblich verbessert, wenn visuelle Indikatoren bereitgestellt werden. In dieser Aufgabe fügen wir ein Symbol hinzu, das angibt, ob ein Besucher ein- oder ausgecheckt werden kann.
 
 1. Wählen Sie die Registerkarte **Einfügen** aus
 
-2. Wählen Sie **Symbole**  aus **\| Hinzufügen**. Wählen Sie Symbol aus. An dieser Stelle spielt es keine Rolle, welches Symbol Sie auswählen, da der Wert dynamisch sein soll.
+2. Wählen Sie **Symbole** aus **\| Hinzufügen**. Wählen Sie Symbol aus. An dieser Stelle spielt es keine Rolle, welches Symbol wir auswählen, da der Wert dynamisch sein soll.
 
 3. Ändern Sie die Größe des Symbols, und platzieren Sie es links neben den Schaltflächen.
 
@@ -345,7 +343,7 @@ Die Benutzerfreundlichkeit einer mobilen App wird erheblich verbessert, wenn vis
 
 6. Drücken Sie **F5** zum Ausführen der App. Geben Sie den zuvor kopierten Code ein, und drücken Sie **Tab**, um den Fokus vom Textfeld zu nehmen. Stellen Sie sicher, dass das Symbol ein Stirnrunzeln-Emoji anzeigt.
 
-7. Suchen Sie einen anderen Codewert, der zuvor noch nicht benutzt wurde (er sollte keinen tatsächlichen Start- oder  Endwert haben). 
+7. Suchen Sie einen anderen Codewert, der zuvor noch nicht benutzt wurde (er sollte keinen tatsächlichen Start- oder Endwert haben). 
 
     > Sie können zur vorherigen Registerkarte navigieren, um einen anderen Code von einem der von Ihnen erstellten Besuche zu kopieren. Sie können auch Ihre zuvor erstellte App **Campus-Mitarbeiter** ausführen, um neue Besuchsdatensätze zu erstellen. Überprüfen Sie, ob das Symbol ein Smiley für diesen Code anzeigt.
 
@@ -355,7 +353,7 @@ Ihre ausgeführte App sollte ungefähr so aussehen:
 
 8. Drücken Sie **ESC** um die laufende App zu beenden.
 
-## Aufgabe Nr. 7: Die App veröffentlichen
+## Aufgabe 7: Die App veröffentlichen
 
 1. Sie sollten die Campus Security-App weiterhin in Ihrem Browser geöffnet haben. Wählen Sie andernfalls die **Campus Security**-App aus, und klicken Sie auf **Bearbeiten**.
 

@@ -10,11 +10,9 @@ Modul 0: Einführung in den Kurs
 ## Lab: Lab-Umgebung überprüfen
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel: „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) sind möglicherweise nicht mehr aktuell. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein. 
 
-Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird. 
-
-Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 Szenario
 --------
@@ -67,7 +65,7 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testmandanten erhalten und
 
 **Ziel:** Das Bereitstellen eines Power Apps-Portals kann einige Zeit dauern. In dieser Übung erstellen Sie Ihr Power Apps-Portal in Ihrer Umgebung, damit der Bereitstellungsprozess gestartet werden kann. Sie verwenden dieses Portal in einem späteren Lab.
 
-## Aufgabe Nr. 1: Erstellen des Power Apps-Portals
+## Aufgabe 1: Erstellen des Power Apps-Portals
 
 1.  Anmelden bei <https://make.powerapps.com>
 
@@ -79,7 +77,7 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testmandanten erhalten und
 
 4.  Geben Sie neue Portaldetails an
 
-    -   Geben Sie **Bellows College-Besucher** als **Name** des Portals ein
+    -   Geben Sie **```Bellows College Visitors```** als **Name** des Portals ein.
 
     -   Geben Sie eine eindeutige URL an; **etwas**.powerappsportals.com (wenn der Name bereits verwendet wird, wählen Sie einen anderen)
 

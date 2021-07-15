@@ -1,19 +1,17 @@
 ---
 lab:
-    title: 'Lab 2: So erstellen Sie eine Canvas-App, Teil 1'
+    title: 'Lab 2: Entwerfen einer Canvas-App, Teil 1'
     module: 'Modul 3: Erste Schritte mit Power Apps'
 ---
 
 # Modul 3: Erste Schritte mit Power Apps
 
-## Lab: So erstellen Sie eine Canvas-App, Teil 1
+## Lab: Entwerfen einer Canvas-App, Teil 1
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel: „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) sind möglicherweise nicht mehr aktuell. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein.
 
-Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs.
-
-Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Szenario
 
@@ -25,7 +23,7 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In Teil 1 dieses Labs erstellen Sie eine Canvas-App in Power Apps, mit der Universitätsmitarbeiter Besuche für ihre Gäste verwalten können.
 
-# Allgemeine Schritte des Lab
+# Weiterführende Schritte des Lab
 
 Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
@@ -37,7 +35,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 ## Voraussetzungen
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 * Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
 ## Vor dem Beginn zu beachtende Dinge
@@ -46,17 +44,17 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 -   Schätzen Sie die Anzahl der Datensätze im System 
 -   Ausgewählte Datensätze einschränken, um die App-Leistung und die Benutzereinführung zu verbessern
 
-# Übung Nr. 1: Canvas-App für Mitarbeiter erstellen
+# Übung 1: Canvas-App für Mitarbeiter erstellen
 
 **Ziel:** In dieser Übung erstellen Sie eine Canvas-App aus einer Vorlage und ändern sie dann so, dass sie die erforderlichen Daten enthält.
 
-## Aufgabe Nr. 1: Canvas-App erstellen
+## Aufgabe 1: Canvas-App erstellen
 
 In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlage, die auf Microsoft Dataverse basiert. Wenn Sie „Besuche“ als ausgewählte Tabelle aus Dataverse nutzen, generiert die Vorlage eine App „Katalog - Ansicht - Bearbeiten“ zum Verwalten von Campusbesuchen.
 
 1.  Zeigen Sie die Apps in Ihrer Umgebung an.
 
-    -   Melden Sie sich bei <https://make.powerapps.com> an.
+    -   Anmelden bei <https://make.powerapps.com>
 
     -   Wählen Sie Ihre **Umgebung** oben rechts aus, falls sie noch nicht auf
         Ihre Übungsumgebung eingestellt ist.
@@ -65,15 +63,11 @@ In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlag
 
 2.  Erstellen Sie eine neue Canvas-Anwendung
 
-    -   Klicken Sie auf **Neue App**, und wählen Sie  **Canvas** aus.
+    -   Klicken Sie auf **Neue App**, und wählen Sie **Canvas** aus.
 
-    -   Klicken Sie unter **Common Data Service** auf **Telefonlayout**.
+    -   Klicken Sie unter **Microsoft Dataverse (Legacy)** auf **Telefonlayout**.
 
-3.  Wählen Sie **Erstellen** unter der Verbindung **Common Data Service** aus.
-
-4.  Wählen Sie die Tabelle **Besuche** aus.
-
-5.  Auf **Verbinden**klicken
+4.  Wählen Sie die Tabelle **Besuche** aus. Klicken Sie auf **Verbinden**.
 
 6.  Das Fenster **Willkommen bei Power Apps Studio** wird möglicherweise angezeigt. Klicken Sie auf **Überspringen**.
 
@@ -85,7 +79,7 @@ In dieser Aufgabe erstellen Sie eine Canvas-App mithilfe der Telefonlayoutvorlag
 
     -   Klicken Sie auf **Speichern**.
 
-## Aufgabe Nr. 2: Konfigurieren des Detailformulars für Besuche
+## Aufgabe 2: Konfigurieren des Detailformulars für Besuche
 
 In dieser Aufgabe konfigurieren Sie das Detailformular, um Informationen zu einzelnen Besuchsaufzeichnungen anzuzeigen.
 
@@ -127,11 +121,11 @@ In dieser Aufgabe konfigurieren Sie das Detailformular, um Informationen zu einz
  
 11.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
-## Aufgabe Nr. 3: Konfigurieren Sie das Bearbeitungsformular für Besuche
+## Aufgabe Nr. 3: Konfigurieren Sie das Bearbeitungsformular für Besuche
 
 In dieser Aufgabe konfigurieren Sie ein Formular zum Bearbeiten von Informationen zu einzelnen Besuchszeilen.
 
-1.  Erweitern Sie **EditScreen1** unter **Strukturansicht**.
+1.  Erweitern Sie**EditScreen1** unter **Strukturansicht**.
 
 2.  **EditForm1** auswählen
 
@@ -166,7 +160,7 @@ Ihr Bildschirm sollte ungefähr wie folgt aussehen:
 
 ![Canvas-Bearbeitungsformular](media/2-canvas-edit-form.png)
 
-## Aufgabe Nr. 4: Konfigurieren Sie die Besuchsgalerie
+## Aufgabe 4: Konfigurieren Sie die Besuchsgalerie
 
 In dieser Aufgabe konfigurieren Sie den vorab generierten Katalog so, dass Titel sowie Start- und Enddatum für den Besuch angezeigt werden. 
 
@@ -192,7 +186,7 @@ In dieser Aufgabe konfigurieren Sie den vorab generierten Katalog so, dass Titel
 
 11.  Um Ihre Arbeit von Zeit zu Zeit zu speichern, klicken Sie auf **Datei**, und wählen Sie dann **Speichern** aus. Klicken Sie auf den Zurück-Pfeil, um zur App zurückzukehren.
 
-## Aufgabe Nr. 5: Fügen Sie einen Datumsfilter hinzu.
+## Aufgabe 5: Fügen Sie einen Datumsfilter hinzu.
 
 Da die Anzahl der Besuche kontinuierlich zunimmt, benötigen Benutzer eine Funktion zum Filtern der Besuchergalerie. Beispielsweise möchte der Benutzer möglicherweise nur die zukünftigen Besuche sehen. In dieser Aufgabe können Sie Besuche erst nach einem vom Benutzer ausgewählten Datum anzeigen.
 
@@ -239,7 +233,7 @@ Ihr Bildschirm sollte ungefähr wie folgt aussehen:
 
 In dieser Übung testen Sie die Anwendung und fügen sie bei Erfolg Ihrer Lösung hinzu.
 
-## Aufgabe Nr. 1: App testen
+## Aufgabe 1: App testen
 
 1.  Starten Sie die Anwendung
 
@@ -253,7 +247,7 @@ In dieser Übung testen Sie die Anwendung und fügen sie bei Erfolg Ihrer Lösun
     
     -   Kehren Sie zum Katalog zurück, und drücken Sie **+**, um einen neuen Besuch zu erstellen. Überprüfen Sie, ob das Bearbeitungsformular die erforderlichen Spalten enthält, einschließlich Besucher, Gebäude sowie geplante Start- und Enddaten.
     
-    -   Geben Sie die Informationen ein, und senden Sie das Formular. Überprüfen Sie, dass der neue Datensatz in der Galerie angezeigt wird.
+    -   Geben Sie die Informationen an und senden Sie sie. Überprüfen Sie, dass der neue Datensatz in der Galerie angezeigt wird.
     
     -   Erstellen Sie mindestens 2 weitere Besuche.
     
@@ -273,7 +267,7 @@ In dieser Übung testen Sie die Anwendung und fügen sie bei Erfolg Ihrer Lösun
 
     -   Klicken Sie auf **Beenden**, wenn Sie aufgefordert werden, das Browserfenster zu schließen.
 
-## Aufgabe Nr. 2: App zur Lösung hinzufügen und veröffentlichen 
+## Aufgabe Nr. 2: App zur Lösung hinzufügen und veröffentlichen 
 
 1. Öffnen Sie die Campus Management-Lösung.
 

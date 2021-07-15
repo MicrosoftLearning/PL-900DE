@@ -5,14 +5,12 @@ lab:
 ---
 
 # Modul 4: Erste Schritte mit Power Automate
-## Lab: Erstellen einer automatisierten Lösung
+## lab: Erstellen einer automatisierten Lösung
 
 ### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Die Terminologie in Microsoft Dataverse wurde teilweise aktualisiert. Beispielsweise heißt „Entität“ jetzt „Tabelle“. Felder und Datensätze in Dataverse-Datenbanken werden jetzt als Spalten und Zeilen bezeichnet.
+Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel: „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) sind möglicherweise nicht mehr aktuell. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein.
 
-Da die Benutzeroberflächen der Anwendungen gerade aktualisiert werden, sind einige Verweise auf Terminologie von Microsoft Dataverse wie etwa „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) möglicherweise nicht mehr aktuell. Bitte beachten Sie dies bei der Durcharbeitung der Labs. Wir gehen davon aus, dass unser gesamter Inhalt sehr bald auf dem neuesten Stand sein wird. 
-
-Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/de-de/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 ## Szenario
 
@@ -24,7 +22,7 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab erstellen Sie Power Automate-Flows, um verschiedene Aspekte der Campusverwaltung zu automatisieren. 
 
-# Allgemeine Schritte des Lab
+# Weiterführende Schritte des Lab
 
 Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschließen.
 
@@ -33,21 +31,21 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ## Voraussetzungen
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
+* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 * Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
-* Campusmitarbeiter-App, erstellt in **Modul 3, Lab 2 – So erstellen Sie eine Canvas-App, Teil 2** (zu Testzwecken)
-* John Doe-Kontakt, erstellt mit einer persönlichen E-Mail-Adresse in **Modul 3, Lab 4 – So erstellen Sie eine modellgesteuerte App** (zu Testzwecken)
+* Campusmitarbeiter-App, erstellt in **Modul 3, Lab 2 – Erstellen einer Canvas-App, Teil 2** (zum Testen)
+* John Doe-Kontakt, erstellt mit einer persönlichen E-Mail-Adresse in **Modul 3, Lab 4 – Erstellen einer modellgesteuerten App** (zum Testen)
 
 ## Vor dem Beginn zu beachtende Dinge
 
 -   Welcher Verteilungsmechanismus ist für die Besuchercodes am besten geeignet?
 -   Wie können Überschreitungen gemessen und strenge Richtlinien durchgesetzt werden?
 
-# Übung Nr. 1: Einen Besuchsbenachrichtigungsfluss erstellen
+# Übung 1: Einen Besuchsbenachrichtigungsfluss erstellen
 
 **Ziel:** In dieser Übung erstellen Sie einen Power Automate-Flow, der die Anforderung implementiert. Dem Besucher sollte eine E-Mail gesendet werden, die den eindeutigen Code enthält, der dem Besuch zugewiesen ist.
 
-## Aufgabe Nr. 1: Flow erstellen
+## Aufgabe 1: Flow erstellen
 
 1.  Öffnen Sie Ihre Campusverwaltung-Lösung.
 
@@ -61,21 +59,21 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 2.  Klicken Sie auf **Neu**, und wählen Sie **Cloud-Flow** aus. Dadurch wird der Power Automate-Flow-Editor in einem neuen Fenster geöffnet.
 
-3. Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
+3. Wählen Sie **Microsoft Dataverse** aus.
 
-4. Wählen Sie den Trigger **Wenn ein Datensatz erstellt, aktualisiert oder gelöscht wird** aus.
+4. Wählen Sie den Trigger **Wenn eine Zeile erstellt, aktualisiert oder gelöscht wird** aus.
 
-   * Wählen Sie**Erstellen** für **Triggerbedingung**
+   * Wählen **Erstellen** für **Änderungstyp** aus.
    
    * Wählen Sie **Besuche** als **Tabellenname** aus.
    
-   * Wählen Sie im **Organisation** als **Bereich** aus.
+   * Wählen Sie im **Bereich** **Organisation** aus
    
    * Klicken Sie im Triggerschritt auf die Schaltfläche mit den Auslassungspunkten **(...**), und klicken Sie auf **Umbenennen**. Benennen Sie diesen Trigger in **„Wenn ein Besuch erstellt wird“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
-5.  Klicken Sie auf **Neuer Schritt**. Dieser Schritt ist erforderlich, um Besucherinformationen einschließlich der E-Mail-Adresse abzurufen.
+5. Wählen Sie **Neuer Schritt** aus. Dieser Schritt ist erforderlich, um Besucherinformationen einschließlich der E-Mail-Adresse abzurufen.
 
-6. Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
+6. Wählen Sie **Microsoft Dataverse** aus.
 
 7. Wählen Sie die Aktion **Get a row by ID** aus. 
 
@@ -112,15 +110,15 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
         Bellows College
         ```
    
-10.  Wählen Sie oben den Flow-Namen **Ohne Titel** aus, und benennen Sie ihn in `Besuchsbenachrichtigung` um.
+10.  Wählen Sie oben den Flow-Namen **Ohne Titel** aus, und benennen Sie ihn in `Visit notification` um.
 
 11. Wählen Sie **Speichern** aus
 
     Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. Ihr Flow sollte in etwa wie folgt aussehen:
 
-![Power Automate-Besucherbenachrichtigungs-Flow](media/4-power-automate-notification.png)
+![Bild](https://user-images.githubusercontent.com/78555251/118340724-ccb13300-b4d9-11eb-96c2-c7b005bb9ac0.png)
 
-## Aufgabe Nr. 2: Flow überprüfen und aktivieren
+## Aufgabe 2: Flow überprüfen und aktivieren
 
 1.  Öffnen Sie in Ihrem Browser eine neue Registerkarte, und navigieren Sie zu <https://make.powerapps.com>.
 
@@ -130,7 +128,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 4.  Klicken Sie in der Befehlsleiste auf **Testen**. Wählen Sie **Manuell** aus, und klicken Sie dann auf **Speichern und testen**.
 
-5.  Lassen Sie die Registerkarte mit dem Flow geöffnet, und navigieren Sie wieder zurück zur vorherigen Registerkarte mit der App **Campus-Mitarbeiter**.
+5.  Lassen Sie die Flow-Registerkarte geöffnet, und navigieren Sie wieder zurück zur vorherigen Registerkarte mit der **Campus-Mitarbeiter**-App.
 
 6.  Klicken Sie auf **+**, um einen neuen Datensatz hinzuzufügen.
 
@@ -156,7 +154,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 **Ziel:** In dieser Übung erstellen Sie einen Power Automate-Flow, der die Anforderung implementiert. Alle 15 Minuten muss eine Sicherheitsprüfung durchgeführt werden. Sollte einer der Besucher seine geplante Aufenthaltszeit überschritten haben, ist die Sicherheit zu benachrichtigen.
 
-## Aufgabe Nr. 1: Einen Flow zum Abrufen von Datensätzen erstellen
+## Aufgabe Nr. 1: Einen Flow zum Abrufen von Datensätzen erstellen
 
 1. Öffnen Sie Ihre Campusverwaltung-Lösung.
 
@@ -174,7 +172,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 4. **Intervall** auf **15 Minuten** einstellen
 
-5. Klicken Sie auf **Neuer Schritt**. Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. Wählen Sie die Aktion **Zeilen auflisten** aus.
+5. Klicken Sie auf **Neuer Schritt**. Suchen Sie nach *Aktuell*, und wählen Sie **Microsoft Dataverse**-Connector. Wählen Sie die Aktion **Zeilen auflisten** aus.
 
    * Geben Sie **Besuche** als **Tabellenname** ein.
    
@@ -202,43 +200,43 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
     * Klicken Sie auf **Eine Aktion hinzufügen** innerhalb der Schleife „Auf jedes anwenden“.
     
-    * Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus. 
+    * Wählen Sie **Microsoft Dataverse** aus. 
     
     * Wählen Sie die Aktion **Get a row by ID** aus.
     
-    * Wählen Sie **Gebäude** als **Entitätsname** aus
+    * Wählen Sie **Gebäude** als **Tabellenname** aus.
     
-    * Wählen Sie **Gebäude (Wert)** als **Element-ID** aus dem Dynamics-Inhalt aus.
+    * Wählen Sie **Gebäude (Wert)** als **Zeilen-ID** aus dem Dynamics-Inhalt aus.
     
-    * Klicken Sie auf **...** neben **Einen Datensatz abrufen**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **Gebäude abrufen** ein.
+    * Klicken Sie neben **Einen Datensatz abrufen** auf **[...]**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **Gebäude abrufen** ein.
     
 9.  Abrufen von Besucherdaten zu zugehörigem Datensatz
 
     * Klicken Sie auf **Eine Aktion hinzufügen** innerhalb der Schleife „Auf jedes anwenden“.
     
-    * Suchen Sie nach *Aktuell* und wählen Sie **Common Data Service (aktuelle Umgebung)** aus.
+    * Wählen Sie **Microsoft Dataverse** aus.
     
     * Wählen Sie die Aktion **Get a row by ID** aus.
     
-    * Wählen Sie **Kontakte** als **Entitätsname** aus
+    * Wählen Sie **Kontakte** als **Tabellenname** aus.
     
-    * Wählen Sie **Besucher (Wert)** als **Element-ID** aus dem Dynamics-Inhalt aus.
+    * Wählen Sie **Besucher (Wert)** als **Zeilen-ID** aus dem Dynamics-Inhalt aus.
     
-    * Klicken Sie auf **...** neben **Einen Datensatz abrufen**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **Besucher abrufen** ein.
+    * Klicken Sie neben **Einen Datensatz abrufen** auf **[...]**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **Besucher abrufen** ein.
     
-11.  Senden Sie eine E-Mail-Benachrichtigung.
+10.  Senden Sie eine E-Mail-Benachrichtigung.
 
      * Klicken Sie auf **Eine Aktion hinzufügen** innerhalb der Schleife „Auf jedes anwenden“. Fügen Sie die Aktion **E-Mail-Benachrichtigung senden** aus **Mail**verbindung hinzu.
 
-12.  Ihre E-Mail-Adresse als **An** eingeben
+11.  Ihre E-Mail-Adresse als **An** eingeben
 
-13.  Geben Sie Folgendes in das Feld **Betreff** ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
+12.  Geben Sie Folgendes in das Feld **Betreff** ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
 
    ```
    {Full Name} overstayed their welcome
    ```
    
-14.  Geben Sie Folgendes in das Feld **Text** ein. **Name** ist ein dynamischer Inhalt aus dem Schritt **Gebäude abrufen**.
+13.  Geben Sie Folgendes in das Feld **Text** ein. **Name** ist ein dynamischer Inhalt aus dem Schritt **Gebäude abrufen**.
 
    ```
    There is an overstay in building {Name}.
@@ -248,15 +246,15 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
    Campus Security
    ```
 
-17.  Wählen Sie den Flow-Namen **Ohne Titel** in der oberen linken Ecke aus, und benennen Sie ihn in **Sicherheitsüberprüfung** um.
+14.  Wählen Sie den Flow-Namen **Ohne Titel** in der oberen linken Ecke aus, und benennen Sie ihn in **Sicherheitsüberprüfung** um.
 
-18.  Wählen Sie **Speichern** aus
+15.  Wählen Sie **Speichern** aus
 
-Ihr Flow sollte in etwa wie folgt aussehen:
+    Ihr Flow sollte in etwa wie folgt aussehen:
 
 ![Sicherheitsüberprüfung, geplanter Flow, Teil 1](media/4-power-automate-security-sweep-flow.png)
 
-## Aufgabe Nr. 2: Flow überprüfen und aktivieren
+## Aufgabe Nr. 2: Flow überprüfen und aktivieren
 
 Ihr Flow beginnt, Ihnen E-Mails zu senden (an die E-Mail-Adresse, die Sie bei der Erstellung des Kontakts „Bernhard Schmid“ zuvor angegeben haben), wenn es Besuche gibt, die den im Flow festgelegten Anforderungen entsprechen.
 
@@ -282,7 +280,7 @@ Ihr Flow beginnt, Ihnen E-Mails zu senden (an die E-Mail-Adresse, die Sie bei de
 
 7. Erweitern Sie **Auf jedes anwenden** und dann den Schritt **Eine E-Mail-Benachrichtigung senden**. Überprüfen Sie die Werte **Betreff**, **E-Mail-Text**.
 
-8. Klicken Sie auf den Zurück-Pfeil, um zu Details des Sicherheitsüberprüfungs-Flows zurückzukehren. Wählen Sie auf der Befehlsleiste **Ausschalten** aus. Dies soll verhindern, dass der Flow nach einem Zeitplan auf dem Testsystem ausgeführt wird.
+8. Klicken Sie auf den Zurück-Pfeil, um zu Details des Sicherheitsüberprüfungs-Flows zurückzukehren. Wählen Sie auf der Befehlsleiste **Ausschalten** aus. Dies soll verhindern, dass der Datenfluss nach einem Zeitplan auf dem Testsystem ausgeführt wird.
 
 # Herausforderungen
 
