@@ -98,16 +98,16 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
         > Dynamischer Inhalt muss dort platziert werden, wo Feldernamen in Klammern angegeben sind. Es wird empfohlen, zuerst den gesamten Text zu kopieren und einzufügen und dann dynamischen Inhalt an den richtigen Stellen hinzuzufügen.
    
         ```
-        Hallo {First Name},
+        Dear {First Name},
 
-        für Ihren Besuch auf dem Bellows Campus wurde der Zeitraum von {Scheduled Start} bis {Scheduled End} vermerkt.
+        You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-        Ihr Sicherheitscode lautet {Code}. Bitte geben Sie ihn nicht weiter! Sie müssen diesen Code während Ihres Besuchs erzeugen.
+        Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
 
-        Mit freundlichen Grüßen
+        Best regards,
 
-        Campusverwaltung
-        Bellows College
+        Campus Administration
+        Bellows College
         ```
    
 10.  Wählen Sie oben den Flow-Namen **Ohne Titel** aus, und benennen Sie ihn in `Visit notification` um.
@@ -224,19 +224,19 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
     
     * Klicken Sie neben **Einen Datensatz abrufen** auf **[...]**, und wählen Sie **Umbenennen** aus. Geben Sie als Schrittname **Besucher abrufen** ein.
     
-11.  Senden Sie eine E-Mail-Benachrichtigung.
+10.  Senden Sie eine E-Mail-Benachrichtigung.
 
      * Klicken Sie auf **Eine Aktion hinzufügen** innerhalb der Schleife „Auf jedes anwenden“. Fügen Sie die Aktion **E-Mail-Benachrichtigung senden** aus **Mail**verbindung hinzu.
 
-12.  Ihre E-Mail-Adresse als **An** eingeben
+11.  Ihre E-Mail-Adresse als **An** eingeben
 
-13.  Geben Sie Folgendes in das Feld **Betreff** ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
+12.  Geben Sie Folgendes in das Feld **Betreff** ein. **Vollständiger Name** ist ein dynamischer Inhalt aus dem Schritt **Besucher abrufen**.
 
    ```
    {Full Name} overstayed their welcome
    ```
    
-14.  Geben Sie Folgendes in das Feld **Text** ein. **Name** ist ein dynamischer Inhalt aus dem Schritt **Gebäude abrufen**.
+13.  Geben Sie Folgendes in das Feld **Text** ein. **Name** ist ein dynamischer Inhalt aus dem Schritt **Gebäude abrufen**.
 
    ```
    There is an overstay in building {Name}.
@@ -246,9 +246,9 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
    Campus Security
    ```
 
-17.  Wählen Sie den Flow-Namen **Ohne Titel** in der oberen linken Ecke aus, und benennen Sie ihn in **Sicherheitsüberprüfung** um.
+14.  Wählen Sie den Flow-Namen **Ohne Titel** in der oberen linken Ecke aus, und benennen Sie ihn in **Sicherheitsüberprüfung** um.
 
-18.  Wählen Sie **Speichern** aus
+15.  Wählen Sie **Speichern** aus
 
     Ihr Flow sollte in etwa wie folgt aussehen:
 

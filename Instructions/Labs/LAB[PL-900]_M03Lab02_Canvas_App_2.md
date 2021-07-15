@@ -62,7 +62,7 @@ Sie werden sich beim Entwerfen der App an nachstehende Gliederung halten:
     
 2.  Erstellen Sie eine neue Canvas-Anwendung
 
-    -   Klicken Sie auf **Neu**, und wählen Sie **App \** aus.**| Canvas-App \| Formfaktor „Telefon“ **.
+    -   Klicken Sie auf **Neu**, und wählen Sie **App \** aus. **| Canvas-App \| Formfaktor „Telefon“**.
         Dadurch wird der App-Editor in einem neuen Fenster geöffnet.
         
     -   Klicken Sie auf **Überspringen**, wenn das Dialogfeld „Willkommen bei Power Apps Studio“ angezeigt wird.
