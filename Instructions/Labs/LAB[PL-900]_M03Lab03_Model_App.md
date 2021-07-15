@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab 4: Erstellen einer modellgesteuerten App'
     module: 'Modul 3: Erste Schritte mit Power Apps'

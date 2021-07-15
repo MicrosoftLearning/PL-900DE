@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab 2: Entwerfen einer Canvas-App, Teil 1'
     module: 'Modul 3: Erste Schritte mit Power Apps'

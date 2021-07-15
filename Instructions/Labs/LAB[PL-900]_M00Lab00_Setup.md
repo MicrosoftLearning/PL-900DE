@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: Lab-Umgebung überprüfen'
     module: 'Modul 0: Einführung in den Kurs'

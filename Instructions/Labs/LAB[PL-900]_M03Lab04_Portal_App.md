@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab 5: Erstellen eines Power Apps-Portals'
     module: 'Modul 3: Erste Schritte mit Power Apps'
